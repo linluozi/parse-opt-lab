@@ -1,0 +1,21 @@
+name: ci
+on:
+  push:
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python -m pip install pytest
+      - name: Build patched tree from pinned upstream
+        run: |
+          git clone https://github.com/r1chardj0n3s/parse.git upstream
+          git -C upstream checkout cf27a9bb66f68a42a467484693b5343be8242197
+          cp -a upstream patched
+          git -C patched apply "$GITHUB_WORKSPACE/patch.diff"
+      - name: Cache semantics tests
+        run: PARSE_SRC="$GITHUB_WORKSPACE/patched" python -m pytest tests/test_cache.py -q
