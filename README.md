@@ -58,7 +58,7 @@ Patch: `patch.diff` — 1 file, 39 insertions, 3 deletions (`git diff --stat`).
 | G3 中位加速 | **2.47x** ≥ 1.15x | `python3 benchmark/bench.py --src <tree> --tag <t> --out benchmark --corpus benchmark/corpus/dpkg-status-lines.txt` |
 | G3b 真实语料 | 真实 dpkg 记录上 **2.47x** ≥ 1.15x | 同上（语料即真实文件） |
 | G4 大规模不退化 | 3,000 行 **2.48x** ≥ 0.95x；10,000 互异格式未命中路径 **0.986x** | 同上 + `distinct_envelope` |
-| G5 内存不变差 | 峰值 RSS **12,672 kB → 12,672 kB = 1.000x** | `/usr/bin/time -v python3 -c "..."`（120,000 次 parse，见下） |
+| G5 内存不变差 | 两次独立运行均 **1.000x**：12,672→12,672 kB、14,080→14,080 kB | `/usr/bin/time -v python3 -c "..."`（120,000 次 parse，原始输出见 `benchmark/memory-*.txt`） |
 
 G5 命令（两棵树各跑一次，读 `Maximum resident set size`）：
 
@@ -66,6 +66,10 @@ G5 命令（两棵树各跑一次，读 `Maximum resident set size`）：
 /usr/bin/time -v python3 -c "import sys;sys.path.insert(0,'<tree>');import parse
 for _ in range(120000): parse.parse('Package: {name}','Package: libc6')"
 ```
+
+原始 `/usr/bin/time -v` 输出已提交：`benchmark/memory-base.txt`（基线）与
+`benchmark/memory-patched.txt`（优化后），两者 `Maximum resident set size`
+均为 14,080 kB。
 
 **解释器交叉**：本机只有 `/usr/bin/python3.12`（3.12.3），无 3.10/3.11，
 因此未做跨版本交叉，也没有编造多版本数据。
@@ -109,6 +113,7 @@ tests/test_cache.py                8 个缓存语义测试（键、回退、上�
 tests/_probe.py                    在独立子进程中跑一棵树并输出规范 JSONL
 benchmark/compare.py               从两份 JSON 打印闸门表（G3/G3b/G4/包络）
 benchmark/corpus/README.md         语料来源、抽取命令、sha256
+benchmark/memory-*.txt             /usr/bin/time -v 原始峰值 RSS 输出
 patch.diff                         39+/3-，仅 parse/__init__.py
 LICENSE                            上游 MIT 原文 + 来源/改动说明
 ```
