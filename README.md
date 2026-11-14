@@ -76,13 +76,20 @@ for _ in range(120000): parse.parse('Package: {name}','Package: libc6')"
 git clone --depth=1 https://github.com/r1chardj0n3s/parse.git upstream && cp -a upstream patched && git -C patched apply "$PWD/patch.diff"
 python3 benchmark/bench.py --src upstream --tag baseline --out benchmark --corpus benchmark/corpus/dpkg-status-lines.txt && python3 benchmark/bench.py --src patched --tag optimized --out benchmark --corpus benchmark/corpus/dpkg-status-lines.txt
 python3 tests/test_diff.py --baseline upstream --optimized patched
+python3 benchmark/compare.py                       # gate table from the two JSON files
+PARSE_SRC=$PWD/patched python3 -m pytest tests/test_cache.py -q   # 8 cache-semantics tests
 ```
+
+`tests/test_cache.py` covers cache hits, converter-identity keys, the
+format-only wrong-answer witness, case sensitivity, unhashable-converter
+fallback, the 256-entry bound, `search()` sharing, and cached-vs-fresh
+`Parser` equality.  Local run: **8 passed in 0.03s** (pytest 9.2.0).
 
 ## 环境
 
 - CPU: AMD EPYC 7K62 48-Core Processor（`/proc/cpuinfo`），4 vCPU
 - 内存: 3,723 MB
-- 运行时: CPython 3.12.3，pytest 9.x
+- 运行时: CPython 3.12.3，pytest 9.2.0
 - 种子: `20261114`（bench 的互异格式生成与差分语料共用）
 - 上游测试命令/结果已写入 `benchmark/baseline.json.upstream_tests`
   与 `benchmark/optimized.json.upstream_tests`
@@ -98,7 +105,10 @@ benchmark/optimized.json           优化后聚合
 benchmark/raw/*.json               每个规模每次采样的原始样本
 benchmark/corpus/                  真实 dpkg status 行语料（含来源说明）
 tests/test_diff.py                 差分入口（1,153 条，去重 1,079）
+tests/test_cache.py                8 个缓存语义测试（键、回退、上界、witness）
 tests/_probe.py                    在独立子进程中跑一棵树并输出规范 JSONL
+benchmark/compare.py               从两份 JSON 打印闸门表（G3/G3b/G4/包络）
+benchmark/corpus/README.md         语料来源、抽取命令、sha256
 patch.diff                         39+/3-，仅 parse/__init__.py
 LICENSE                            上游 MIT 原文 + 来源/改动说明
 ```
