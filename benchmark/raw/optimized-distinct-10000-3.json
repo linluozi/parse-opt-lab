@@ -1,0 +1,9 @@
+{
+ "impl": "optimized",
+ "workload": "distinct",
+ "scale": 10000,
+ "sample": 3,
+ "elapsed_s": 1.329406712,
+ "distinct_inputs": 10000,
+ "sha256_set": "8397903cb96dc72f7f89d244d872d5d960b04249485b2fdd06ef2ee715225590"
+}

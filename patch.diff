@@ -1,0 +1,74 @@
+diff --git a/parse/__init__.py b/parse/__init__.py
+index 3b891d8..04844bc 100644
+--- a/parse/__init__.py
++++ b/parse/__init__.py
+@@ -8,7 +8,7 @@ from datetime import time
+ from datetime import timedelta
+ from datetime import tzinfo
+ from decimal import Decimal
+-from functools import partial
++from functools import lru_cache, partial
+ 
+ 
+ __version__ = "1.22.4"
+@@ -964,6 +964,36 @@ class ResultIterator(object):
+     next = __next__
+ 
+ 
++
++_MAX_CACHED_PARSERS = 256
++
++
++def _parser_cache_key(format, extra_types, case_sensitive):
++    """Return a hashable, semantics-preserving cache key, or None."""
++    if not extra_types:
++        return (format, case_sensitive, None)
++    try:
++        items = tuple(sorted(extra_types.items()))
++        hash(items)
++    except TypeError:
++        return None
++    return (format, case_sensitive, items)
++
++
++@lru_cache(maxsize=_MAX_CACHED_PARSERS)
++def _cached_parser(format, case_sensitive, extra_items):
++    extra_types = dict(extra_items) if extra_items else None
++    return Parser(format, extra_types=extra_types, case_sensitive=case_sensitive)
++
++
++def parser_cache_info():
++    return _cached_parser.cache_info()
++
++
++def parser_cache_clear():
++    _cached_parser.cache_clear()
++
++
+ def parse(format, string, extra_types=None, evaluate_result=True, case_sensitive=False):
+     """Using "format" attempt to pull values from "string".
+ 
+@@ -990,7 +1020,10 @@ def parse(format, string, extra_types=None, evaluate_result=True, case_sensitive
+ 
+     In the case there is no match parse() will return None.
+     """
+-    p = Parser(format, extra_types=extra_types, case_sensitive=case_sensitive)
++    key = _parser_cache_key(format, extra_types, case_sensitive)
++    p = _cached_parser(*key) if key is not None else Parser(
++        format, extra_types=extra_types, case_sensitive=case_sensitive
++    )
+     return p.parse(string, evaluate_result=evaluate_result)
+ 
+ 
+@@ -1031,7 +1064,10 @@ def search(
+ 
+     In the case there is no match parse() will return None.
+     """
+-    p = Parser(format, extra_types=extra_types, case_sensitive=case_sensitive)
++    key = _parser_cache_key(format, extra_types, case_sensitive)
++    p = _cached_parser(*key) if key is not None else Parser(
++        format, extra_types=extra_types, case_sensitive=case_sensitive
++    )
+     return p.search(string, pos, endpos, evaluate_result=evaluate_result)
+ 
+ 

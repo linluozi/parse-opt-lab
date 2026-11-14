@@ -1,0 +1,3143 @@
+Package: acpid
+Version: 1:2.0.34-1ubuntu2
+Depends: libc6 (>= 2.38), sysvinit-utils (>= 3.05-4), kmod
+Package: adduser
+Version: 3.137ubuntu1
+Depends: passwd
+Package: adwaita-icon-theme
+Version: 46.0-1
+Depends: gtk-update-icon-cache, hicolor-icon-theme, ubuntu-mono
+Package: alsa-topology-conf
+Version: 1.2.5.1-2
+Package: alsa-ucm-conf
+Version: 1.2.10-1ubuntu5.14
+Depends: libasound2t64 (>= 1.2.7)
+Package: amd64-microcode
+Version: 3.20250311.1ubuntu0.24.04.1
+Package: apparmor
+Version: 4.0.1really4.0.1-0ubuntu0.24.04.5
+Depends: debconf, debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.38)
+Package: apport
+Version: 2.28.1-0ubuntu3.8
+Depends: apport-core-dump-handler | python3-zstandard, apport-core-dump-handler | systemd-coredump, gir1.2-glib-2.0 (>= 1.29.17), python3, python3-apport (>= 2.28.1-0ubuntu3.8), python3-gi, sensible-utils
+Package: apport-core-dump-handler
+Version: 2.28.1-0ubuntu3.8
+Depends: apport (>= 2.27.0-0ubuntu7~)
+Package: apport-symptoms
+Version: 0.25
+Package: appstream
+Version: 1.0.2-1build6
+Depends: shared-mime-info, libappstream5 (>= 1.0.0), libc6 (>= 2.34), libglib2.0-0t64 (>= 2.75.3)
+Package: apt
+Version: 2.8.3
+Depends: base-passwd (>= 3.6.1) | adduser, gpgv, libapt-pkg6.0t64 (>= 2.8.3), ubuntu-keyring, libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libgnutls30t64 (>= 3.8.1), libseccomp2 (>= 2.4.2), libstdc++6 (>= 13.1), libsystemd0
+Package: apt-transport-https
+Version: 2.8.3
+Depends: apt (>= 1.5~alpha4)
+Package: apt-utils
+Version: 2.8.3
+Depends: apt (= 2.8.3), libapt-pkg6.0t64 (>= 2.8.3), libc6 (>= 2.34), libdb5.3t64, libgcc-s1 (>= 3.3.1), libstdc++6 (>= 13.1)
+Package: aptitude
+Version: 0.8.13-5ubuntu5
+Depends: aptitude-common (= 0.8.13-5ubuntu5), libapt-pkg6.0t64 (>= 1.9.11~), libboost-iostreams1.83.0 (>= 1.83.0), libc6 (>= 2.38), libcwidget4 (>= 0.5.18-1), libgcc-s1 (>= 3.3.1), libncursesw6 (>= 6.1+20180210), libsigc++-2.0-0v5 (>= 2.8.0), libsqlite3-0 (>= 3.6.5), libstdc++6 (>= 13.1), libtinfo6 (>= 6.1+20180210), libxapian30 (>= 1.4.19~)
+Package: aptitude-common
+Version: 0.8.13-5ubuntu5
+Package: at-spi2-common
+Version: 2.52.0-1build1
+Package: at-spi2-core
+Version: 2.52.0-1build1
+Depends: libatspi2.0-0t64 (>= 2.9.90), libc6 (>= 2.34), libdbus-1-3 (>= 1.9.14), libglib2.0-0t64 (>= 2.79.0), libsystemd0, libx11-6, libxtst6, at-spi2-common, gsettings-desktop-schemas
+Package: base-files
+Version: 13ubuntu10.4
+Depends: libc6 (>= 2.34), libcrypt1 (>= 1:4.4.10-10ubuntu3)
+Package: base-passwd
+Version: 3.6.3build1
+Depends: libc6 (>= 2.34), libdebconfclient0 (>= 0.145), libselinux1 (>= 3.1~)
+Package: bash
+Version: 5.2.21-2ubuntu4
+Depends: base-files (>= 2.1.12), debianutils (>= 5.6-0.1)
+Package: bash-completion
+Version: 1:2.11-8
+Package: bc
+Version: 1.07.1-3ubuntu4
+Depends: libc6 (>= 2.38), libreadline8t64 (>= 6.0)
+Package: bcache-tools
+Version: 1.0.8-5build1
+Depends: libblkid1 (>= 2.17.2), libc6 (>= 2.34), libuuid1 (>= 2.16), gawk
+Package: bind9-dnsutils
+Version: 1:9.18.39-0ubuntu0.24.04.5
+Depends: bind9-host | host, bind9-libs (= 1:9.18.39-0ubuntu0.24.04.5), libc6 (>= 2.38), libedit2 (>= 2.11-20080614-0), libidn2-0 (>= 2.0.0), libkrb5-3 (>= 1.6.dfsg.2)
+Package: bind9-host
+Version: 1:9.18.39-0ubuntu0.24.04.5
+Depends: bind9-libs (= 1:9.18.39-0ubuntu0.24.04.5), libc6 (>= 2.38), libidn2-0 (>= 2.0.0)
+Package: bind9-libs
+Version: 1:9.18.39-0ubuntu0.24.04.5
+Depends: libuv1t64 (>= 1.40.0), libc6 (>= 2.38), libedit2 (>= 2.11-20080614-0), libgssapi-krb5-2 (>= 1.17), libjson-c5 (>= 0.15), libkrb5-3 (>= 1.6.dfsg.2), liblmdb0 (>= 0.9.7), libmaxminddb0 (>= 1.3.0), libnghttp2-14 (>= 1.12.0), libssl3t64 (>= 3.0.0), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4)
+Package: binutils
+Version: 2.42-4ubuntu2.8
+Depends: binutils-common (= 2.42-4ubuntu2.8), libbinutils (= 2.42-4ubuntu2.8), binutils-x86-64-linux-gnu (= 2.42-4ubuntu2.8)
+Package: binutils-common
+Version: 2.42-4ubuntu2.8
+Package: binutils-x86-64-linux-gnu
+Version: 2.42-4ubuntu2.8
+Depends: binutils-common (= 2.42-4ubuntu2.8), libbinutils (= 2.42-4ubuntu2.8), libc6 (>= 2.38), libctf-nobfd0 (>= 2.36), libctf0 (>= 2.36), libgcc-s1 (>= 4.2), libgprofng0 (>= 2.41), libjansson4 (>= 2.14), libsframe1 (>= 2.41), libstdc++6 (>= 13.1), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Package: bolt
+Version: 0.9.7-1
+Depends: libc6 (>= 2.38), libglib2.0-0t64 (>= 2.79.0), libpolkit-gobject-1-0 (>= 0.99), libudev1 (>= 183)
+Package: bpfcc-tools
+Version: 0.29.1+ds-1ubuntu7
+Depends: python3-bpfcc (>= 0.29.1+ds-1ubuntu7), python3-netaddr, python3:any
+Package: bpftrace
+Version: 0.20.2-1ubuntu4.3
+Depends: libbpf1 (>= 1:0.7.0), libbpfcc (>= 0.29.1+ds), libc6 (>= 2.38), libclang1-18 (>= 1:9~svn359771-1~), libdw1t64 (>= 0.161), libgcc-s1 (>= 3.3.1), libllvm18, libstdc++6 (>= 13.1), zlib1g (>= 1:1.1.4)
+Package: bridge-utils
+Version: 1.7.1-1ubuntu2
+Depends: libc6 (>= 2.34)
+Package: bsdextrautils
+Version: 2.39.3-9ubuntu6.4
+Depends: libc6 (>= 2.38), libsmartcols1 (>= 2.39.1), libtinfo6 (>= 6)
+Package: bsdutils
+Version: 1:2.39.3-9ubuntu6.4
+Package: btrfs-progs
+Version: 6.6.3-1.1build2
+Depends: libblkid1 (>= 2.17.2), libc6 (>= 2.38), libcom-err2 (>= 1.43.9), libext2fs2t64 (>= 1.42), liblzo2-2 (>= 2.02), libreiserfscore0t64 (>= 1:3.6.27), libudev1 (>= 183), libuuid1 (>= 2.16), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.0)
+Package: build-essential
+Version: 12.10ubuntu1
+Depends: libc6-dev | libc-dev, gcc (>= 4:12.3), g++ (>= 4:12.3), make, dpkg-dev (>= 1.17.11)
+Package: busybox-initramfs
+Version: 1:1.36.1-6ubuntu3.1
+Depends: libc6 (>= 2.38)
+Package: busybox-static
+Version: 1:1.36.1-6ubuntu3.1
+Package: byobu
+Version: 6.11-0ubuntu1
+Depends: debconf (>= 0.5) | debconf-2.0, python3:any, gettext-base, iproute2, python3, python3-newt, tmux (>= 1.5), gawk
+Package: bzip2
+Version: 1.0.8-5.1build0.1
+Depends: libbz2-1.0 (= 1.0.8-5.1build0.1), libc6 (>= 2.34)
+Package: ca-certificates
+Version: 20260601~24.04.1
+Depends: openssl (>= 1.1.1), debconf (>= 0.5) | debconf-2.0
+Package: caddy
+Version: 2.11.4
+Package: chrony
+Version: 4.5-1ubuntu4.2
+Depends: adduser (>= 3.130), iproute2, tzdata-legacy, libcap2-bin (>= 1:2.32-1), ucf, libc6 (>= 2.38), libcap2 (>= 1:2.10), libedit2 (>= 2.11-20080614-0), libgnutls30t64 (>= 3.8.1), libnettle8t64 (>= 3.9~), libseccomp2 (>= 2.4.3-1~)
+Package: cloud-guest-utils
+Version: 0.33-1
+Depends: e2fsprogs, fdisk, python3:any
+Package: cloud-initramfs-copymods
+Version: 0.49~24.04.1
+Depends: initramfs-tools
+Package: cloud-initramfs-dyn-netconf
+Version: 0.49~24.04.1
+Depends: initramfs-tools
+Package: command-not-found
+Version: 23.04.0
+Depends: python3-commandnotfound (= 23.04.0)
+Package: console-setup
+Version: 1.226ubuntu1
+Depends: console-setup-linux | console-setup-freebsd | hurd, xkb-data (>= 0.9), keyboard-configuration (= 1.226ubuntu1), debconf (>= 0.5) | debconf-2.0
+Package: console-setup-linux
+Version: 1.226ubuntu1
+Depends: kbd (>= 0.99-12) | console-tools (>= 1:0.2.3-16), keyboard-configuration (= 1.226ubuntu1), init-system-helpers (>= 1.29~) | initscripts
+Package: containerd
+Version: 2.2.1-0ubuntu1~24.04.3
+Depends: runc, libc6 (>= 2.34)
+Package: coreutils
+Version: 9.4-3ubuntu6.1
+Package: cpio
+Version: 2.15+dfsg-1ubuntu2
+Depends: libc6 (>= 2.38)
+Package: cpp
+Version: 4:13.2.0-7ubuntu1
+Depends: cpp-13 (>= 13.2.0-11~), cpp-x86-64-linux-gnu (= 4:13.2.0-7ubuntu1)
+Package: cpp-13
+Version: 13.3.0-6ubuntu2~24.04.1
+Depends: gcc-13-base (= 13.3.0-6ubuntu2~24.04.1), cpp-13-x86-64-linux-gnu (= 13.3.0-6ubuntu2~24.04.1)
+Package: cpp-13-x86-64-linux-gnu
+Version: 13.3.0-6ubuntu2~24.04.1
+Depends: gcc-13-base (= 13.3.0-6ubuntu2~24.04.1), libc6 (>= 2.38), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Package: cpp-x86-64-linux-gnu
+Version: 4:13.2.0-7ubuntu1
+Depends: cpp-13-x86-64-linux-gnu (>= 13.2.0-11~)
+Package: crash
+Version: 8.0.4-1ubuntu2.1
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.4), liblzo2-2 (>= 2.02), libncursesw6 (>= 6), libsnappy1v5 (>= 1.1.10), libstdc++6 (>= 12), libtinfo6 (>= 6), libzstd1 (>= 1.5.5), binutils
+Package: cron
+Version: 3.0pl1-184ubuntu2
+Depends: libc6 (>= 2.34), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), sensible-utils, libpam-runtime
+Package: cron-daemon-common
+Version: 3.0pl1-184ubuntu2
+Depends: systemd | systemd-standalone-sysusers | systemd-sysusers, adduser
+Package: cryptsetup
+Version: 2:2.7.0-1ubuntu4.2
+Depends: cryptsetup-bin (>= 2:1.6.0), dmsetup, debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.34)
+Package: cryptsetup-bin
+Version: 2:2.7.0-1ubuntu4.2
+Depends: libblkid1 (>= 2.24.2), libc6 (>= 2.38), libcryptsetup12 (>= 2:2.7), libpopt0 (>= 1.14), libuuid1 (>= 2.16)
+Package: cryptsetup-initramfs
+Version: 2:2.7.0-1ubuntu4.2
+Depends: busybox-initramfs, cryptsetup (>= 2:2.7.0-1ubuntu4.2), initramfs-tools (>= 0.137) | linux-initramfs-tool, debconf (>= 0.5) | debconf-2.0
+Package: curl
+Version: 8.5.0-2ubuntu10.13
+Depends: libc6 (>= 2.34), libcurl4t64 (= 8.5.0-2ubuntu10.13), zlib1g (>= 1:1.1.4)
+Package: dash
+Version: 0.5.12-6ubuntu5
+Depends: debianutils (>= 5.6-0.1), dpkg (>= 1.19.1)
+Package: dbus
+Version: 1.14.10-4ubuntu4.1
+Depends: dbus-bin (= 1.14.10-4ubuntu4.1), dbus-daemon (= 1.14.10-4ubuntu4.1), dbus-system-bus-common (>= 1.14.10-4ubuntu4.1), libc6 (>= 2.34), libdbus-1-3 (= 1.14.10-4ubuntu4.1), libexpat1 (>= 2.1~beta3), libsystemd0
+Package: dbus-bin
+Version: 1.14.10-4ubuntu4.1
+Depends: libc6 (>= 2.38), libdbus-1-3 (= 1.14.10-4ubuntu4.1)
+Package: dbus-daemon
+Version: 1.14.10-4ubuntu4.1
+Depends: dbus-bin (= 1.14.10-4ubuntu4.1), dbus-session-bus-common (>= 1.14.10-4ubuntu4.1), libapparmor1 (>= 2.8.94), libaudit1 (>= 1:2.2.1), libc6 (>= 2.34), libcap-ng0 (>= 0.7.9), libdbus-1-3 (= 1.14.10-4ubuntu4.1), libexpat1 (>= 2.1~beta3), libselinux1 (>= 3.1~), libsystemd0
+Package: dbus-session-bus-common
+Version: 1.14.10-4ubuntu4.1
+Package: dbus-system-bus-common
+Version: 1.14.10-4ubuntu4.1
+Depends: adduser
+Package: dbus-user-session
+Version: 1.14.10-4ubuntu4.1
+Depends: dbus-daemon (= 1.14.10-4ubuntu4.1) | dbus-broker, dbus-session-bus-common (>= 1.14.10-4ubuntu4.1), libpam-systemd, systemd
+Package: dconf-gsettings-backend
+Version: 0.40.0-4ubuntu0.1
+Depends: dconf-service (<< 0.40.0-4ubuntu0.1.1~), dconf-service (>= 0.40.0-4ubuntu0.1), libdconf1 (= 0.40.0-4ubuntu0.1), libc6 (>= 2.4), libglib2.0-0t64 (>= 2.79.0)
+Package: dconf-service
+Version: 0.40.0-4ubuntu0.1
+Depends: default-dbus-session-bus | dbus-session-bus, libdconf1 (= 0.40.0-4ubuntu0.1), procps, libc6 (>= 2.34), libglib2.0-0t64 (>= 2.79.0)
+Package: debconf
+Version: 1.5.86ubuntu1
+Package: debconf-i18n
+Version: 1.5.86ubuntu1
+Depends: debconf (= 1.5.86ubuntu1), liblocale-gettext-perl, libtext-charwidth-perl, libtext-iconv-perl, libtext-wrapi18n-perl
+Package: debian-archive-keyring
+Version: 2023.4ubuntu1
+Package: debian-keyring
+Version: 2023.12.24
+Package: debianutils
+Version: 5.17build1
+Package: dhcpcd-base
+Version: 1:10.0.6-1ubuntu3.2
+Depends: adduser, libc6 (>= 2.38), libssl3t64 (>= 3.0.0), libudev1 (>= 183)
+Package: diffutils
+Version: 1:3.10-1build1
+Package: dirmngr
+Version: 2.4.4-2ubuntu17.4
+Depends: adduser, gpgconf (= 2.4.4-2ubuntu17.4), init-system-helpers (>= 1.52), libassuan0 (>= 2.5.0), libc6 (>= 2.38), libgcrypt20 (>= 1.10.0), libgnutls30t64 (>= 3.8.1), libgpg-error0 (>= 1.46), libksba8 (>= 1.6.3), libldap2 (>= 2.6.2), libnpth0t64 (>= 0.90)
+Package: distro-info
+Version: 1.7build1
+Depends: distro-info-data (>= 0.59~), libc6 (>= 2.34)
+Package: distro-info-data
+Version: 0.60ubuntu0.5
+Package: dmeventd
+Version: 2:1.02.185-3ubuntu3.2
+Depends: libc6 (>= 2.38), libdevmapper-event1.02.1 (>= 2:1.02.110), libdevmapper1.02.1 (>= 2:1.02.110), liblvm2cmd2.03 (>= 2.03.16)
+Package: dmidecode
+Version: 3.5-3ubuntu0.1
+Depends: libc6 (>= 2.34)
+Package: dmsetup
+Version: 2:1.02.185-3ubuntu3.2
+Depends: libc6 (>= 2.38), libdevmapper1.02.1 (>= 2:1.02.181)
+Package: dns-root-data
+Version: 2024071801~ubuntu0.24.04.1
+Package: dnsmasq-base
+Version: 2.91-0ubuntu0.24.04.1
+Depends: libc6 (>= 2.38), libdbus-1-3 (>= 1.9.14), libgmp10 (>= 2:6.3.0+dfsg), libhogweed6t64 (>= 2.4-3), libidn2-0 (>= 2.0.0), libnetfilter-conntrack3 (>= 1.0.1), libnettle8t64 (>= 2.4-3), libnftables1 (>= 1.0.2)
+Package: docker-compose-v2
+Version: 2.40.3+ds1-0ubuntu1~24.04.1
+Depends: libc6 (>= 2.34)
+Package: docker.io
+Version: 29.1.3-0ubuntu3~24.04.2
+Depends: adduser, containerd (>= 1.2.6-0ubuntu1~), iptables, debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.34), libnftables1 (>= 1.0.2), libsystemd0 (>= 209~)
+Package: docutils-common
+Version: 0.20.1+dfsg-3
+Depends: sgml-base (>= 1.28), xml-core (>= 0.14)
+Package: dosfstools
+Version: 4.2-1.1build1
+Depends: libc6 (>= 2.38)
+Package: dpkg
+Version: 1.22.6ubuntu6.6
+Depends: tar (>= 1.28-1)
+Package: dpkg-dev
+Version: 1.22.6ubuntu6.6
+Depends: perl:any, libdpkg-perl (= 1.22.6ubuntu6.6), tar (>= 1.28-1), bzip2, xz-utils (>= 5.4.0), patch (>= 2.7), make, binutils, lto-disabled-list
+Package: dracut-install
+Version: 060+5-1ubuntu3.3
+Depends: libc6 (>= 2.38), libkmod2 (>= 22~)
+Package: e2fsprogs
+Version: 1.47.0-2.4~exp1ubuntu4.1
+Depends: logsave
+Package: e2fsprogs-l10n
+Version: 1.47.0-2.4~exp1ubuntu4.1
+Depends: e2fsprogs (>= 1.47.0-2.4~exp1ubuntu4.1), e2fsprogs (<< 1.47.0-2.4~exp1ubuntu4.1+c~)
+Package: ed
+Version: 1.20.1-1
+Depends: libc6 (>= 2.34)
+Package: eject
+Version: 2.39.3-9ubuntu6.4
+Depends: libc6 (>= 2.38), libmount1 (>= 2.24.2)
+Package: ethtool
+Version: 1:6.7-1build1
+Depends: libc6 (>= 2.34), libmnl0 (>= 1.0.3-4~)
+Package: fdisk
+Version: 2.39.3-9ubuntu6.4
+Depends: libc6 (>= 2.38), libfdisk1 (>= 2.38), libmount1 (>= 2.24.2), libncursesw6 (>= 6), libreadline8t64 (>= 6.0), libsmartcols1 (>= 2.28~rc1), libtinfo6 (>= 6)
+Package: ffmpeg
+Version: 7:6.1.1-3ubuntu5
+Depends: libavcodec60 (>= 7:6.1), libavdevice60 (>= 7:6.0), libavfilter9 (>= 7:6.0), libavformat60 (>= 7:6.0), libavutil58 (>= 7:6.0), libc6 (>= 2.35), libpostproc57 (>= 7:6.0), libsdl2-2.0-0 (>= 2.0.12), libswresample4 (>= 7:6.0), libswscale7 (>= 7:6.0)
+Package: file
+Version: 1:5.45-3build1
+Depends: libc6 (>= 2.38), libmagic1t64 (= 1:5.45-3build1)
+Package: finalrd
+Version: 9build1
+Package: findutils
+Version: 4.9.0-5build1
+Package: firmware-sof-signed
+Version: 2023.12.1-1ubuntu1.10
+Package: fontconfig
+Version: 2.15.0-1.1ubuntu2
+Depends: libc6 (>= 2.38), libfontconfig1 (>= 2.13.0), libfreetype6 (>= 2.2.1), fontconfig-config
+Package: fontconfig-config
+Version: 2.15.0-1.1ubuntu2
+Depends: fonts-dejavu-core | fonts-liberation | fonts-croscore | fonts-freefont-otf | fonts-freefont-ttf | fonts-urw-base35 | fonts-texgyre | fonts-noto-core
+Package: fonts-dejavu-core
+Version: 2.37-8
+Depends: fonts-dejavu-mono
+Package: fonts-dejavu-mono
+Version: 2.37-8
+Package: fonts-liberation
+Version: 1:2.1.5-3
+Package: fonts-liberation-sans-narrow
+Version: 1:1.07.6-4
+Package: fonts-noto-cjk
+Version: 1:20230817+repack1-3
+Package: fonts-ubuntu-console
+Version: 0.869+git20240321-0ubuntu1
+Package: friendly-recovery
+Version: 0.2.42
+Depends: systemd-sysv, whiptail
+Package: ftp
+Version: 20230507-2build3
+Depends: tnftp
+Package: fuse3
+Version: 3.14.0-5build1
+Depends: libc6 (>= 2.38), libfuse3-3 (= 3.14.0-5build1), adduser, mount (>= 2.19.1), sed (>= 4)
+Package: fwupd
+Version: 1.9.33-0ubuntu1~24.04.1ubuntu1
+Depends: systemd-sysusers, libarchive13t64 (>= 3.2.1), libc6 (>= 2.38), libcbor0.10 (>= 0.10.2), libcurl3t64-gnutls (>= 7.63.0), libflashrom1 (>= 1.3.0), libfwupd2 (>= 1.9.20), libglib2.0-0t64 (>= 2.79.0), libgnutls30t64 (>= 3.7.3), libgudev-1.0-0 (>= 165), libgusb2 (>= 0.4.8), libjcat1 (>= 0.1.12), libjson-glib-1.0-0 (>= 1.5.2), liblzma5 (>= 5.1.1alpha+20120614), libmbim-glib4 (>= 1.28.0), libmbim-proxy, libmm-glib0 (>= 1.10.4), libpolkit-gobject-1-0 (>= 0.99), libprotobuf-c1 (>= 1.3.1), libqmi-glib5 (>= 1.32.0), libqmi-proxy, libsqlite3-0 (>= 3.6.1), libsystemd0, libtss2-esys-3.0.2-0t64 (>= 2.3.1), libxmlb2 (>= 0.3.17), zlib1g (>= 1:1.1.4), shared-mime-info
+Package: fwupd-signed
+Version: 1.52+1.4-1
+Package: g++
+Version: 4:13.2.0-7ubuntu1
+Depends: cpp (= 4:13.2.0-7ubuntu1), cpp-x86-64-linux-gnu (= 4:13.2.0-7ubuntu1), gcc (= 4:13.2.0-7ubuntu1), g++-13 (>= 13.2.0-11~), g++-x86-64-linux-gnu (= 4:13.2.0-7ubuntu1), gcc-13 (>= 13.2.0-11~)
+Package: g++-13
+Version: 13.3.0-6ubuntu2~24.04.1
+Depends: g++-13-x86-64-linux-gnu (= 13.3.0-6ubuntu2~24.04.1), gcc-13-base (= 13.3.0-6ubuntu2~24.04.1), gcc-13 (= 13.3.0-6ubuntu2~24.04.1)
+Package: g++-13-x86-64-linux-gnu
+Version: 13.3.0-6ubuntu2~24.04.1
+Depends: gcc-13-base (= 13.3.0-6ubuntu2~24.04.1), gcc-13-x86-64-linux-gnu (= 13.3.0-6ubuntu2~24.04.1), libstdc++-13-dev (= 13.3.0-6ubuntu2~24.04.1), libc6 (>= 2.38), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Package: g++-x86-64-linux-gnu
+Version: 4:13.2.0-7ubuntu1
+Depends: cpp-x86-64-linux-gnu (= 4:13.2.0-7ubuntu1), gcc-x86-64-linux-gnu (= 4:13.2.0-7ubuntu1), g++-13-x86-64-linux-gnu (>= 13.2.0-11~)
+Package: gawk
+Version: 1:5.2.1-2build3
+Package: gcc
+Version: 4:13.2.0-7ubuntu1
+Depends: cpp (= 4:13.2.0-7ubuntu1), cpp-x86-64-linux-gnu (= 4:13.2.0-7ubuntu1), gcc-13 (>= 13.2.0-11~), gcc-x86-64-linux-gnu (= 4:13.2.0-7ubuntu1)
+Package: gcc-13
+Version: 13.3.0-6ubuntu2~24.04.1
+Depends: gcc-13-x86-64-linux-gnu (= 13.3.0-6ubuntu2~24.04.1), gcc-13-base (= 13.3.0-6ubuntu2~24.04.1), cpp-13 (= 13.3.0-6ubuntu2~24.04.1), binutils (>= 2.39)
+Package: gcc-13-base
+Version: 13.3.0-6ubuntu2~24.04.1
+Package: gcc-13-x86-64-linux-gnu
+Version: 13.3.0-6ubuntu2~24.04.1
+Depends: cpp-13-x86-64-linux-gnu (= 13.3.0-6ubuntu2~24.04.1), gcc-13-base (= 13.3.0-6ubuntu2~24.04.1), libcc1-0 (>= 13.3.0-6ubuntu2~24.04.1), binutils-x86-64-linux-gnu (>= 2.39), libgcc-13-dev (= 13.3.0-6ubuntu2~24.04.1), libc6 (>= 2.38), libgcc-s1 (>= 3.0), libgmp10 (>= 2:6.3.0+dfsg), libisl23 (>= 0.15), libmpc3 (>= 1.1.0), libmpfr6 (>= 3.1.3), libstdc++6 (>= 5), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Package: gcc-14-base
+Version: 14.2.0-4ubuntu2~24.04.1
+Package: gcc-x86-64-linux-gnu
+Version: 4:13.2.0-7ubuntu1
+Depends: cpp-x86-64-linux-gnu (= 4:13.2.0-7ubuntu1), gcc-13-x86-64-linux-gnu (>= 13.2.0-11~)
+Package: gdisk
+Version: 1.0.10-1build1
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libncursesw6 (>= 6), libpopt0 (>= 1.14), libstdc++6 (>= 13.1), libtinfo6 (>= 6), libuuid1 (>= 2.16)
+Package: gettext-base
+Version: 0.21-14ubuntu2
+Depends: libc6 (>= 2.38)
+Package: gh
+Version: 2.45.0-1ubuntu0.3
+Depends: libc6 (>= 2.34)
+Package: gir1.2-girepository-2.0
+Version: 1.80.1-1
+Depends: gir1.2-gobject-2.0 (>= 2.80.0), libgirepository-1.0-1 (>= 1.75.6)
+Package: gir1.2-glib-2.0
+Version: 2.80.0-6ubuntu3.8
+Depends: libglib2.0-0t64 (= 2.80.0-6ubuntu3.8)
+Package: gir1.2-packagekitglib-1.0
+Version: 1.2.8-2ubuntu1.4
+Depends: gir1.2-gio-2.0, gir1.2-glib-2.0 (>= 1.36), gir1.2-gobject-2.0, libpackagekit-glib2-18 (>= 1.2.7)
+Package: git
+Version: 1:2.43.0-1ubuntu7.3
+Depends: libc6 (>= 2.38), libcurl3t64-gnutls (>= 7.56.1), libexpat1 (>= 2.0.1), libpcre2-8-0 (>= 10.34), zlib1g (>= 1:1.2.2), perl, liberror-perl, git-man (>> 1:2.43.0), git-man (<< 1:2.43.0-.)
+Package: git-man
+Version: 1:2.43.0-1ubuntu7.3
+Package: gnupg
+Version: 2.4.4-2ubuntu17.4
+Depends: dirmngr (<< 2.4.4-2ubuntu17.4.1~), dirmngr (>= 2.4.4-2ubuntu17.4), gnupg-utils (<< 2.4.4-2ubuntu17.4.1~), gnupg-utils (>= 2.4.4-2ubuntu17.4), gpg (<< 2.4.4-2ubuntu17.4.1~), gpg (>= 2.4.4-2ubuntu17.4), gpg-agent (<< 2.4.4-2ubuntu17.4.1~), gpg-agent (>= 2.4.4-2ubuntu17.4), gpgsm (<< 2.4.4-2ubuntu17.4.1~), gpgsm (>= 2.4.4-2ubuntu17.4), gpgv (<< 2.4.4-2ubuntu17.4.1~), gpgv (>= 2.4.4-2ubuntu17.4), keyboxd (<< 2.4.4-2ubuntu17.4.1~), keyboxd (>= 2.4.4-2ubuntu17.4)
+Package: gnupg-l10n
+Version: 2.4.4-2ubuntu17.4
+Package: gnupg-utils
+Version: 2.4.4-2ubuntu17.4
+Depends: libbz2-1.0, libc6 (>= 2.38), libgcrypt20 (>= 1.10.0), libgpg-error0 (>= 1.46), libksba8 (>= 1.6.3), zlib1g (>= 1:1.1.4)
+Package: google-chrome-stable
+Version: 153.0.8010.52-1
+Depends: ca-certificates, fonts-liberation, libasound2 (>= 1.0.17), libatk-bridge2.0-0 (>= 2.5.3), libatk1.0-0 (>= 2.11.90), libatspi2.0-0 (>= 2.9.90), libc6 (>= 2.25), libcairo2 (>= 1.14.0), libcups2 (>= 1.7.0), libcurl3-gnutls | libcurl3-nss | libcurl4 | libcurl3, libdbus-1-3 (>= 1.9.14), libexpat1 (>= 2.1~beta3), libgbm1 (>= 17.1.0~rc2), libglib2.0-0 (>= 2.39.4), libgtk-3-0 (>= 3.9.10) | libgtk-4-1, libnspr4 (>= 2:4.9-2~), libnss3 (>= 2:3.35), libpango-1.0-0 (>= 1.14.0), libudev1 (>= 183), libvulkan1, libx11-6 (>= 2:1.4.99.1), libxcb1 (>= 1.9.2), libxcomposite1 (>= 1:0.4.4-1), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxkbcommon0 (>= 0.5.0), libxrandr2, wget, xdg-utils (>= 1.0.2)
+Package: gpg
+Version: 2.4.4-2ubuntu17.4
+Depends: gpgconf (= 2.4.4-2ubuntu17.4), libassuan0 (>= 2.5.0), libbz2-1.0, libc6 (>= 2.38), libgcrypt20 (>= 1.10.3), libgpg-error0 (>= 1.46), libnpth0t64 (>= 0.90), libreadline8t64 (>= 6.0), libsqlite3-0 (>= 3.7.15), zlib1g (>= 1:1.1.4)
+Package: gpg-agent
+Version: 2.4.4-2ubuntu17.4
+Depends: gpgconf (= 2.4.4-2ubuntu17.4), pinentry-curses | pinentry, init-system-helpers (>= 1.52), libassuan0 (>= 2.5.1), libc6 (>= 2.38), libgcrypt20 (>= 1.10.3), libgpg-error0 (>= 1.46), libnpth0t64 (>= 0.90)
+Package: gpg-wks-client
+Version: 2.4.4-2ubuntu17.4
+Depends: dirmngr (= 2.4.4-2ubuntu17.4), gpg (= 2.4.4-2ubuntu17.4), gpg-agent (= 2.4.4-2ubuntu17.4), libassuan0 (>= 2.5.0), libc6 (>= 2.38), libgcrypt20 (>= 1.10.0), libgpg-error0 (>= 1.46)
+Package: gpgconf
+Version: 2.4.4-2ubuntu17.4
+Depends: libassuan0 (>= 2.5.0), libc6 (>= 2.38), libgcrypt20 (>= 1.10.0), libgpg-error0 (>= 1.46), libreadline8t64 (>= 6.0)
+Package: gpgsm
+Version: 2.4.4-2ubuntu17.4
+Depends: gpgconf (= 2.4.4-2ubuntu17.4), libassuan0 (>= 2.5.0), libc6 (>= 2.38), libgcrypt20 (>= 1.10.3), libgpg-error0 (>= 1.46), libksba8 (>= 1.6.3), libnpth0t64 (>= 0.90), libreadline8t64 (>= 6.0)
+Package: gpgv
+Version: 2.4.4-2ubuntu17.4
+Depends: libassuan0 (>= 2.5.0), libbz2-1.0, libc6 (>= 2.38), libgcrypt20 (>= 1.10.0), libgpg-error0 (>= 1.46), libnpth0t64 (>= 0.90), zlib1g (>= 1:1.1.4)
+Package: grep
+Version: 3.11-4build1
+Package: groff-base
+Version: 1.23.0-3build2
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 4.0), libstdc++6 (>= 4.1.1), libuchardet0 (>= 0.0.1)
+Package: grub-common
+Version: 2.12-1ubuntu7.3
+Depends: libc6 (>= 2.38), libdevmapper1.02.1 (>= 2:1.02.36), libefiboot1t64 (>= 38), libefivar1t64 (>= 38), libfreetype6 (>= 2.2.1), libfuse3-3 (>= 3.2.3), liblzma5 (>= 5.1.1alpha+20120614), debconf (>= 0.5) | debconf-2.0, gettext-base, lsb-base (>= 3.0-6), python3, python3-apt
+Package: grub-gfxpayload-lists
+Version: 0.7build2
+Depends: grub-pc (>= 1.99~20101210-1ubuntu2)
+Package: grub-pc
+Version: 2.12-1ubuntu7.3
+Depends: debconf (>= 0.5) | debconf-2.0, grub-common (= 2.12-1ubuntu7.3), grub2-common (= 2.12-1ubuntu7.3), grub-pc-bin (= 2.12-1ubuntu7.3), ucf, grub-gfxpayload-lists
+Package: grub-pc-bin
+Version: 2.12-1ubuntu7.3
+Depends: libc6 (>= 2.38), libdevmapper1.02.1 (>= 2:1.02.36), grub-common (= 2.12-1ubuntu7.3)
+Package: grub2-common
+Version: 2.12-1ubuntu7.3
+Depends: grub-common (= 2.12-1ubuntu7.3), dpkg (>= 1.15.4), libc6 (>= 2.38), libdevmapper1.02.1 (>= 2:1.02.36), libefiboot1t64 (>= 38), libefivar1t64 (>= 38), liblzma5 (>= 5.1.1alpha+20120614)
+Package: gsettings-desktop-schemas
+Version: 46.1-0ubuntu1
+Depends: dconf-gsettings-backend | gsettings-backend, session-migration
+Package: gtk-update-icon-cache
+Version: 3.24.41-4ubuntu1.3
+Depends: libc6 (>= 2.38), libgdk-pixbuf-2.0-0 (>= 2.40.0), libglib2.0-0t64 (>= 2.57.2)
+Package: gzip
+Version: 1.12-1ubuntu3.1
+Depends: dpkg (>= 1.15.4) | install-info
+Package: hdparm
+Version: 9.65+ds-1build1
+Depends: libc6 (>= 2.34), lsb-base
+Package: hicolor-icon-theme
+Version: 0.17-2
+Package: hostname
+Version: 3.23+nmu2ubuntu2
+Package: htop
+Version: 3.3.0-4build1
+Depends: libc6 (>= 2.38), libncursesw6 (>= 6), libnl-3-200 (>= 3.2.7), libnl-genl-3-200 (>= 3.2.7), libtinfo6 (>= 6)
+Package: humanity-icon-theme
+Version: 0.6.16
+Depends: adwaita-icon-theme, hicolor-icon-theme
+Package: hwdata
+Version: 0.379-1
+Depends: pci.ids, usb.ids
+Package: i965-va-driver
+Version: 2.4.1+dfsg1-1ubuntu0.2
+Depends: libva-driver-abi-1.20, libc6 (>= 2.38), libdrm-intel1 (>= 2.4.52), libdrm2 (>= 2.4.52)
+Package: ibverbs-providers
+Version: 50.0-2ubuntu0.2
+Depends: libc6 (>= 2.38), libibverbs1 (>= 38)
+Package: ieee-data
+Version: 20220827.1
+Depends: wget | libwww-perl | curl
+Package: inetutils-inetd
+Version: 2:2.5-3ubuntu4.1
+Depends: libc6 (>= 2.38), inetutils-syslogd | system-log-daemon, sysvinit-utils (>= 3.05-4~), tcpd, update-inetd
+Package: inetutils-telnet
+Version: 2:2.5-3ubuntu4.1
+Depends: libc6 (>= 2.38), libcom-err2 (>= 1.43.9), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.13~alpha1+dfsg), libtinfo6 (>= 6), netbase
+Package: inetutils-telnetd
+Version: 2:2.5-3ubuntu4.1
+Depends: libc6 (>= 2.38), libcom-err2 (>= 1.43.9), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.13~alpha1+dfsg), libtinfo6 (>= 6), inetutils-inetd | inet-superserver, inetutils-syslogd | system-log-daemon, netbase
+Package: info
+Version: 7.1-3build2
+Depends: libc6 (>= 2.38), libtinfo6 (>= 6), install-info
+Package: init
+Version: 1.66ubuntu1
+Package: init-system-helpers
+Version: 1.66ubuntu1
+Package: initramfs-tools
+Version: 0.142ubuntu25.8
+Depends: initramfs-tools-core (= 0.142ubuntu25.8), linux-base
+Package: initramfs-tools-bin
+Version: 0.142ubuntu25.8
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libudev1 (>= 183)
+Package: initramfs-tools-core
+Version: 0.142ubuntu25.8
+Depends: busybox-initramfs (>= 1:1.30.1-4ubuntu5~), dhcpcd-base, dracut-install, e2fsprogs, initramfs-tools-bin (= 0.142ubuntu25.8), klibc-utils (>= 2.0.4-8~), cpio (>= 2.12), kmod, udev, coreutils (>= 8.24), logsave | e2fsprogs (<< 1.45.3-1~)
+Package: install-info
+Version: 7.1-3build2
+Depends: libc6 (>= 2.38)
+Package: intel-media-va-driver
+Version: 24.1.0+dfsg1-1ubuntu0.2
+Depends: libva-driver-abi-1.20, libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libigdgmm12 (>= 22.3.17+ds1), libstdc++6 (>= 11)
+Package: intel-microcode
+Version: 3.20260210.0ubuntu0.24.04.1
+Depends: iucode-tool (>= 1.0)
+Package: iproute2
+Version: 6.1.0-1ubuntu6.2
+Depends: debconf (>= 0.5) | debconf-2.0, libbpf1 (>= 1:0.6.0), libc6 (>= 2.38), libcap2 (>= 1:2.10), libdb5.3t64, libelf1t64 (>= 0.131), libmnl0 (>= 1.0.3-4~), libselinux1 (>= 3.1~), libxtables12 (>= 1.6.0+snapshot20161117), libcap2-bin
+Package: iptables
+Version: 1.8.10-3ubuntu2
+Depends: libip4tc2 (= 1.8.10-3ubuntu2), libip6tc2 (= 1.8.10-3ubuntu2), libxtables12 (= 1.8.10-3ubuntu2), netbase (>= 6.0), libc6 (>= 2.38), libmnl0 (>= 1.0.3-4~), libnetfilter-conntrack3 (>= 1.0.6), libnfnetlink0 (>= 1.0.2), libnftnl11 (>= 1.1.6)
+Package: iputils-ping
+Version: 3:20240117-1ubuntu0.1
+Depends: libcap2-bin, libc6 (>= 2.38), libcap2 (>= 1:2.10), libidn2-0 (>= 0.6)
+Package: iputils-tracepath
+Version: 3:20240117-1ubuntu0.1
+Depends: libc6 (>= 2.38)
+Package: iso-codes
+Version: 4.16.0-1
+Package: iucode-tool
+Version: 2.3.1-3build1
+Depends: libc6 (>= 2.38)
+Package: javascript-common
+Version: 11+nmu1
+Package: jq
+Version: 1.7.1-3ubuntu0.24.04.2
+Depends: libc6 (>= 2.38), libjq1 (= 1.7.1-3ubuntu0.24.04.2)
+Package: kbd
+Version: 2.6.4-2ubuntu2
+Depends: libc6 (>= 2.34), console-setup | console-setup-mini
+Package: kdump-tools
+Version: 1:1.10.3ubuntu2
+Depends: bsdextrautils | bsdmainutils, busybox | busybox-static, debconf, file, linux-base, lsb-base (>= 3.0-6), ucf, kexec-tools (>= 1:2.0.10-2), debconf (>= 0.5) | debconf-2.0
+Package: kexec-tools
+Version: 1:2.0.28-0ubuntu3
+Depends: libc6 (>= 2.38), debconf (>= 0.5) | debconf-2.0, debconf, dpkg (>= 1.15.7.2)
+Package: keyboard-configuration
+Version: 1.226ubuntu1
+Depends: debconf (>= 0.5) | debconf-2.0, liblocale-gettext-perl, xkb-data (>= 2.41~), xkb-data (<< 2.41A)
+Package: keyboxd
+Version: 2.4.4-2ubuntu17.4
+Depends: gpgconf (= 2.4.4-2ubuntu17.4), init-system-helpers (>= 1.52), libassuan0 (>= 2.5.1), libc6 (>= 2.38), libgcrypt20 (>= 1.10.0), libgpg-error0 (>= 1.46), libksba8 (>= 1.6.3), libnpth0t64 (>= 0.90), libsqlite3-0 (>= 3.14.0)
+Package: klibc-utils
+Version: 2.0.13-4ubuntu0.2
+Depends: libklibc (= 2.0.13-4ubuntu0.2)
+Package: kmod
+Version: 31+20240202-2ubuntu7.2
+Depends: libc6 (>= 2.38), liblzma5 (>= 5.4.5-0.2), libssl3t64 (>= 3.0.0), libzstd1 (>= 1.5.5), libkmod2 (= 31+20240202-2ubuntu7.2)
+Package: kpartx
+Version: 0.9.4-5ubuntu8.1
+Depends: dmsetup, udev, libc6 (>= 2.34), libdevmapper1.02.1 (>= 2:1.02.97)
+Package: krb5-locales
+Version: 1.20.1-6ubuntu2.6
+Package: landscape-common
+Version: 24.02-0ubuntu5.7
+Depends: python3:any, debconf (>= 0.5) | debconf-2.0, python3-twisted, python3-configobj, python3-apt, ca-certificates, python3-gdbm, python3-netifaces, lsb-release, adduser, bc, lshw, libpam-modules, python3-setuptools
+Package: less
+Version: 590-2ubuntu2.1
+Depends: libc6 (>= 2.34), libtinfo6 (>= 6)
+Package: libaacs0
+Version: 0.11.1-2build1
+Depends: libc6 (>= 2.33), libgcrypt20 (>= 1.10.0)
+Package: libacl1
+Version: 2.3.2-1build1.1
+Depends: libc6 (>= 2.38)
+Package: libaio1t64
+Version: 0.3.113-6build1.1
+Depends: libc6 (>= 2.4)
+Package: libaom3
+Version: 3.8.2-2ubuntu0.1
+Depends: libc6 (>= 2.34)
+Package: libapparmor1
+Version: 4.0.1really4.0.1-0ubuntu0.24.04.5
+Depends: libc6 (>= 2.38)
+Package: libappstream5
+Version: 1.0.2-1build6
+Depends: libc6 (>= 2.33), libcurl3t64-gnutls (>= 7.63.0), libglib2.0-0t64 (>= 2.79.0), libstemmer0d (>= 0+svn527), libsystemd0 (>= 242), libxml2 (>= 2.9.0), libxmlb2 (>= 0.3.13), libyaml-0-2, libzstd1 (>= 1.5.5)
+Package: libapt-pkg6.0t64
+Version: 2.8.3
+Depends: libbz2-1.0, libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libgcrypt20 (>= 1.10.0), liblz4-1 (>= 0.0~r127), liblzma5 (>= 5.1.1alpha+20120614), libstdc++6 (>= 13.1), libsystemd0 (>= 221), libudev1 (>= 183), libxxhash0 (>= 0.7.1), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.2.3)
+Package: libarchive13t64
+Version: 3.7.2-2ubuntu0.7
+Depends: libacl1 (>= 2.2.23), libbz2-1.0, libc6 (>= 2.38), liblz4-1 (>= 0.0~r130), liblzma5 (>= 5.2.2), libnettle8t64, libxml2 (>= 2.7.4), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Package: libargon2-1
+Version: 0~20190702+dfsg-4build1
+Depends: libc6 (>= 2.34)
+Package: libasan8
+Version: 14.2.0-4ubuntu2~24.04.1
+Depends: gcc-14-base (= 14.2.0-4ubuntu2~24.04.1), libc6 (>= 2.34), libgcc-s1 (>= 3.3)
+Package: libasound2-data
+Version: 1.2.11-1ubuntu0.3
+Package: libasound2t64
+Version: 1.2.11-1ubuntu0.3
+Depends: libasound2-data (>= 1.2.11-1ubuntu0.3), libc6 (>= 2.38)
+Package: libass9
+Version: 1:0.17.1-2build1
+Depends: libc6 (>= 2.38), libfontconfig1 (>= 2.13.0), libfreetype6 (>= 2.3.5), libfribidi0 (>= 1.0.0), libharfbuzz0b (>= 1.2.6), libunibreak5 (>= 1.0)
+Package: libassuan0
+Version: 2.5.6-1build1
+Depends: libc6 (>= 2.38), libgpg-error0 (>= 1.33)
+Package: libasyncns0
+Version: 0.8-6build4
+Depends: libc6 (>= 2.34)
+Package: libatasmart4
+Version: 0.19-5build3
+Depends: libc6 (>= 2.38), libudev1 (>= 183)
+Package: libatk-bridge2.0-0t64
+Version: 2.52.0-1build1
+Depends: libatk1.0-0t64 (>= 2.51.90), libatspi2.0-0t64 (>= 2.9.90), libc6 (>= 2.38), libdbus-1-3 (>= 1.9.14), libglib2.0-0t64 (>= 2.79.0)
+Package: libatk1.0-0t64
+Version: 2.52.0-1build1
+Depends: libc6 (>= 2.4), libglib2.0-0t64 (>= 2.79.0), at-spi2-common
+Package: libatm1t64
+Version: 1:2.5.1-5.1build1
+Depends: libc6 (>= 2.34)
+Package: libatomic1
+Version: 14.2.0-4ubuntu2~24.04.1
+Depends: gcc-14-base (= 14.2.0-4ubuntu2~24.04.1), libc6 (>= 2.14)
+Package: libatspi2.0-0t64
+Version: 2.52.0-1build1
+Depends: libc6 (>= 2.7), libdbus-1-3 (>= 1.9.14), libglib2.0-0t64 (>= 2.79.0), libx11-6 (>= 2:1.2.99.901), libxi6 (>= 2:1.2.99.4)
+Package: libattr1
+Version: 1:2.5.2-1build1.1
+Depends: libc6 (>= 2.4)
+Package: libaudit-common
+Version: 1:3.1.2-2.1build1.1
+Package: libaudit1
+Version: 1:3.1.2-2.1build1.1
+Depends: libaudit-common (>= 1:3.1.2-2.1build1.1), libc6 (>= 2.38), libcap-ng0 (>= 0.7.9)
+Package: libauthen-sasl-perl
+Version: 2.1700-1
+Depends: perl:any
+Package: libavahi-client3
+Version: 0.8-13ubuntu6.2
+Depends: libavahi-common3 (= 0.8-13ubuntu6.2), libc6 (>= 2.34), libdbus-1-3 (>= 1.9.14)
+Package: libavahi-common-data
+Version: 0.8-13ubuntu6.2
+Package: libavahi-common3
+Version: 0.8-13ubuntu6.2
+Depends: libc6 (>= 2.38), libavahi-common-data (= 0.8-13ubuntu6.2)
+Package: libavc1394-0
+Version: 0.5.4-5build3
+Depends: libc6 (>= 2.29), libraw1394-11 (>= 2.1.2)
+Package: libavcodec60
+Version: 7:6.1.1-3ubuntu5
+Depends: libaom3 (>= 3.2.0), libavutil58 (= 7:6.1.1-3ubuntu5), libc6 (>= 2.35), libcairo2 (>= 1.2.4), libcodec2-1.2 (>= 1.2.0), libdav1d7 (>= 1.1.0), libglib2.0-0t64 (>= 2.12.0), libgsm1 (>= 1.0.18), libjxl0.7 (>= 0.7.0), liblzma5 (>= 5.1.1alpha+20120614), libmp3lame0 (>= 3.100), libopenjp2-7 (>= 2.0.0), libopus0 (>= 1.1), librav1e0 (>= 0.5.1), librsvg2-2 (>= 2.52.5), libshine3 (>= 3.1.0), libsnappy1v5 (>= 1.1.10), libspeex1 (>= 1.2~), libsvtav1enc1d1 (>= 1.7.0+dfsg), libswresample4 (>= 7:6.0), libtheora0 (>= 1.0), libtwolame0 (>= 0.3.10), libva2 (>= 2.9.0), libvorbis0a (>= 1.1.2), libvorbisenc2 (>= 1.1.2), libvpl2 (>= 2023.3.0), libvpx9 (>= 1.12.0), libwebp7 (>= 1.3.2), libwebpmux3 (>= 1.3.2), libx264-164 (>= 2:0.164.3108+git31e19f9), libx265-199 (>= 3.5), libxvidcore4 (>= 1.2.2), libzvbi0t64 (>= 0.2.35), zlib1g (>= 1:1.2.0)
+Package: libavdevice60
+Version: 7:6.1.1-3ubuntu5
+Depends: libasound2t64 (>= 1.0.16), libavc1394-0 (>= 0.5.3), libavcodec60 (>= 7:6.0), libavfilter9 (>= 7:6.0), libavformat60 (= 7:6.1.1-3ubuntu5), libavutil58 (= 7:6.1.1-3ubuntu5), libc6 (>= 2.34), libcaca0 (>= 0.99.beta20), libcdio-cdda2t64 (>= 10.2+2.0.0), libcdio-paranoia2t64 (>= 10.2+2.0.0), libdc1394-25 (>= 2.2.6), libdrm2 (>= 2.4.101), libgl1, libiec61883-0 (>= 1.2.0), libjack-jackd2-0 (>= 1.9.10+20150825) | libjack-0.125, libopenal1 (>= 1.14), libpulse0 (>= 0.99.1), libraw1394-11 (>= 2.1.2), libsdl2-2.0-0 (>= 2.0.12), libx11-6, libxcb-shape0, libxcb-shm0, libxcb-xfixes0, libxcb1, libxext6, libxv1
+Package: libavfilter9
+Version: 7:6.1.1-3ubuntu5
+Depends: libass9 (>= 1:0.15.0), libavcodec60 (= 7:6.1.1-3ubuntu5), libavformat60 (>= 7:6.0), libavutil58 (= 7:6.1.1-3ubuntu5), libbs2b0 (>= 3.1.0+dfsg), libc6 (>= 2.38), libflite1 (>= 1.4-release-9~), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libfribidi0 (>= 0.19.2), libharfbuzz0b (>= 0.9.9), liblilv-0-0 (>= 0.14.2~dfsg0), libmysofa1 (>= 0.7~), libplacebo338 (>= 6.338.1), libpocketsphinx3 (>= 0.8.0+real5prealpha+1), libpostproc57 (>= 7:6.0), librubberband2 (>= 3.3.0+dfsg), libsphinxbase3t64 (>= 0.8+5prealpha), libstdc++6 (>= 13.1), libswresample4 (>= 7:6.0), libswscale7 (>= 7:6.0), libva2 (>= 1.7.3), libvidstab1.1, libvpl2 (>= 2023.3.0), libzimg2 (>= 0.3.1), libzmq5 (>= 3.2.3+dfsg), ocl-icd-libopencl1 | libopencl1, ocl-icd-libopencl1 (>= 1.0) | libopencl-1.2-1, zlib1g (>= 1:1.1.4)
+Package: libavformat60
+Version: 7:6.1.1-3ubuntu5
+Depends: libavcodec60 (= 7:6.1.1-3ubuntu5), libavutil58 (= 7:6.1.1-3ubuntu5), libbluray2 (>= 1:0.2.2), libbz2-1.0, libc6 (>= 2.35), libchromaprint1 (>= 1.3.2), libgme0 (>= 0.5.5), libgnutls30t64 (>= 3.8.1), libopenmpt0t64 (>= 0.3.0), librabbitmq4 (>= 0.6.0), librist4 (>= 0.2.6+dfsg), libsrt1.5-gnutls (>= 1.5.3), libssh-gcrypt-4 (>= 0.8.0), libxml2 (>= 2.7.4), libzmq5 (>= 4.0.1+dfsg), zlib1g (>= 1:1.2.0.2)
+Package: libavutil58
+Version: 7:6.1.1-3ubuntu5
+Depends: libc6 (>= 2.35), libdrm2 (>= 2.4.66), libva-drm2 (>= 1.3), libva-x11-2 (>= 1.3), libva2 (>= 2.1.0), libvdpau1 (>= 0.2), libvpl2 (>= 2023.3.0), libx11-6, ocl-icd-libopencl1 | libopencl1, ocl-icd-libopencl1 (>= 1.0) | libopencl-1.2-1
+Package: libbdplus0
+Version: 0.2.0-3build1
+Depends: libc6 (>= 2.33), libgcrypt20 (>= 1.10.0), libgpg-error0 (>= 1.14)
+Package: libbinutils
+Version: 2.42-4ubuntu2.8
+Depends: libc6 (>= 2.38), libsframe1, libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.0), binutils-common (= 2.42-4ubuntu2.8)
+Package: libblas3
+Version: 3.12.0-3build1.1
+Depends: libc6 (>= 2.4), libgcc-s1 (>= 4.0)
+Package: libblkid1
+Version: 2.39.3-9ubuntu6.4
+Depends: libc6 (>= 2.38)
+Package: libblockdev-crypto3
+Version: 3.1.1-1ubuntu0.1
+Depends: libblkid1 (>= 2.23.0), libblockdev-utils3 (>= 3.0), libc6 (>= 2.6), libcryptsetup12 (>= 2:2.4), libglib2.0-0t64 (>= 2.42.2), libkeyutils1 (>= 1.4), libnss3 (>= 2:3.13.4-2~), libvolume-key1 (>= 0.3.9)
+Package: libblockdev-fs3
+Version: 3.1.1-1ubuntu0.1
+Depends: libblkid1 (>= 2.24.2), libblockdev-utils3 (>= 3.0), libc6 (>= 2.7), libext2fs2t64 (>= 1.42.11), libglib2.0-0t64 (>= 2.42.2), libmount1 (>= 2.30.2), libuuid1 (>= 2.16)
+Package: libblockdev-loop3
+Version: 3.1.1-1ubuntu0.1
+Depends: libblockdev-utils3 (>= 2.14), libc6 (>= 2.27), libglib2.0-0t64 (>= 2.42.2)
+Package: libblockdev-mdraid3
+Version: 3.1.1-1ubuntu0.1
+Depends: libblockdev-utils3 (>= 3.0), libbytesize1 (>= 2.6), libc6 (>= 2.27), libglib2.0-0t64 (>= 2.42.2)
+Package: libblockdev-nvme3
+Version: 3.1.1-1ubuntu0.1
+Depends: libblockdev-utils3 (>= 3.0), libc6 (>= 2.6), libglib2.0-0t64 (>= 2.42.2), libnvme1t64 (>= 1.8)
+Package: libblockdev-part3
+Version: 3.1.1-1ubuntu0.1
+Depends: libblockdev-utils3 (>= 3.0), libc6 (>= 2.6), libfdisk1 (>= 2.31.1), libglib2.0-0t64 (>= 2.42.2)
+Package: libblockdev-swap3
+Version: 3.1.1-1ubuntu0.1
+Depends: libblkid1 (>= 2.23.0), libblockdev-utils3 (>= 2.14), libc6 (>= 2.4), libglib2.0-0t64 (>= 2.42.2), libuuid1 (>= 2.16)
+Package: libblockdev-utils3
+Version: 3.1.1-1ubuntu0.1
+Depends: libc6 (>= 2.14), libglib2.0-0t64 (>= 2.75.3), libkmod2 (>= 19), libudev1 (>= 216)
+Package: libblockdev3
+Version: 3.1.1-1ubuntu0.1
+Depends: libblockdev-utils3 (>= 3.0), libc6 (>= 2.34), libglib2.0-0t64 (>= 2.42.2)
+Package: libbluray2
+Version: 1:1.3.4-1build1
+Depends: libc6 (>= 2.34), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libudfread0 (>= 1.1.1), libxml2 (>= 2.7.4)
+Package: libboost-iostreams1.83.0
+Version: 1.83.0-2.1ubuntu3.2
+Depends: libbz2-1.0, libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), liblzma5 (>= 5.2.2), libstdc++6 (>= 5.2), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Package: libbpf1
+Version: 1:1.3.0-2build2
+Depends: libc6 (>= 2.38), libelf1t64 (>= 0.144), zlib1g (>= 1:1.2.3.3)
+Package: libbpfcc
+Version: 0.29.1+ds-1ubuntu7
+Depends: libbpf1 (>= 1:1.2.0), libc6 (>= 2.38), libclang-cpp18 (>= 1:18.1.3), libelf1t64 (>= 0.144), libgcc-s1 (>= 3.3.1), libllvm18, libstdc++6 (>= 13.1)
+Package: libbrotli1
+Version: 1.1.0-2build2
+Depends: libc6 (>= 2.29)
+Package: libbs2b0
+Version: 3.1.0+dfsg-7build1
+Depends: libc6 (>= 2.29), libstdc++6 (>= 4.1.1)
+Package: libbsd0
+Version: 0.12.1-1build1.1
+Depends: libc6 (>= 2.38), libmd0 (>= 1.0.3-2)
+Package: libbytesize-common
+Version: 2.10-1ubuntu2
+Package: libbytesize1
+Version: 2.10-1ubuntu2
+Depends: libc6 (>= 2.38), libgmp10 (>= 2:6.3.0+dfsg), libmpfr6 (>= 3.1.3), libpcre2-8-0 (>= 10.22), libbytesize-common (= 2.10-1ubuntu2)
+Package: libbz2-1.0
+Version: 1.0.8-5.1build0.1
+Depends: libc6 (>= 2.4)
+Package: libc-bin
+Version: 2.39-0ubuntu8.7
+Depends: libc6 (>> 2.39), libc6 (<< 2.40)
+Package: libc-dev-bin
+Version: 2.39-0ubuntu8.7
+Depends: libc6 (>> 2.39), libc6 (<< 2.40)
+Package: libc-devtools
+Version: 2.39-0ubuntu8.7
+Depends: libc6 (>= 2.38), libgd3 (>= 2.1.0~alpha~)
+Package: libc6
+Version: 2.39-0ubuntu8.7
+Depends: libgcc-s1
+Package: libc6-dev
+Version: 2.39-0ubuntu8.7
+Depends: libc6 (= 2.39-0ubuntu8.7), libc-dev-bin (= 2.39-0ubuntu8.7), linux-libc-dev, libcrypt-dev, rpcsvc-proto
+Package: libcaca0
+Version: 0.99.beta20-4ubuntu0.2
+Depends: libc6 (>= 2.34), libncursesw6 (>= 6), libslang2 (>= 2.2.4), libstdc++6 (>= 13.1), libtinfo6 (>= 6), zlib1g (>= 1:1.1.4)
+Package: libcairo-gobject2
+Version: 1.18.0-3build1
+Depends: libcairo2 (= 1.18.0-3build1), libglib2.0-0t64 (>= 2.68.0)
+Package: libcairo2
+Version: 1.18.0-3build1
+Depends: libc6 (>= 2.38), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.11.1), libpixman-1-0 (>= 0.40.0), libpng16-16t64 (>= 1.6.2), libx11-6, libxcb-render0, libxcb-shm0, libxcb1 (>= 1.6), libxext6, libxrender1, zlib1g (>= 1:1.1.4)
+Package: libcap-ng0
+Version: 0.8.4-2build2
+Depends: libc6 (>= 2.38)
+Package: libcap2
+Version: 1:2.66-5ubuntu2.4
+Depends: libc6 (>= 2.38)
+Package: libcap2-bin
+Version: 1:2.66-5ubuntu2.4
+Depends: libc6 (>= 2.38), libcap2 (>= 1:2.63)
+Package: libcares2
+Version: 1.27.0-1.0ubuntu1
+Depends: libc6 (>= 2.38)
+Package: libcbor0.10
+Version: 0.10.2-1.2ubuntu2
+Depends: libc6 (>= 2.14)
+Package: libcc1-0
+Version: 14.2.0-4ubuntu2~24.04.1
+Depends: gcc-14-base (= 14.2.0-4ubuntu2~24.04.1), libc6 (>= 2.15), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)
+Package: libcdio-cdda2t64
+Version: 10.2+2.0.1-1.1build2
+Depends: libc6 (>= 2.33), libcdio19 (>= 2.1.0)
+Package: libcdio-paranoia2t64
+Version: 10.2+2.0.1-1.1build2
+Depends: libc6 (>= 2.14), libcdio-cdda2t64 (>= 10.2+2.0.0), libcdio19 (>= 2.1.0)
+Package: libcdio19t64
+Version: 2.1.0-4.1ubuntu1.2
+Depends: libc6 (>= 2.33)
+Package: libchromaprint1
+Version: 1.5.1-5
+Depends: libc6 (>= 2.29), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 13.1)
+Package: libcjson1
+Version: 1.7.17-1
+Depends: libc6 (>= 2.14)
+Package: libclang-cpp18
+Version: 1:18.1.3-1ubuntu1
+Depends: libc6 (>= 2.38), libllvm18 (= 1:18.1.3-1ubuntu1), libstdc++6 (>= 12)
+Package: libclang1-18
+Version: 1:18.1.3-1ubuntu1
+Depends: libc6 (>= 2.38), libllvm18, libstdc++6 (>= 11)
+Package: libclone-perl
+Version: 0.46-1build3
+Depends: perl (>= 5.38.2-3), perlapi-5.38.2, libc6 (>= 2.14)
+Package: libcodec2-1.2
+Version: 1.2.0-2build1
+Depends: libc6 (>= 2.32)
+Package: libcolord2
+Version: 1.4.7-1build2
+Depends: libc6 (>= 2.29), libglib2.0-0t64 (>= 2.79.0), liblcms2-2 (>= 2.6), libudev1 (>= 196)
+Package: libcom-err2
+Version: 1.47.0-2.4~exp1ubuntu4.1
+Depends: libc6 (>= 2.38)
+Package: libcrypt-dev
+Version: 1:4.4.36-4build1
+Depends: libcrypt1 (= 1:4.4.36-4build1)
+Package: libcrypt1
+Version: 1:4.4.36-4build1
+Depends: libc6 (>= 2.38)
+Package: libcryptsetup12
+Version: 2:2.7.0-1ubuntu4.2
+Depends: libargon2-1 (>= 0~20171227), libblkid1 (>= 2.17.2), libc6 (>= 2.38), libdevmapper1.02.1 (>= 2:1.02.98), libjson-c5 (>= 0.15), libssl3t64 (>= 3.0.0), libuuid1 (>= 2.16)
+Package: libctf-nobfd0
+Version: 2.42-4ubuntu2.8
+Depends: libc6 (>= 2.14), zlib1g (>= 1:1.2.0)
+Package: libctf0
+Version: 2.42-4ubuntu2.8
+Depends: libbinutils (= 2.42-4ubuntu2.8), libc6 (>= 2.33), zlib1g (>= 1:1.2.0)
+Package: libcups2t64
+Version: 2.4.7-1.2ubuntu7.14
+Depends: libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libc6 (>= 2.38), libgnutls30t64 (>= 3.8.1), libgssapi-krb5-2 (>= 1.17), zlib1g (>= 1:1.2.0)
+Package: libcurl3t64-gnutls
+Version: 8.5.0-2ubuntu10.13
+Depends: libbrotli1 (>= 0.6.0), libc6 (>= 2.36), libgnutls30t64 (>= 3.8.2), libgssapi-krb5-2 (>= 1.17), libidn2-0 (>= 2.0.0), libldap2 (>= 2.6.2), libnettle8t64, libnghttp2-14 (>= 1.50.0), libpsl5t64 (>= 0.16.0), librtmp1 (>= 2.3), libssh-4 (>= 0.9.0), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Package: libcurl4t64
+Version: 8.5.0-2ubuntu10.13
+Depends: libbrotli1 (>= 0.6.0), libc6 (>= 2.34), libgssapi-krb5-2 (>= 1.17), libidn2-0 (>= 2.0.0), libldap2 (>= 2.6.2), libnghttp2-14 (>= 1.50.0), libpsl5t64 (>= 0.16.0), librtmp1 (>= 2.3), libssh-4 (>= 0.9.0), libssl3t64 (>= 3.0.0), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Package: libcwidget4
+Version: 0.5.18-6build1
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libncursesw6 (>= 6.0+20180210), libsigc++-2.0-0v5 (>= 2.8.0), libstdc++6 (>= 11), libtinfo6 (>= 6.0+20180210)
+Package: libdata-dump-perl
+Version: 1.25-1
+Depends: perl:any
+Package: libdatrie1
+Version: 0.2.13-3build1
+Depends: libc6 (>= 2.14)
+Package: libdav1d7
+Version: 1.4.1-1build1
+Depends: libc6 (>= 2.34)
+Package: libdb5.3t64
+Version: 5.3.28+dfsg2-7
+Depends: libc6 (>= 2.38)
+Package: libdbus-1-3
+Version: 1.14.10-4ubuntu4.1
+Depends: libc6 (>= 2.38), libsystemd0
+Package: libdbus-glib-1-2
+Version: 0.112-3build2
+Depends: libc6 (>= 2.14), libdbus-1-3 (>= 1.9.14), libglib2.0-0 (>= 2.32.0)
+Package: libdc1394-25
+Version: 2.2.6-4build1
+Depends: libc6 (>= 2.34), libraw1394-11 (>= 2.1.2), libusb-1.0-0 (>= 2:1.0.9)
+Package: libdconf1
+Version: 0.40.0-4ubuntu0.1
+Depends: libc6 (>= 2.4), libglib2.0-0t64 (>= 2.79.0)
+Package: libde265-0
+Version: 1.0.15-1build3
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 13.1)
+Package: libdebconfclient0
+Version: 0.271ubuntu3
+Depends: libc6 (>= 2.38)
+Package: libdecor-0-0
+Version: 0.2.2-1build2
+Depends: libc6 (>= 2.38), libwayland-client0 (>= 1.20.0)
+Package: libdecor-0-plugin-1-gtk
+Version: 0.2.2-1build2
+Depends: libc6 (>= 2.38), libcairo2 (>= 1.14.0), libdbus-1-3 (>= 1.9.14), libdecor-0-0 (= 0.2.2-1build2), libglib2.0-0t64 (>= 2.12.0), libgtk-3-0t64 (>= 3.19.12), libwayland-client0 (>= 1.20.0), libwayland-cursor0 (>= 1.18)
+Package: libdeflate0
+Version: 1.19-1build1.1
+Depends: libc6 (>= 2.14)
+Package: libdevmapper-event1.02.1
+Version: 2:1.02.185-3ubuntu3.2
+Depends: libc6 (>= 2.38), libdevmapper1.02.1 (>= 2:1.02.97)
+Package: libdevmapper1.02.1
+Version: 2:1.02.185-3ubuntu3.2
+Depends: libc6 (>= 2.38), libselinux1 (>= 3.1~), libudev1 (>= 183)
+Package: libdpkg-perl
+Version: 1.22.6ubuntu6.6
+Depends: perl:any, dpkg (>= 1.18.11)
+Package: libdrm-amdgpu1
+Version: 2.4.125-1ubuntu0.1~24.04.2
+Depends: libc6 (>= 2.38), libdrm2 (>= 2.4.108)
+Package: libdrm-common
+Version: 2.4.125-1ubuntu0.1~24.04.2
+Package: libdrm-intel1
+Version: 2.4.125-1ubuntu0.1~24.04.2
+Depends: libc6 (>= 2.34), libdrm2 (>= 2.4.108), libpciaccess0
+Package: libdrm2
+Version: 2.4.125-1ubuntu0.1~24.04.2
+Depends: libdrm-common (>= 2.4.125-1ubuntu0.1~24.04.2), libc6 (>= 2.38)
+Package: libduktape207
+Version: 2.7.0+tests-0ubuntu3
+Depends: libc6 (>= 2.38)
+Package: libdw1t64
+Version: 0.190-1.1ubuntu0.1
+Depends: libbz2-1.0, libc6 (>= 2.38), libelf1t64 (= 0.190-1.1ubuntu0.1), liblzma5 (>= 5.1.1alpha+20120614), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.2.3)
+Package: libedit2
+Version: 3.1-20230828-1build1
+Depends: libbsd0 (>= 0.1.3), libc6 (>= 2.38), libtinfo6 (>= 6)
+Package: libefiboot1t64
+Version: 38-3.1build1
+Depends: libc6 (>= 2.38), libefivar1t64 (>= 38)
+Package: libefivar1t64
+Version: 38-3.1build1
+Depends: libc6 (>= 2.38)
+Package: libegl-mesa0
+Version: 25.2.8-0ubuntu0.24.04.2
+Depends: libc6 (>= 2.38), libdrm2 (>= 2.4.125-1), libexpat1 (>= 2.0.1), libgbm1 (= 25.2.8-0ubuntu0.24.04.2), libgcc-s1 (>= 3.4), libwayland-client0 (>= 1.20.0), libx11-xcb1 (>= 2:1.8.7), libxcb-dri3-0 (>= 1.13), libxcb-present0, libxcb-randr0 (>= 1.3), libxcb-shm0, libxcb-xfixes0, libxcb1 (>= 1.6), mesa-libgallium (= 25.2.8-0ubuntu0.24.04.2)
+Package: libegl1
+Version: 1.7.0-1build1
+Depends: libc6 (>= 2.38), libglvnd0 (= 1.7.0-1build1), libegl-mesa0
+Package: libelf1t64
+Version: 0.190-1.1ubuntu0.1
+Depends: libc6 (>= 2.38), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Package: libencode-locale-perl
+Version: 1.05-3
+Depends: perl:any
+Package: libepoxy0
+Version: 1.5.10-1build1
+Depends: libc6 (>= 2.34)
+Package: liberror-perl
+Version: 0.17029-2
+Depends: perl:any
+Package: libestr0
+Version: 0.1.11-1build1
+Depends: libc6 (>= 2.14)
+Package: libevdev2
+Version: 1.13.1+dfsg-1build1
+Depends: libc6 (>= 2.33)
+Package: libevent-core-2.1-7t64
+Version: 2.1.12-stable-9ubuntu2
+Depends: libc6 (>= 2.38)
+Package: libexpat1
+Version: 2.6.1-2ubuntu0.4
+Depends: libc6 (>= 2.38)
+Package: libexpat1-dev
+Version: 2.6.1-2ubuntu0.4
+Depends: libexpat1 (= 2.6.1-2ubuntu0.4), libc6-dev | libc-dev
+Package: libext2fs2t64
+Version: 1.47.0-2.4~exp1ubuntu4.1
+Depends: libc6 (>= 2.38)
+Package: libfastjson4
+Version: 1.2304.0-1build1
+Depends: libc6 (>= 2.38)
+Package: libfdisk1
+Version: 2.39.3-9ubuntu6.4
+Depends: libblkid1 (>= 2.24.2), libc6 (>= 2.38), libuuid1 (>= 2.16)
+Package: libffi-dev
+Version: 3.4.6-1build1
+Depends: libffi8 (= 3.4.6-1build1)
+Package: libffi8
+Version: 3.4.6-1build1
+Depends: libc6 (>= 2.34)
+Package: libfftw3-double3
+Version: 3.3.10-1ubuntu3
+Depends: libc6 (>= 2.34), libgomp1 (>= 4.9)
+Package: libfido2-1
+Version: 1.14.0-1build3
+Depends: libc6 (>= 2.38), libcbor0.10 (>= 0.10.2), libssl3t64 (>= 3.0.0), libudev1 (>= 183), zlib1g (>= 1:1.1.4)
+Package: libfile-basedir-perl
+Version: 0.09-2
+Depends: perl:any, libipc-system-simple-perl
+Package: libfile-desktopentry-perl
+Version: 0.22-3
+Depends: perl:any, libfile-basedir-perl, liburi-perl
+Package: libfile-fcntllock-perl
+Version: 0.22-4ubuntu5
+Depends: perl (>= 5.38.2-3), perlapi-5.38.2, libc6 (>= 2.28)
+Package: libfile-listing-perl
+Version: 6.16-1
+Depends: perl:any, libhttp-date-perl
+Package: libfile-mimeinfo-perl
+Version: 0.34-1
+Depends: perl:any, libencode-locale-perl, libfile-basedir-perl, libfile-desktopentry-perl, shared-mime-info
+Package: libflac12t64
+Version: 1.4.3+ds-2.1ubuntu2
+Depends: libc6 (>= 2.33), libogg0 (>= 1.0rc3)
+Package: libflashrom1
+Version: 1.3.0-2.1ubuntu2
+Depends: libc6 (>= 2.33), libftdi1-2 (>= 1.2), libpci3 (>= 1:3.8.0), libusb-1.0-0 (>= 2:1.0.22)
+Package: libflite1
+Version: 2.2-6build3
+Depends: libasound2t64 (>= 1.0.16), libc6 (>= 2.38)
+Package: libfont-afm-perl
+Version: 1.20-4
+Depends: perl:any
+Package: libfontconfig1
+Version: 2.15.0-1.1ubuntu2
+Depends: libc6 (>= 2.38), libexpat1 (>= 2.0.1), libfreetype6 (>= 2.9.1), fontconfig-config (>= 2.15.0-1.1ubuntu2)
+Package: libfontenc1
+Version: 1:1.1.8-1build1
+Depends: libc6 (>= 2.38), zlib1g (>= 1:1.1.4)
+Package: libfreetype6
+Version: 2.13.2+dfsg-1ubuntu0.1
+Depends: libbrotli1 (>= 0.6.0), libbz2-1.0, libc6 (>= 2.33), libpng16-16t64 (>= 1.6.2), zlib1g (>= 1:1.1.4)
+Package: libfribidi0
+Version: 1.0.13-3build1
+Depends: libc6 (>= 2.4)
+Package: libftdi1-2
+Version: 1.5-6build5
+Depends: libc6 (>= 2.14), libusb-1.0-0 (>= 2:1.0.16)
+Package: libfuse3-3
+Version: 3.14.0-5build1
+Depends: libc6 (>= 2.38)
+Package: libfwupd2
+Version: 1.9.33-0ubuntu1~24.04.1ubuntu1
+Depends: libc6 (>= 2.27), libcurl3t64-gnutls (>= 7.63.0), libglib2.0-0t64 (>= 2.79.0), libjcat1 (>= 0.1.0), libjson-glib-1.0-0 (>= 1.5.2)
+Package: libgbm1
+Version: 25.2.8-0ubuntu0.24.04.2
+Depends: libc6 (>= 2.38), libdrm2 (>= 2.4.125-1), libexpat1 (>= 2.0.1), mesa-libgallium (= 25.2.8-0ubuntu0.24.04.2)
+Package: libgcc-13-dev
+Version: 13.3.0-6ubuntu2~24.04.1
+Depends: gcc-13-base (= 13.3.0-6ubuntu2~24.04.1), libgcc-s1 (>= 13.3.0-6ubuntu2~24.04.1), libgomp1 (>= 13.3.0-6ubuntu2~24.04.1), libitm1 (>= 13.3.0-6ubuntu2~24.04.1), libatomic1 (>= 13.3.0-6ubuntu2~24.04.1), libasan8 (>= 13.3.0-6ubuntu2~24.04.1), liblsan0 (>= 13.3.0-6ubuntu2~24.04.1), libtsan2 (>= 13.3.0-6ubuntu2~24.04.1), libubsan1 (>= 13.3.0-6ubuntu2~24.04.1), libhwasan0 (>= 13.3.0-6ubuntu2~24.04.1), libquadmath0 (>= 13.3.0-6ubuntu2~24.04.1)
+Package: libgcc-s1
+Version: 14.2.0-4ubuntu2~24.04.1
+Depends: gcc-14-base (= 14.2.0-4ubuntu2~24.04.1), libc6 (>= 2.35)
+Package: libgcrypt20
+Version: 1.10.3-2ubuntu0.1
+Depends: libc6 (>= 2.38), libgpg-error0 (>= 1.27)
+Package: libgd3
+Version: 2.3.3-9ubuntu5
+Depends: libc6 (>= 2.38), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libheif1 (>= 1.17.6-1ubuntu4~), libjpeg8 (>= 8c), libpng16-16t64 (>= 1.6.2), libtiff6 (>= 4.0.3), libwebp7 (>= 1.3.2), libxpm4
+Package: libgdbm-compat4t64
+Version: 1.23-5.1build1
+Depends: libc6 (>= 2.33), libgdbm6t64 (>= 1.16)
+Package: libgdbm6t64
+Version: 1.23-5.1build1
+Depends: libc6 (>= 2.34)
+Package: libgdk-pixbuf-2.0-0
+Version: 2.42.10+dfsg-3ubuntu3.3
+Depends: libgdk-pixbuf2.0-common (>= 2.42.10+dfsg-3ubuntu3.3), shared-mime-info, libc6 (>= 2.34), libglib2.0-0t64 (>= 2.79.0), libjpeg8 (>= 8c), libpng16-16t64 (>= 1.6.2), libtiff6 (>= 4.0.3)
+Package: libgdk-pixbuf2.0-bin
+Version: 2.42.10+dfsg-3ubuntu3.3
+Depends: libc6 (>= 2.34), libgdk-pixbuf-2.0-0 (>= 2.35.4), libglib2.0-0t64 (>= 2.16.0)
+Package: libgdk-pixbuf2.0-common
+Version: 2.42.10+dfsg-3ubuntu3.3
+Package: libgfortran5
+Version: 14.2.0-4ubuntu2~24.04.1
+Depends: gcc-14-base (= 14.2.0-4ubuntu2~24.04.1), libc6 (>= 2.38), libgcc-s1 (>= 4.3)
+Package: libgirepository-1.0-1
+Version: 1.80.1-1
+Depends: libc6 (>= 2.29), libffi8 (>= 3.4), libglib2.0-0t64 (>= 2.80.0)
+Package: libgl1
+Version: 1.7.0-1build1
+Depends: libc6 (>= 2.34), libglvnd0 (= 1.7.0-1build1), libglx0 (= 1.7.0-1build1)
+Package: libgl1-mesa-dri
+Version: 25.2.8-0ubuntu0.24.04.2
+Depends: libgbm1 (= 25.2.8-0ubuntu0.24.04.2), libvulkan1, libc6 (>= 2.34)
+Package: libgles2
+Version: 1.7.0-1build1
+Depends: libc6 (>= 2.34), libglvnd0 (= 1.7.0-1build1)
+Package: libglib2.0-0t64
+Version: 2.80.0-6ubuntu3.8
+Depends: libc6 (>= 2.38), libffi8 (>= 3.4), libmount1 (>= 2.26.2), libpcre2-8-0 (>= 10.22), libselinux1 (>= 3.1~), zlib1g (>= 1:1.2.2)
+Package: libglib2.0-bin
+Version: 2.80.0-6ubuntu3.8
+Depends: libglib2.0-data, libc6 (>= 2.38), libelf1t64 (>= 0.142), libglib2.0-0t64 (= 2.80.0-6ubuntu3.8)
+Package: libglib2.0-data
+Version: 2.80.0-6ubuntu3.8
+Package: libglvnd0
+Version: 1.7.0-1build1
+Depends: libc6 (>= 2.38)
+Package: libglx-mesa0
+Version: 25.2.8-0ubuntu0.24.04.2
+Depends: libc6 (>= 2.38), libdrm2 (>= 2.4.125-1), libexpat1 (>= 2.0.1), libx11-6 (>= 2:1.4.99.1), libx11-xcb1 (>= 2:1.8.7), libxcb-dri3-0, libxcb-glx0 (>= 1.8), libxcb-present0, libxcb-shm0, libxcb-xfixes0, libxcb1, libxext6, libxxf86vm1, mesa-libgallium (= 25.2.8-0ubuntu0.24.04.2), libgl1-mesa-dri
+Package: libglx0
+Version: 1.7.0-1build1
+Depends: libc6 (>= 2.38), libglvnd0 (= 1.7.0-1build1), libx11-6 (>= 2:1.4.99.1), libglx-mesa0
+Package: libgme0
+Version: 0.6.3-7build1
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 11), zlib1g (>= 1:1.1.4)
+Package: libgmp10
+Version: 2:6.3.0+dfsg-2ubuntu6.1
+Depends: libc6 (>= 2.38)
+Package: libgnutls30t64
+Version: 3.8.3-1.1ubuntu3.6
+Depends: libc6 (>= 2.38), libgmp10 (>= 2:6.3.0+dfsg), libhogweed6t64 (>= 3.6), libidn2-0 (>= 2.0.0), libnettle8t64 (>= 3.9~), libp11-kit0 (>= 0.25.1), libtasn1-6 (>= 4.14), libunistring5 (>= 1.1)
+Package: libgomp1
+Version: 14.2.0-4ubuntu2~24.04.1
+Depends: gcc-14-base (= 14.2.0-4ubuntu2~24.04.1), libc6 (>= 2.38)
+Package: libgpg-error-l10n
+Version: 1.47-3build2.1
+Package: libgpg-error0
+Version: 1.47-3build2.1
+Depends: libc6 (>= 2.38)
+Package: libgpgme11t64
+Version: 1.18.0-4.1ubuntu4
+Depends: gnupg (>= 2.1.21-4) | gpg, libassuan0 (>= 2.4.2), libc6 (>= 2.38), libgpg-error0 (>= 1.36)
+Package: libgpm2
+Version: 1.20.7-11
+Depends: libc6 (>= 2.38)
+Package: libgprofng0
+Version: 2.42-4ubuntu2.8
+Depends: libbinutils (= 2.42-4ubuntu2.8), libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 13.1), zlib1g (>= 1:1.1.4)
+Package: libgraphite2-3
+Version: 1.3.14-2ubuntu0.24.04.1
+Depends: libc6 (>= 2.4)
+Package: libgsm1
+Version: 1.0.22-1build1
+Depends: libc6 (>= 2.4)
+Package: libgssapi-krb5-2
+Version: 1.20.1-6ubuntu2.6
+Depends: libkrb5-3 (= 1.20.1-6ubuntu2.6), libc6 (>= 2.38), libcom-err2 (>= 1.43.9), libk5crypto3 (>= 1.20), libkrb5support0 (= 1.20.1-6ubuntu2.6)
+Package: libgstreamer1.0-0
+Version: 1.24.2-1ubuntu0.1
+Depends: libc6 (>= 2.38), libcap2 (>= 1:2.10), libdw1t64 (>= 0.126), libgcc-s1 (>= 4.2), libglib2.0-0t64 (>= 2.79.0), libunwind8, libcap2-bin
+Package: libgtk-3-0t64
+Version: 3.24.41-4ubuntu1.3
+Depends: adwaita-icon-theme, hicolor-icon-theme, shared-mime-info, libatk-bridge2.0-0t64 (>= 2.15.1), libatk1.0-0t64 (>= 2.35.1), libc6 (>= 2.38), libcairo-gobject2 (>= 1.14.0), libcairo2 (>= 1.14.0), libcolord2 (>= 0.1.10), libcups2t64 (>= 2.3~b6), libepoxy0 (>= 1.4.3), libfontconfig1 (>= 2.12.6), libfribidi0 (>= 0.19.7), libgdk-pixbuf-2.0-0 (>= 2.40.0), libglib2.0-0t64 (>= 2.79.0), libharfbuzz0b (>= 2.2.0), libpango-1.0-0 (>= 1.45.5), libpangocairo-1.0-0 (>= 1.44.0), libpangoft2-1.0-0 (>= 1.44.0), libwayland-client0 (>= 1.20.0), libwayland-cursor0 (>= 1.14.91), libwayland-egl1 (>= 1.15.0), libx11-6 (>= 2:1.4.99.1), libxcomposite1 (>= 1:0.4.5), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxi6 (>= 2:1.2.99.4), libxinerama1 (>= 2:1.1.4), libxkbcommon0 (>= 0.5.0), libxrandr2 (>= 2:1.5.0), libgtk-3-common (>= 3.24.41-4ubuntu1.3)
+Package: libgtk-3-bin
+Version: 3.24.41-4ubuntu1.3
+Depends: gtk-update-icon-cache, libc6 (>= 2.38), libcairo2 (>= 1.14.0), libgdk-pixbuf-2.0-0 (>= 2.40.0), libglib2.0-0t64 (>= 2.79.0), libgtk-3-0t64 (>= 3.24.41-4ubuntu1.3), libgtk-3-common (>= 3.24.41-4ubuntu1.3)
+Package: libgtk-3-common
+Version: 3.24.41-4ubuntu1.3
+Depends: dconf-gsettings-backend | gsettings-backend
+Package: libgudev-1.0-0
+Version: 1:238-5ubuntu1
+Depends: libc6 (>= 2.33), libglib2.0-0t64 (>= 2.79.0), libudev1 (>= 251)
+Package: libgusb2
+Version: 0.4.8-1build2
+Depends: libc6 (>= 2.14), libglib2.0-0 (>= 2.79.0), libjson-glib-1.0-0 (>= 1.5.2), libusb-1.0-0 (>= 2:1.0.22)
+Package: libharfbuzz0b
+Version: 8.3.0-2build2
+Depends: libc6 (>= 2.38), libfreetype6 (>= 2.11.1), libglib2.0-0 (>= 2.32.0), libgraphite2-3 (>= 1.2.2)
+Package: libheif-plugin-aomdec
+Version: 1.17.6-1ubuntu4.2
+Depends: libheif1 (= 1.17.6-1ubuntu4.2), libaom3 (>= 3.2.0), libc6 (>= 2.14), libstdc++6 (>= 4.1.1)
+Package: libheif-plugin-aomenc
+Version: 1.17.6-1ubuntu4.2
+Depends: libheif1 (= 1.17.6-1ubuntu4.2), libaom3 (>= 3.2.0), libc6 (>= 2.14), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 5.2)
+Package: libheif-plugin-libde265
+Version: 1.17.6-1ubuntu4.2
+Depends: libheif1 (= 1.17.6-1ubuntu4.2), libc6 (>= 2.14), libde265-0 (>= 1.0.7), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 5.2)
+Package: libheif1
+Version: 1.17.6-1ubuntu4.2
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libsharpyuv0 (>= 1.3.2), libstdc++6 (>= 13.1), zlib1g (>= 1:1.1.4), libheif-plugin-aomdec (= 1.17.6-1ubuntu4.2) | libheif-plugin-dav1d (= 1.17.6-1ubuntu4.2), libheif-plugin-libde265 (= 1.17.6-1ubuntu4.2)
+Package: libhogweed6t64
+Version: 3.9.1-2.2build1.1
+Depends: libc6 (>= 2.14), libgmp10 (>= 2:6.3.0+dfsg), libnettle8t64
+Package: libhtml-form-perl
+Version: 6.11-1
+Depends: perl:any, libhtml-parser-perl, libhttp-message-perl, liburi-perl
+Package: libhtml-format-perl
+Version: 2.16-2
+Depends: perl:any, libfont-afm-perl, libhtml-tree-perl
+Package: libhtml-parser-perl
+Version: 3.81-1ubuntu0.1
+Depends: perl (>= 5.38.2-3.2ubuntu0.3), perlapi-5.38.2, libc6 (>= 2.14), libhtml-tagset-perl, liburi-perl
+Package: libhtml-tagset-perl
+Version: 3.20-6
+Depends: perl:any
+Package: libhtml-tree-perl
+Version: 5.07-3
+Depends: perl:any, libhtml-parser-perl, libhtml-tagset-perl
+Package: libhttp-cookies-perl
+Version: 6.11-1
+Depends: perl:any, libhttp-date-perl, libhttp-message-perl
+Package: libhttp-daemon-perl
+Version: 6.16-1ubuntu0.24.04.1
+Depends: perl:any, libhttp-date-perl, libhttp-message-perl, libio-socket-ip-perl, liblwp-mediatypes-perl, libsocket-perl
+Package: libhttp-date-perl
+Version: 6.06-1ubuntu0.24.04.1
+Depends: perl:any, libtime-local-perl (>= 1.28), libtimedate-perl
+Package: libhttp-message-perl
+Version: 6.45-1ubuntu1
+Depends: perl:any, libclone-perl (>= 0.46), libcompress-raw-bzip2-perl, libcompress-raw-zlib-perl, libencode-locale-perl, libencode-perl, libhttp-date-perl, libio-html-perl, liblwp-mediatypes-perl, liburi-perl
+Package: libhttp-negotiate-perl
+Version: 6.01-2
+Depends: perl:any, libhttp-message-perl
+Package: libhwasan0
+Version: 14.2.0-4ubuntu2~24.04.1
+Depends: gcc-14-base (= 14.2.0-4ubuntu2~24.04.1), libc6 (>= 2.34), libgcc-s1 (>= 3.3)
+Package: libhwy1t64
+Version: 1.0.7-8.1build1
+Depends: libc6 (>= 2.25), libgcc-s1 (>= 12), libstdc++6 (>= 5)
+Package: libibverbs1
+Version: 50.0-2ubuntu0.2
+Depends: adduser, libc6 (>= 2.38), libnl-3-200 (>= 3.2.7), libnl-route-3-200 (>= 3.2.7)
+Package: libice6
+Version: 2:1.0.10-1build3
+Depends: libbsd0 (>= 0.2.0), libc6 (>= 2.38), x11-common
+Package: libicu74
+Version: 74.2-1ubuntu3.1
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 13.1)
+Package: libidn2-0
+Version: 2.3.7-2build1.1
+Depends: libc6 (>= 2.14), libunistring5 (>= 1.1)
+Package: libiec61883-0
+Version: 1.2.0-6build1
+Depends: libc6 (>= 2.4), libraw1394-11 (>= 2.1.2)
+Package: libigdgmm12
+Version: 22.3.17+ds1-1ubuntu1
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 13.1)
+Package: libimagequant0
+Version: 2.18.0-1build1
+Depends: libc6 (>= 2.29), libgomp1 (>= 4.9)
+Package: libimobiledevice6
+Version: 1.3.0-8.1build3
+Depends: libc6 (>= 2.34), libplist-2.0-4 (>= 2.3.0), libssl3t64 (>= 3.0.0), libusbmuxd6 (>= 2.0.2)
+Package: libinih1
+Version: 55-1ubuntu2
+Depends: libc6 (>= 2.4)
+Package: libintl-perl
+Version: 1.33-1build3
+Depends: perl:any
+Package: libintl-xs-perl
+Version: 1.33-1build3
+Depends: perl (>= 5.38.2-3), perlapi-5.38.2, libc6 (>= 2.3), libintl-perl (= 1.33-1build3)
+Package: libio-html-perl
+Version: 1.004-3
+Depends: perl:any
+Package: libio-socket-ssl-perl
+Version: 2.085-1
+Depends: perl:any, libnet-ssleay-perl, netbase
+Package: libio-stringy-perl
+Version: 2.111-3
+Depends: perl
+Package: libip4tc2
+Version: 1.8.10-3ubuntu2
+Depends: libc6 (>= 2.4)
+Package: libip6tc2
+Version: 1.8.10-3ubuntu2
+Depends: libc6 (>= 2.4)
+Package: libipc-system-simple-perl
+Version: 1.30-2
+Depends: perl:any
+Package: libisl23
+Version: 0.26-3build1.1
+Depends: libc6 (>= 2.14), libgmp10 (>= 2:6.3.0+dfsg)
+Package: libisns0t64
+Version: 0.101-0.3build3
+Depends: libc6 (>= 2.38), libssl3t64 (>= 3.0.0)
+Package: libitm1
+Version: 14.2.0-4ubuntu2~24.04.1
+Depends: gcc-14-base (= 14.2.0-4ubuntu2~24.04.1), libc6 (>= 2.34)
+Package: libjack-jackd2-0
+Version: 1.9.21~dfsg-3ubuntu3
+Depends: libc6 (>= 2.38), libdb5.3t64, libgcc-s1 (>= 3.0), libopus0 (>= 1.3.1-2~), libsamplerate0 (>= 0.1.7), libstdc++6 (>= 13.1)
+Package: libjansson4
+Version: 2.14-2build2
+Depends: libc6 (>= 2.38)
+Package: libjbig0
+Version: 2.1-6.1ubuntu2
+Depends: libc6 (>= 2.4)
+Package: libjcat1
+Version: 0.2.0-2build3
+Depends: libc6 (>= 2.14), libglib2.0-0t64 (>= 2.79.0), libgnutls30 (>= 3.8.2), libgpg-error0 (>= 1.14), libgpgme11 (>= 1.2.0), libhogweed6, libjson-glib-1.0-0 (>= 1.5.2)
+Package: libjpeg-turbo8
+Version: 2.1.5-2ubuntu2
+Depends: libc6 (>= 2.14)
+Package: libjpeg8
+Version: 8c-2ubuntu11
+Depends: libjpeg-turbo8 (>= 1.1.90+svn722-1ubuntu6)
+Package: libjq1
+Version: 1.7.1-3ubuntu0.24.04.2
+Depends: libc6 (>= 2.39), libonig5 (>= 6.8.1)
+Package: libjs-jquery
+Version: 3.6.1+dfsg+~3.5.14-1
+Package: libjs-sphinxdoc
+Version: 7.2.6-6
+Depends: libjs-jquery (>= 1.11.1), libjs-underscore (>= 1.3.1)
+Package: libjs-underscore
+Version: 1.13.4~dfsg+~1.11.4-3
+Package: libjson-c5
+Version: 0.17-1build1
+Depends: libc6 (>= 2.38)
+Package: libjson-glib-1.0-0
+Version: 1.8.0-2build2
+Depends: libjson-glib-1.0-common (>= 1.8.0-2build2), libc6 (>= 2.14), libglib2.0-0 (>= 2.79.0)
+Package: libjson-glib-1.0-common
+Version: 1.8.0-2build2
+Package: libjxl0.7
+Version: 0.7.0-10.2ubuntu6.1
+Depends: libbrotli1 (>= 0.6.0), libc6 (>= 2.38), libgcc-s1 (>= 3.4), libhwy1t64 (>= 0.16.0), liblcms2-2 (>= 2.13), libstdc++6 (>= 12)
+Package: libk5crypto3
+Version: 1.20.1-6ubuntu2.6
+Depends: libc6 (>= 2.38), libkrb5support0 (= 1.20.1-6ubuntu2.6)
+Package: libkeyutils1
+Version: 1.6.3-3build1
+Depends: libc6 (>= 2.7)
+Package: libklibc
+Version: 2.0.13-4ubuntu0.2
+Package: libkmod2
+Version: 31+20240202-2ubuntu7.2
+Depends: libc6 (>= 2.38), liblzma5 (>= 5.4.5-0.2), libssl3t64 (>= 3.0.0), libzstd1 (>= 1.5.5)
+Package: libkrb5-3
+Version: 1.20.1-6ubuntu2.6
+Depends: libkrb5support0 (= 1.20.1-6ubuntu2.6), libc6 (>= 2.38), libcom-err2 (>= 1.43.9), libk5crypto3 (>= 1.20), libkeyutils1 (>= 1.5.9), libssl3t64 (>= 3.0.0)
+Package: libkrb5support0
+Version: 1.20.1-6ubuntu2.6
+Depends: libc6 (>= 2.38)
+Package: libksba8
+Version: 1.6.6-1build1
+Depends: libc6 (>= 2.38), libgpg-error0 (>= 1.46)
+Package: liblapack3
+Version: 3.12.0-3build1.1
+Depends: libblas3 | libblas.so.3, libc6 (>= 2.29), libgcc-s1 (>= 4.0), libgfortran5 (>= 8)
+Package: liblcms2-2
+Version: 2.14-2ubuntu0.1
+Depends: libc6 (>= 2.29)
+Package: libldap-common
+Version: 2.6.10+dfsg-0ubuntu0.24.04.1
+Package: libldap2
+Version: 2.6.10+dfsg-0ubuntu0.24.04.1
+Depends: libc6 (>= 2.38), libgnutls30t64 (>= 3.8.2), libsasl2-2 (>= 2.1.28+dfsg1)
+Package: liblerc4
+Version: 4.0.0+ds-4ubuntu2
+Depends: libc6 (>= 2.29), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 11)
+Package: liblilv-0-0
+Version: 0.24.22-1build1
+Depends: libc6 (>= 2.34), libserd-0-0 (>= 0.30.2), libsord-0-0 (>= 0.14.0~dfsg0), libsratom-0-0 (>= 0.4.6~dfsg0), libzix-0-0 (>= 0.4.2)
+Package: libllvm18
+Version: 1:18.1.3-1ubuntu1
+Depends: libc6 (>= 2.38), libedit2 (>= 2.11-20080614-0), libffi8 (>= 3.4), libgcc-s1 (>= 3.3), libstdc++6 (>= 12), libtinfo6 (>= 6), libxml2 (>= 2.7.4), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.0)
+Package: libllvm20
+Version: 1:20.1.2-0ubuntu1~24.04.3
+Depends: libc6 (>= 2.38), libedit2 (>= 2.11-20080614-0), libffi8 (>= 3.4), libgcc-s1 (>= 3.3), libstdc++6 (>= 13.1), libxml2 (>= 2.7.4), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.0)
+Package: liblmdb0
+Version: 0.9.31-1build1
+Depends: libc6 (>= 2.38)
+Package: liblocale-gettext-perl
+Version: 1.07-6ubuntu5
+Depends: libc6 (>= 2.3)
+Package: liblsan0
+Version: 14.2.0-4ubuntu2~24.04.1
+Depends: gcc-14-base (= 14.2.0-4ubuntu2~24.04.1), libc6 (>= 2.34), libgcc-s1 (>= 3.3)
+Package: liblvm2cmd2.03
+Version: 2.03.16-3ubuntu3.2
+Depends: libaio1t64 (>= 0.3.93), libblkid1 (>= 2.24.2), libc6 (>= 2.38), libdevmapper-event1.02.1 (>= 2:1.02.74), libselinux1 (>= 3.1~), libsystemd0 (>= 233), libudev1 (>= 183), dmeventd
+Package: liblwp-mediatypes-perl
+Version: 6.04-2
+Depends: perl:any
+Package: liblwp-protocol-https-perl
+Version: 6.13-1
+Depends: perl:any, ca-certificates, libio-socket-ssl-perl, libnet-http-perl, libwww-perl
+Package: liblz4-1
+Version: 1.9.4-1build1.1
+Depends: libc6 (>= 2.14)
+Package: liblzma5
+Version: 5.6.1+really5.4.5-1ubuntu0.3
+Depends: libc6 (>= 2.34)
+Package: liblzo2-2
+Version: 2.10-2build4
+Depends: libc6 (>= 2.14)
+Package: libmagic-mgc
+Version: 1:5.45-3build1
+Package: libmagic1t64
+Version: 1:5.45-3build1
+Depends: libbz2-1.0, libc6 (>= 2.38), liblzma5 (>= 5.1.1alpha+20120614), zlib1g (>= 1:1.1.4), libmagic-mgc (= 1:5.45-3build1)
+Package: libmailtools-perl
+Version: 2.21-2
+Depends: perl:any, libnet-perl, libnet-smtp-ssl-perl, libtest-simple-perl, libtimedate-perl
+Package: libmaxminddb0
+Version: 1.9.1-1build1
+Depends: libc6 (>= 2.33)
+Package: libmbedcrypto7t64
+Version: 2.28.8-1
+Depends: libc6 (>= 2.14)
+Package: libmbim-glib4
+Version: 1.31.2-0ubuntu3.1
+Depends: libc6 (>= 2.14), libglib2.0-0t64 (>= 2.56)
+Package: libmbim-proxy
+Version: 1.31.2-0ubuntu3.1
+Depends: libc6 (>= 2.34), libglib2.0-0t64 (>= 2.56), libmbim-glib4 (= 1.31.2-0ubuntu3.1)
+Package: libmbim-utils
+Version: 1.31.2-0ubuntu3.1
+Depends: libc6 (>= 2.34), libglib2.0-0t64 (>= 2.56), libmbim-glib4 (>= 1.31.2-0ubuntu3.1~), libmbim-proxy
+Package: libmd0
+Version: 1.1.0-2build1.1
+Depends: libc6 (>= 2.33)
+Package: libmm-glib0
+Version: 1.23.4-0ubuntu2
+Depends: libc6 (>= 2.14), libglib2.0-0t64 (>= 2.62.0)
+Package: libmnl0
+Version: 1.0.5-2build1
+Depends: libc6 (>= 2.14)
+Package: libmodule-find-perl
+Version: 0.16-2
+Depends: perl:any
+Package: libmodule-scandeps-perl
+Version: 1.35-1ubuntu0.24.04.1
+Depends: perl:any, libmodule-metadata-perl, libscalar-list-utils-perl, libversion-perl
+Package: libmount1
+Version: 2.39.3-9ubuntu6.4
+Depends: libblkid1 (>= 2.17.2), libc6 (>= 2.38), libselinux1 (>= 3.1~)
+Package: libmp3lame0
+Version: 3.100-6build1
+Depends: libc6 (>= 2.38)
+Package: libmpc3
+Version: 1.3.1-1build1.1
+Depends: libc6 (>= 2.4), libgmp10 (>= 2:6.3.0+dfsg), libmpfr6 (>= 4.0.0)
+Package: libmpfr6
+Version: 4.2.1-1build1.1
+Depends: libc6 (>= 2.14), libgmp10 (>= 2:6.3.0+dfsg)
+Package: libmpg123-0t64
+Version: 1.32.5-1ubuntu1.1
+Depends: libc6 (>= 2.29)
+Package: libmspack0t64
+Version: 0.11-1.1build1
+Depends: libc6 (>= 2.14)
+Package: libmysofa1
+Version: 1.3.2+dfsg-2ubuntu2
+Depends: libc6 (>= 2.38), zlib1g (>= 1:1.1.4)
+Package: libncurses6
+Version: 6.4+20240113-1ubuntu2
+Depends: libtinfo6 (= 6.4+20240113-1ubuntu2), libc6 (>= 2.34)
+Package: libncursesw6
+Version: 6.4+20240113-1ubuntu2
+Depends: libtinfo6 (= 6.4+20240113-1ubuntu2), libc6 (>= 2.34)
+Package: libnet-dbus-perl
+Version: 1.2.0-2build3
+Depends: perl (>= 5.38.2-3), perlapi-5.38.2, libc6 (>= 2.4), libdbus-1-3 (>= 1.9.14), libxml-twig-perl
+Package: libnet-http-perl
+Version: 6.23-1
+Depends: perl:any, libio-socket-ip-perl, liburi-perl
+Package: libnet-smtp-ssl-perl
+Version: 1.04-2
+Depends: libio-socket-ssl-perl, perl:any
+Package: libnet-ssleay-perl
+Version: 1.94-1build4
+Depends: perl (>= 5.38.2-3.2build2), perl-openssl-abi-3, perlapi-5.38.2, libc6 (>= 2.14), libssl3t64 (>= 3.0.0)
+Package: libnetfilter-conntrack3
+Version: 1.0.9-6build1
+Depends: libc6 (>= 2.14), libmnl0 (>= 1.0.3-4~), libnfnetlink0 (>= 1.0.2)
+Package: libnetplan1
+Version: 1.1.2-8ubuntu1~24.04.1
+Depends: libc6 (>= 2.38), libglib2.0-0t64 (>= 2.75.3), libuuid1 (>= 2.16), libyaml-0-2
+Package: libnettle8t64
+Version: 3.9.1-2.2build1.1
+Depends: libc6 (>= 2.17)
+Package: libnewt0.52
+Version: 0.52.24-2ubuntu2
+Depends: libc6 (>= 2.38), libslang2 (>= 2.2.4)
+Package: libnfnetlink0
+Version: 1.0.2-2build1
+Depends: libc6 (>= 2.14)
+Package: libnftables1
+Version: 1.0.9-1build1
+Depends: libc6 (>= 2.38), libgmp10 (>= 2:6.3.0+dfsg), libjansson4 (>= 2.14), libmnl0 (>= 1.0.3-4~), libnftnl11 (>= 1.2.6), libxtables12 (>= 1.6.0+snapshot20161117)
+Package: libnftnl11
+Version: 1.2.6-2build1
+Depends: libc6 (>= 2.34), libmnl0 (>= 1.0.3-4~)
+Package: libnghttp2-14
+Version: 1.59.0-1ubuntu0.2
+Depends: libc6 (>= 2.17)
+Package: libnl-3-200
+Version: 3.7.0-0.3build1.1
+Depends: libc6 (>= 2.38)
+Package: libnl-genl-3-200
+Version: 3.7.0-0.3build1.1
+Depends: libnl-3-200 (= 3.7.0-0.3build1.1), libc6 (>= 2.4)
+Package: libnl-route-3-200
+Version: 3.7.0-0.3build1.1
+Depends: libnl-3-200 (= 3.7.0-0.3build1.1), libc6 (>= 2.38)
+Package: libnode109
+Version: 18.19.1+dfsg-6ubuntu5
+Depends: libbrotli1 (>= 1.0.0), libc6 (>= 2.38), libcares2 (>= 1.18.1~), libgcc-s1 (>= 3.4), libicu74 (>= 74.1-1~), libnghttp2-14 (>= 1.41.0), libssl3t64 (>= 3.0.0), libstdc++6 (>= 13.1), libuv1t64 (>= 1.44.1), zlib1g (>= 1:1.1.4), node-acorn (>= 6.2.1~), node-cjs-module-lexer (>= 1.2.2~), node-undici (>= 5.0.0~)
+Package: libnorm1t64
+Version: 1.5.9+dfsg-3.1build1
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 5)
+Package: libnpth0t64
+Version: 1.6-3.1build1
+Depends: libc6 (>= 2.34)
+Package: libnspr4
+Version: 2:4.35-1.1build1
+Depends: libc6 (>= 2.38)
+Package: libnss-systemd
+Version: 255.4-1ubuntu8.15
+Depends: libc6 (>= 2.39), libcap2 (>= 1:2.10), systemd (= 255.4-1ubuntu8.15)
+Package: libnss3
+Version: 2:3.98-1ubuntu0.1
+Depends: libc6 (>= 2.34), libnspr4 (>= 2:4.34), libsqlite3-0 (>= 3.5.9)
+Package: libntfs-3g89t64
+Version: 1:2022.10.3-1.2ubuntu3
+Depends: libc6 (>= 2.38)
+Package: libnuma1
+Version: 2.0.18-1ubuntu0.24.04.1
+Depends: libc6 (>= 2.38)
+Package: libnvme1t64
+Version: 1.8-3ubuntu1
+Depends: libc6 (>= 2.38), libjson-c5 (>= 0.15), libkeyutils1 (>= 1.5.9), libssl3t64 (>= 3.0.0)
+Package: libogg0
+Version: 1.3.5-3build1
+Depends: libc6 (>= 2.14)
+Package: libonig5
+Version: 6.9.9-1build1
+Depends: libc6 (>= 2.14)
+Package: libopenal-data
+Version: 1:1.23.1-4build1
+Package: libopenal1
+Version: 1:1.23.1-4build1
+Depends: libopenal-data (= 1:1.23.1-4build1), libc6 (>= 2.38), libgcc-s1 (>= 4.0), libsndio7.0 (>= 1.8.1), libstdc++6 (>= 6)
+Package: libopeniscsiusr
+Version: 2.1.9-3ubuntu5.4
+Depends: libc6 (>= 2.38), libkmod2 (>= 5~)
+Package: libopenjp2-7
+Version: 2.5.0-2ubuntu0.5
+Depends: libc6 (>= 2.34)
+Package: libopenmpt0t64
+Version: 0.7.3-1.1build3
+Depends: libc6 (>= 2.32), libgcc-s1 (>= 4.0), libmpg123-0t64 (>= 1.28.0), libstdc++6 (>= 13.1), libvorbis0a (>= 1.1.2), libvorbisfile3 (>= 1.1.2), zlib1g (>= 1:1.1.4)
+Package: libopus0
+Version: 1.4-1build1
+Depends: libc6 (>= 2.29)
+Package: libp11-kit0
+Version: 0.25.3-4ubuntu2.1
+Depends: libc6 (>= 2.38), libffi8 (>= 3.4)
+Package: libpackagekit-glib2-18
+Version: 1.2.8-2ubuntu1.4
+Depends: libc6 (>= 2.14), libglib2.0-0t64 (>= 2.79.0)
+Package: libpam-cap
+Version: 1:2.66-5ubuntu2.4
+Depends: libpam-runtime (>= 1.1.3-2~), libc6 (>= 2.7), libcap2 (>= 1:2.63), libpam0g (>= 0.99.7.1)
+Package: libpam-modules
+Version: 1.5.3-5ubuntu5.5
+Package: libpam-modules-bin
+Version: 1.5.3-5ubuntu5.5
+Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.38), libcrypt1 (>= 1:4.3.0), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), libsystemd0 (>= 254)
+Package: libpam-runtime
+Version: 1.5.3-5ubuntu5.5
+Depends: debconf (>= 0.5) | debconf-2.0, debconf (>= 1.5.19) | cdebconf, libpam-modules (>= 1.0.1-6)
+Package: libpam-systemd
+Version: 255.4-1ubuntu8.15
+Depends: libc6 (>= 2.39), libcap2 (>= 1:2.10), libpam0g (>= 0.99.7.1), systemd (= 255.4-1ubuntu8.15), libpam-runtime, default-dbus-system-bus | dbus-system-bus, systemd-sysv
+Package: libpam0g
+Version: 1.5.3-5ubuntu5.5
+Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.34), debconf (>= 0.5) | debconf-2.0
+Package: libpango-1.0-0
+Version: 1.52.1+ds-1build1
+Depends: fontconfig, libc6 (>= 2.38), libfribidi0 (>= 1.0.0), libglib2.0-0t64 (>= 2.79.0), libharfbuzz0b (>= 7.3.0), libthai0 (>= 0.1.25)
+Package: libpangocairo-1.0-0
+Version: 1.52.1+ds-1build1
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.8.0), libfontconfig1 (>= 2.12.6), libglib2.0-0t64 (>= 2.79.0), libharfbuzz0b (>= 1.2.6), libpango-1.0-0 (= 1.52.1+ds-1build1), libpangoft2-1.0-0 (= 1.52.1+ds-1build1)
+Package: libpangoft2-1.0-0
+Version: 1.52.1+ds-1build1
+Depends: libc6 (>= 2.4), libfontconfig1 (>= 2.13.0), libfreetype6 (>= 2.2.1), libglib2.0-0t64 (>= 2.79.0), libharfbuzz0b (>= 5.1.0), libpango-1.0-0 (= 1.52.1+ds-1build1)
+Package: libpaper-utils
+Version: 1.1.29build1
+Depends: libc6 (>= 2.34), libpaper1
+Package: libpaper1
+Version: 1.1.29build1
+Depends: libc6 (>= 2.33), debconf (>= 0.5) | debconf-2.0, ucf (>= 0.28), dpkg (>= 1.17.2)
+Package: libparted2t64
+Version: 3.6-4build1
+Depends: libblkid1 (>= 2.17.2), libc6 (>= 2.38), libdevmapper1.02.1 (>= 2:1.02.97), libuuid1 (>= 2.16), dmidecode
+Package: libpcap0.8t64
+Version: 1.10.4-4.1ubuntu3
+Depends: libc6 (>= 2.38), libdbus-1-3 (>= 1.9.14), libibverbs1 (>= 1.1.6)
+Package: libpci3
+Version: 1:3.10.0-2build1
+Depends: libc6 (>= 2.38), libudev1 (>= 196), zlib1g (>= 1:1.1.4), pci.ids (>= 0.0~2019.11.10-2)
+Package: libpciaccess0
+Version: 0.17-3ubuntu0.24.04.2
+Depends: libc6 (>= 2.38), zlib1g (>= 1:1.1.4)
+Package: libpcre2-8-0
+Version: 10.42-4ubuntu2.1
+Depends: libc6 (>= 2.34)
+Package: libperl5.38t64
+Version: 5.38.2-3.2ubuntu0.6
+Depends: libbz2-1.0, libc6 (>= 2.38), libcrypt1 (>= 1:4.1.0), libdb5.3t64, libgdbm-compat4t64 (>= 1.18-3), libgdbm6t64 (>= 1.21), zlib1g (>= 1:1.2.3.3), perl-modules-5.38 (>= 5.38.2-3.2ubuntu0.6)
+Package: libpgm-5.3-0t64
+Version: 5.3.128~dfsg-2.1build1
+Depends: libc6 (>= 2.34)
+Package: libpipeline1
+Version: 1.5.7-2
+Depends: libc6 (>= 2.26)
+Package: libpixman-1-0
+Version: 0.42.2-1build1
+Depends: libc6 (>= 2.29)
+Package: libplacebo338
+Version: 6.338.2-2build1
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.4), liblcms2-2 (>= 2.6), libstdc++6 (>= 13.1), libvulkan1 (>= 1.2.131.2)
+Package: libplist-2.0-4
+Version: 2.3.0-1~exp2build2
+Depends: libc6 (>= 2.34)
+Package: libplymouth5
+Version: 24.004.60-1ubuntu7.1
+Depends: libc6 (>= 2.38), libevdev2 (>= 0.9.1), libpng16-16t64 (>= 1.6.2), libudev1 (>= 183), libxkbcommon0 (>= 0.5.0)
+Package: libpng16-16t64
+Version: 1.6.43-5ubuntu0.5
+Depends: libc6 (>= 2.29), zlib1g (>= 1:1.2.3.4)
+Package: libpocketsphinx3
+Version: 0.8.0+real5prealpha+1-15ubuntu5
+Depends: libc6 (>= 2.29), libsphinxbase3 (>= 0.8+5prealpha+1)
+Package: libpolkit-agent-1-0
+Version: 124-2ubuntu1.24.04.3
+Depends: libc6 (>= 2.38), libglib2.0-0t64 (>= 2.79.0), libpolkit-gobject-1-0 (= 124-2ubuntu1.24.04.3)
+Package: libpolkit-gobject-1-0
+Version: 124-2ubuntu1.24.04.3
+Depends: libc6 (>= 2.38), libglib2.0-0t64 (>= 2.79.0), libsystemd0 (>= 213)
+Package: libpopt0
+Version: 1.19+dfsg-1build1
+Depends: libc6 (>= 2.38)
+Package: libpostproc57
+Version: 7:6.1.1-3ubuntu5
+Depends: libavutil58 (>= 7:6.0), libc6 (>= 2.14)
+Package: libproc-processtable-perl
+Version: 0.636-1build3
+Depends: perl (>= 5.38.2-3), perlapi-5.38.2, libc6 (>= 2.38)
+Package: libproc2-0
+Version: 2:4.0.4-4ubuntu3.2
+Depends: libc6 (>= 2.38), libsystemd0 (>= 209)
+Package: libprotobuf-c1
+Version: 1.4.1-1ubuntu4
+Depends: libc6 (>= 2.14)
+Package: libpsl5t64
+Version: 0.21.2-1.1build1
+Depends: libidn2-0 (>= 0.16), libc6 (>= 2.33), libunistring5 (>= 1.1)
+Package: libpulse0
+Version: 1:16.1+dfsg1-2ubuntu10.1
+Depends: libapparmor1 (>= 2.7.0~beta1+bzr1772), libasyncns0 (>= 0.3), libc6 (>= 2.38), libdbus-1-3 (>= 1.9.14), libsndfile1 (>= 1.0.20), libsystemd0, libx11-6, libx11-xcb1 (>= 2:1.8.7), libxcb1
+Package: libpython3-dev
+Version: 3.12.3-0ubuntu2.1
+Depends: libpython3.12-dev (>= 3.12.3-0~)
+Package: libpython3-stdlib
+Version: 3.12.3-0ubuntu2.1
+Depends: libpython3.12-stdlib (>= 3.12.3-0~)
+Package: libpython3.12-dev
+Version: 3.12.3-1ubuntu0.17
+Depends: libpython3.12-stdlib (= 3.12.3-1ubuntu0.17), libpython3.12t64 (= 3.12.3-1ubuntu0.17), libexpat1-dev, zlib1g-dev
+Package: libpython3.12-minimal
+Version: 3.12.3-1ubuntu0.17
+Depends: libc6 (>= 2.14), libssl3t64 (>= 3.0.0)
+Package: libpython3.12-stdlib
+Version: 3.12.3-1ubuntu0.17
+Depends: libpython3.12-minimal (= 3.12.3-1ubuntu0.17), media-types | mime-support, netbase, tzdata, libbz2-1.0, libc6 (>= 2.38), libcrypt1 (>= 1:4.1.0), libdb5.3t64, libffi8 (>= 3.4), liblzma5 (>= 5.1.1alpha+20120614), libncursesw6 (>= 6.1), libreadline8t64 (>= 7.0~beta), libsqlite3-0 (>= 3.36.0), libtinfo6 (>= 6)
+Package: libpython3.12t64
+Version: 3.12.3-1ubuntu0.17
+Depends: libpython3.12-stdlib (= 3.12.3-1ubuntu0.17), libc6 (>= 2.38), libexpat1 (>= 2.6.0), zlib1g (>= 1:1.2.0)
+Package: libqmi-glib5
+Version: 1.35.2-0ubuntu2
+Depends: libc6 (>= 2.14), libglib2.0-0t64 (>= 2.54.0), libmbim-glib4 (>= 1.14.0), libmbim-proxy, libqrtr-glib0 (>= 1.0.0)
+Package: libqmi-proxy
+Version: 1.35.2-0ubuntu2
+Depends: libqmi-glib5 (= 1.35.2-0ubuntu2), libc6 (>= 2.34), libglib2.0-0t64 (>= 2.30.0)
+Package: libqmi-utils
+Version: 1.35.2-0ubuntu2
+Depends: libc6 (>= 2.34), libglib2.0-0t64 (>= 2.38.0), libgudev-1.0-0 (>= 146), libmbim-glib4 (>= 1.28.0), libmbim-proxy, libqmi-glib5 (>= 1.34.0), libqmi-proxy, libqrtr-glib0 (>= 1.0.0)
+Package: libqrtr-glib0
+Version: 1.2.2-1ubuntu4
+Depends: libc6 (>= 2.4), libglib2.0-0t64 (>= 2.56)
+Package: libquadmath0
+Version: 14.2.0-4ubuntu2~24.04.1
+Depends: gcc-14-base (= 14.2.0-4ubuntu2~24.04.1), libc6 (>= 2.38)
+Package: librabbitmq4
+Version: 0.11.0-1ubuntu0.2
+Depends: libc6 (>= 2.17), libssl3t64 (>= 3.0.0)
+Package: libraqm0
+Version: 0.10.1-1build1
+Depends: libc6 (>= 2.14), libfreetype6 (>= 2.11.0), libfribidi0 (>= 1.0.0), libharfbuzz0b (>= 5.2)
+Package: librav1e0
+Version: 0.7.1-2
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.2)
+Package: libraw1394-11
+Version: 2.1.2-2build3
+Depends: libc6 (>= 2.14)
+Package: libreadline8t64
+Version: 8.2-4build1
+Depends: readline-common, libc6 (>= 2.38), libtinfo6 (>= 6)
+Package: libreiserfscore0t64
+Version: 1:3.6.27-7.1build1
+Depends: libc6 (>= 2.38), libcom-err2 (>= 1.43.9), libuuid1 (>= 2.16)
+Package: librist4
+Version: 0.2.10+dfsg-2
+Depends: libc6 (>= 2.38), libcjson1 (>= 1.7.5), libmbedcrypto7t64 (>= 2.28.0)
+Package: librsvg2-2
+Version: 2.58.0+dfsg-1build1
+Depends: libc6 (>= 2.38), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.15.8), libgcc-s1 (>= 4.2), libgdk-pixbuf-2.0-0 (>= 2.25.2), libglib2.0-0t64 (>= 2.54.0), libpango-1.0-0 (>= 1.48.11), libpangocairo-1.0-0 (>= 1.48.11), libxml2 (>= 2.9.0)
+Package: librsvg2-common
+Version: 2.58.0+dfsg-1build1
+Depends: librsvg2-2 (= 2.58.0+dfsg-1build1), libgdk-pixbuf-2.0-0 (>= 2.23.5-2), libglib2.0-0t64 (>= 2.50.0)
+Package: librtmp1
+Version: 2.4+20151223.gitfa8646d.1-2build7
+Depends: libc6 (>= 2.34), libgmp10 (>= 2:6.3.0+dfsg), libgnutls30 (>= 3.8.1), libhogweed6, libnettle8, zlib1g (>= 1:1.1.4)
+Package: librubberband2
+Version: 3.3.0+dfsg-2build1
+Depends: libc6 (>= 2.34), libfftw3-double3 (>= 3.3.10), libgcc-s1 (>= 3.3.1), libsamplerate0 (>= 0.1.7), libstdc++6 (>= 13.1)
+Package: libsamplerate0
+Version: 0.2.2-4build1
+Depends: libc6 (>= 2.14)
+Package: libsasl2-2
+Version: 2.1.28+dfsg1-5ubuntu3.1
+Depends: libsasl2-modules-db (>= 2.1.28+dfsg1-5ubuntu3.1), libc6 (>= 2.38), libssl3t64 (>= 3.0.0)
+Package: libsasl2-modules
+Version: 2.1.28+dfsg1-5ubuntu3.1
+Depends: libc6 (>= 2.38), libssl3t64 (>= 3.0.0)
+Package: libsasl2-modules-db
+Version: 2.1.28+dfsg1-5ubuntu3.1
+Depends: libc6 (>= 2.14), libdb5.3t64
+Package: libsdl2-2.0-0
+Version: 2.30.0+dfsg-1ubuntu3.1
+Depends: libasound2t64 (>= 1.0.27), libc6 (>= 2.38), libdecor-0-0 (>= 0.1.1-2~), libdrm2 (>= 2.4.46), libgbm1 (>= 8.1~0), libpulse0 (>= 5.0), libsamplerate0 (>= 0.1.7), libwayland-client0 (>= 1.20.0), libwayland-cursor0 (>= 1.18), libwayland-egl1 (>= 1.18), libx11-6 (>= 2:1.2.99.901), libxcursor1 (>> 1.1.2), libxext6, libxfixes3 (>= 1:5.0), libxi6 (>= 2:1.5.99.2), libxkbcommon0 (>= 0.5.0), libxrandr2 (>= 2:1.2.99.3), libxss1
+Package: libseccomp2
+Version: 2.5.5-1ubuntu3.1
+Depends: libc6 (>= 2.4)
+Package: libselinux1
+Version: 3.5-2ubuntu2.1
+Depends: libc6 (>= 2.38), libpcre2-8-0 (>= 10.22)
+Package: libsemanage-common
+Version: 3.5-1build5
+Package: libsemanage2
+Version: 3.5-1build5
+Depends: libsemanage-common (>= 3.5-1build5), libaudit1 (>= 1:2.2.1), libbz2-1.0, libc6 (>= 2.38), libselinux1 (>= 3.5), libsepol2 (>= 3.5)
+Package: libsensors-config
+Version: 1:3.6.0-9build1
+Package: libsensors5
+Version: 1:3.6.0-9build1
+Depends: libsensors-config, libc6 (>= 2.38)
+Package: libsepol2
+Version: 3.5-2build1
+Depends: libc6 (>= 2.38)
+Package: libserd-0-0
+Version: 0.32.2-1
+Depends: libc6 (>= 2.29)
+Package: libsframe1
+Version: 2.42-4ubuntu2.8
+Depends: libc6 (>= 2.14)
+Package: libsgutils2-1.46-2
+Version: 1.46-3ubuntu4
+Depends: libc6 (>= 2.34)
+Package: libsharpyuv0
+Version: 1.3.2-0.4build3
+Depends: libc6 (>= 2.29)
+Package: libshine3
+Version: 3.1.1-2build1
+Depends: libc6 (>= 2.29)
+Package: libsigc++-2.0-0v5
+Version: 2.12.1-2
+Depends: libc6 (>= 2.4), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 4.6)
+Package: libsigsegv2
+Version: 2.14-1ubuntu2
+Depends: libc6 (>= 2.4)
+Package: libslang2
+Version: 2.3.3-3build2
+Depends: libc6 (>= 2.38)
+Package: libsm6
+Version: 2:1.2.3-1build3
+Depends: libc6 (>= 2.14), libice6 (>= 1:1.0.0), libuuid1 (>= 2.16)
+Package: libsmartcols1
+Version: 2.39.3-9ubuntu6.4
+Depends: libc6 (>= 2.38)
+Package: libsnappy1v5
+Version: 1.1.10-1build1
+Depends: libc6 (>= 2.14), libstdc++6 (>= 5.2)
+Package: libsndfile1
+Version: 1.2.2-1ubuntu5.24.04.1
+Depends: libc6 (>= 2.38), libflac12t64 (>= 1.3.0), libmp3lame0 (>= 3.100), libmpg123-0t64 (>= 1.28.0), libogg0 (>= 1.3.0), libopus0 (>= 1.1), libvorbis0a (>= 1.2.3), libvorbisenc2 (>= 1.1.2)
+Package: libsndio7.0
+Version: 1.9.0-0.3build3
+Depends: libasound2t64 (>= 1.0.17), libbsd0 (>= 0.0), libc6 (>= 2.38)
+Package: libsodium23
+Version: 1.0.18-1ubuntu0.24.04.1
+Depends: libc6 (>= 2.34)
+Package: libsord-0-0
+Version: 0.16.16-2build1
+Depends: libc6 (>= 2.4), libserd-0-0 (>= 0.30), libzix-0-0 (>= 0.4.2)
+Package: libsort-naturally-perl
+Version: 1.03-4
+Depends: perl:any
+Package: libsoxr0
+Version: 0.1.3-4build3
+Depends: libc6 (>= 2.29), libgomp1 (>= 4.9)
+Package: libspeex1
+Version: 1.2.1-2ubuntu2.24.04.1
+Depends: libc6 (>= 2.29)
+Package: libsphinxbase3t64
+Version: 0.8+5prealpha+1-17build2
+Depends: libblas3 | libblas.so.3, libc6 (>= 2.34), liblapack3 | liblapack.so.3, libpulse0 (>= 0.99.1)
+Package: libsqlite3-0
+Version: 3.45.1-1ubuntu2.5
+Depends: libc6 (>= 2.38)
+Package: libsratom-0-0
+Version: 0.6.16-1build1
+Depends: libc6 (>= 2.14), libserd-0-0 (>= 0.30.2), libsord-0-0 (>= 0.16.16)
+Package: libsrt1.5-gnutls
+Version: 1.5.3-1build2
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libgnutls30 (>= 3.7.0), libnettle8, libstdc++6 (>= 13.1)
+Package: libss2
+Version: 1.47.0-2.4~exp1ubuntu4.1
+Depends: libcom-err2, libc6 (>= 2.34)
+Package: libssh-4
+Version: 0.10.6-2ubuntu0.5
+Depends: libc6 (>= 2.33), libgssapi-krb5-2 (>= 1.17), libssl3t64 (>= 3.0.0), zlib1g (>= 1:1.1.4)
+Package: libssh-gcrypt-4
+Version: 0.10.6-2ubuntu0.5
+Depends: libc6 (>= 2.33), libgcrypt20 (>= 1.10.0), libgpg-error0 (>= 1.14), libgssapi-krb5-2 (>= 1.17), zlib1g (>= 1:1.1.4)
+Package: libssl-dev
+Version: 3.0.13-0ubuntu3.9
+Depends: libssl3t64 (= 3.0.13-0ubuntu3.9)
+Package: libssl3t64
+Version: 3.0.13-0ubuntu3.9
+Depends: libc6 (>= 2.38)
+Package: libstdc++-13-dev
+Version: 13.3.0-6ubuntu2~24.04.1
+Depends: gcc-13-base (= 13.3.0-6ubuntu2~24.04.1), libgcc-13-dev (= 13.3.0-6ubuntu2~24.04.1), libstdc++6 (>= 13.3.0-6ubuntu2~24.04.1), libc6-dev (>= 2.13-0ubuntu6)
+Package: libstdc++6
+Version: 14.2.0-4ubuntu2~24.04.1
+Depends: gcc-14-base (= 14.2.0-4ubuntu2~24.04.1), libc6 (>= 2.38), libgcc-s1 (>= 4.3)
+Package: libstemmer0d
+Version: 2.2.0-4build1
+Depends: libc6 (>= 2.4)
+Package: libsvtav1enc1d1
+Version: 1.7.0+dfsg-2build1
+Depends: libc6 (>= 2.34)
+Package: libswresample4
+Version: 7:6.1.1-3ubuntu5
+Depends: libavutil58 (>= 7:6.1), libc6 (>= 2.29), libsoxr0 (>= 0.1.0)
+Package: libswscale7
+Version: 7:6.1.1-3ubuntu5
+Depends: libavutil58 (= 7:6.1.1-3ubuntu5), libc6 (>= 2.34)
+Package: libsystemd-shared
+Version: 255.4-1ubuntu8.15
+Depends: libacl1 (>= 2.2.23), libapparmor1 (>= 2.13), libaudit1 (>= 1:2.2.1), libblkid1 (>= 2.30.2), libc6 (>= 2.39), libcap2 (>= 1:2.10), libcrypt1 (>= 1:4.4.0), libgcrypt20 (>= 1.10.0), libkmod2 (>= 15), liblz4-1 (>= 0.0~r130), liblzma5 (>= 5.1.1alpha+20120614), libmount1 (>= 2.30), libpam0g (>= 0.99.7.1), libseccomp2 (>= 2.4.1), libselinux1 (>= 3.1~), libssl3t64 (>= 3.0.0), libzstd1 (>= 1.5.5)
+Package: libsystemd0
+Version: 255.4-1ubuntu8.15
+Depends: libc6 (>= 2.38), libcap2 (>= 1:2.10), libgcrypt20 (>= 1.10.0), liblz4-1 (>= 0.0~r122), liblzma5 (>= 5.1.1alpha+20120614), libzstd1 (>= 1.5.5)
+Package: libtasn1-6
+Version: 4.19.0-3ubuntu0.24.04.2
+Depends: libc6 (>= 2.38)
+Package: libtcl8.6
+Version: 8.6.14+dfsg-1build1
+Depends: tzdata, libc6 (>= 2.38), zlib1g (>= 1:1.2.2)
+Package: libterm-readkey-perl
+Version: 2.38-2build4
+Depends: perl (>= 5.38.2-3), perlapi-5.38.2, libc6 (>= 2.28)
+Package: libtext-charwidth-perl
+Version: 0.04-11build3
+Depends: libc6 (>= 2.4), perl-base (>= 5.38.2-3), perlapi-5.38.2
+Package: libtext-iconv-perl
+Version: 1.7-8build3
+Depends: libc6 (>= 2.4), perl-base (>= 5.38.2-3), perlapi-5.38.2
+Package: libtext-wrapi18n-perl
+Version: 0.06-10
+Depends: libtext-charwidth-perl
+Package: libthai-data
+Version: 0.1.29-2build1
+Package: libthai0
+Version: 0.1.29-2build1
+Depends: libthai-data (>= 0.1.10), libc6 (>= 2.14), libdatrie1 (>= 0.2.0)
+Package: libtheora0
+Version: 1.1.1+dfsg.1-16.1build3
+Depends: libc6 (>= 2.14), libcairo2 (>= 1.2.4), libogg0 (>= 1.1.0)
+Package: libtie-ixhash-perl
+Version: 1.23-4
+Depends: perl:any
+Package: libtiff6
+Version: 4.5.1+git230720-4ubuntu2.5
+Depends: libc6 (>= 2.33), libdeflate0 (>= 1.0), libjbig0 (>= 2.0), libjpeg8 (>= 8c), liblerc4 (>= 3.0), liblzma5 (>= 5.1.1alpha+20120614), libwebp7 (>= 1.3.2), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Package: libtimedate-perl
+Version: 2.3300-2
+Depends: perl:any
+Package: libtinfo6
+Version: 6.4+20240113-1ubuntu2
+Depends: libc6 (>= 2.34)
+Package: libtirpc-common
+Version: 1.3.4+ds-1.1build1
+Package: libtirpc3t64
+Version: 1.3.4+ds-1.1build1
+Depends: libc6 (>= 2.38), libgssapi-krb5-2 (>= 1.17), libtirpc-common (>= 1.3.4+ds-1.1build1)
+Package: libtk8.6
+Version: 8.6.14-1build1
+Depends: libtcl8.6 (>= 8.6.0-2), libc6 (>= 2.38), libfontconfig1 (>= 2.12.6), libx11-6, libxft2 (>> 2.1.1), libxss1
+Package: libtraceevent1
+Version: 1:1.8.2-1ubuntu2.1
+Depends: libc6 (>= 2.38)
+Package: libtraceevent1-plugin
+Version: 1:1.8.2-1ubuntu2.1
+Depends: libc6 (>= 2.38), libtraceevent1 (= 1:1.8.2-1ubuntu2.1)
+Package: libtracefs1
+Version: 1.8.0-1ubuntu1
+Depends: libc6 (>= 2.38), libtraceevent1 (>= 1:1.8.1)
+Package: libtry-tiny-perl
+Version: 0.31-2
+Depends: perl:any
+Package: libtsan2
+Version: 14.2.0-4ubuntu2~24.04.1
+Depends: gcc-14-base (= 14.2.0-4ubuntu2~24.04.1), libc6 (>= 2.34), libgcc-s1 (>= 3.4)
+Package: libtss2-esys-3.0.2-0t64
+Version: 4.0.1-7.1ubuntu5.1
+Depends: libtss2-tcti-cmd0t64, libtss2-tcti-device0t64, libtss2-tcti-mssim0t64, libtss2-tcti-swtpm0t64, tpm-udev, libc6 (>= 2.34), libssl3t64 (>= 3.0.0), libtss2-mu-4.0.1-0t64 (>= 3.0.1), libtss2-sys1t64 (>= 4.0.1)
+Package: libtss2-mu-4.0.1-0t64
+Version: 4.0.1-7.1ubuntu5.1
+Depends: tpm-udev, libc6 (>= 2.14)
+Package: libtss2-sys1t64
+Version: 4.0.1-7.1ubuntu5.1
+Depends: tpm-udev, libc6 (>= 2.14), libtss2-mu-4.0.1-0t64 (>= 3.0.1)
+Package: libtss2-tcti-cmd0t64
+Version: 4.0.1-7.1ubuntu5.1
+Depends: tpm-udev, libc6 (>= 2.4), libtss2-mu-4.0.1-0t64 (>= 3.0.1)
+Package: libtss2-tcti-device0t64
+Version: 4.0.1-7.1ubuntu5.1
+Depends: tpm-udev, libc6 (>= 2.4), libtss2-mu-4.0.1-0t64 (>= 3.0.1)
+Package: libtss2-tcti-mssim0t64
+Version: 4.0.1-7.1ubuntu5.1
+Depends: tpm-udev, libc6 (>= 2.38), libtss2-mu-4.0.1-0t64 (>= 3.0.1)
+Package: libtss2-tcti-swtpm0t64
+Version: 4.0.1-7.1ubuntu5.1
+Depends: tpm-udev, libc6 (>= 2.38), libtss2-mu-4.0.1-0t64 (>= 3.0.1)
+Package: libtwolame0
+Version: 0.4.0-2build3
+Depends: libc6 (>= 2.29)
+Package: libubsan1
+Version: 14.2.0-4ubuntu2~24.04.1
+Depends: gcc-14-base (= 14.2.0-4ubuntu2~24.04.1), libc6 (>= 2.34), libgcc-s1 (>= 3.3), libstdc++6 (>= 4.1.1)
+Package: libuchardet0
+Version: 0.0.8-1build1
+Depends: libc6 (>= 2.14), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 4.1.1)
+Package: libudev1
+Version: 255.4-1ubuntu8.15
+Depends: libc6 (>= 2.38), libcap2 (>= 1:2.10)
+Package: libudfread0
+Version: 1.1.2-1build1
+Depends: libc6 (>= 2.14)
+Package: libudisks2-0
+Version: 2.10.1-6ubuntu1.3
+Depends: libc6 (>= 2.14), libglib2.0-0t64 (>= 2.79.0)
+Package: libunibreak5
+Version: 5.1-2build1
+Depends: libc6 (>= 2.4)
+Package: libunistring5
+Version: 1.1-2build1.1
+Depends: libc6 (>= 2.34)
+Package: libunwind8
+Version: 1.6.2-3build1.1
+Depends: libc6 (>= 2.34), liblzma5 (>= 5.1.1alpha+20110809)
+Package: libupower-glib3
+Version: 1.90.3-1
+Depends: libc6 (>= 2.4), libglib2.0-0t64 (>= 2.66)
+Package: liburcu8t64
+Version: 0.14.0-3.1build1
+Depends: libc6 (>= 2.38)
+Package: liburi-perl
+Version: 5.27-1
+Depends: perl:any
+Package: libusb-1.0-0
+Version: 2:1.0.27-1
+Depends: libc6 (>= 2.38), libudev1 (>= 183)
+Package: libusbmuxd6
+Version: 2.0.2-4build3
+Depends: libc6 (>= 2.38), libplist-2.0-4 (>= 2.3.0)
+Package: libutempter0
+Version: 1.2.1-3build1
+Depends: libc6 (>= 2.34)
+Package: libuuid1
+Version: 2.39.3-9ubuntu6.4
+Depends: libc6 (>= 2.38)
+Package: libuv1t64
+Version: 1.48.0-1.1build1
+Depends: libc6 (>= 2.38)
+Package: libva-drm2
+Version: 2.20.0-2ubuntu0.2
+Depends: libc6 (>= 2.34), libdrm2 (>= 2.4.60), libva2 (>= 2.20.0), libva2 (<< 2.20.0.1)
+Package: libva-x11-2
+Version: 2.20.0-2ubuntu0.2
+Depends: libc6 (>= 2.33), libdrm2 (>= 2.4.60), libva2 (>= 2.20.0), libva2 (<< 2.20.0.1), libx11-6 (>= 2:1.4.99.1), libx11-xcb1 (>= 2:1.8.7), libxcb-dri3-0, libxcb1, libxext6, libxfixes3
+Package: libva2
+Version: 2.20.0-2ubuntu0.2
+Depends: libc6 (>= 2.38)
+Package: libvdpau1
+Version: 1.5-2build1
+Depends: libc6 (>= 2.38), libx11-6 (>= 2:1.4.99.1), libxext6
+Package: libvidstab1.1
+Version: 1.1.0-2build1
+Depends: libc6 (>= 2.29), libgomp1 (>= 4.9)
+Package: libvncclient1
+Version: 0.9.14+dfsg-1ubuntu0.2
+Depends: libc6 (>= 2.33), libgcrypt20 (>= 1.10.0), libgnutls30t64 (>= 3.8.2), libjpeg8 (>= 8c), liblzo2-2 (>= 2.02), libsasl2-2 (>= 2.1.28+dfsg1), zlib1g (>= 1:1.1.4)
+Package: libvncserver1
+Version: 0.9.14+dfsg-1ubuntu0.2
+Depends: libc6 (>= 2.34), libgcrypt20 (>= 1.10.0), libgnutls30t64 (>= 3.8.1), libjpeg8 (>= 8c), liblzo2-2 (>= 2.02), zlib1g (>= 1:1.2.0)
+Package: libvolume-key1
+Version: 0.3.12-7build2
+Depends: libblkid1 (>= 2.16), libc6 (>= 2.14), libcryptsetup12 (>= 2:1.4), libglib2.0-0t64 (>= 2.18.0), libgpgme11t64 (>= 1.4.1), libnspr4 (>= 2:4.9-2~), libnss3 (>= 2:3.13.4-2~), gnupg
+Package: libvorbis0a
+Version: 1.3.7-1build3
+Depends: libc6 (>= 2.29), libogg0 (>= 1.1.0)
+Package: libvorbisenc2
+Version: 1.3.7-1build3
+Depends: libc6 (>= 2.4), libvorbis0a (= 1.3.7-1build3)
+Package: libvorbisfile3
+Version: 1.3.7-1build3
+Depends: libc6 (>= 2.14), libogg0 (>= 1.1.0), libvorbis0a (= 1.3.7-1build3)
+Package: libvpl2
+Version: 2023.3.0-1build1
+Depends: libc6 (>= 2.38), libdrm-intel1 (>= 2.4.1), libdrm2 (>= 2.4.60), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 13.1), libwayland-client0 (>= 1.20.0)
+Package: libvpx9
+Version: 1.14.0-1ubuntu2.3
+Depends: libc6 (>= 2.34)
+Package: libvulkan1
+Version: 1.3.275.0-1build1
+Depends: libc6 (>= 2.38)
+Package: libwayland-client0
+Version: 1.22.0-2.1build1
+Depends: libc6 (>= 2.38), libffi8 (>= 3.4)
+Package: libwayland-cursor0
+Version: 1.22.0-2.1build1
+Depends: libc6 (>= 2.28), libwayland-client0 (>= 1.20.0)
+Package: libwayland-egl1
+Version: 1.22.0-2.1build1
+Depends: libc6 (>= 2.2.5)
+Package: libwebp7
+Version: 1.3.2-0.4build3
+Depends: libc6 (>= 2.34), libsharpyuv0 (>= 1.3.2)
+Package: libwebpdemux2
+Version: 1.3.2-0.4build3
+Depends: libc6 (>= 2.14), libwebp7 (>= 1.3.2)
+Package: libwebpmux3
+Version: 1.3.2-0.4build3
+Depends: libc6 (>= 2.29), libwebp7 (>= 1.3.2)
+Package: libwrap0
+Version: 7.6.q-33
+Depends: libc6 (>= 2.33)
+Package: libwww-perl
+Version: 6.76-1ubuntu0.1
+Depends: perl:any, ca-certificates, libencode-locale-perl, libfile-listing-perl, libhtml-parser-perl, libhtml-tagset-perl, libhtml-tree-perl, libhttp-cookies-perl, libhttp-date-perl, libhttp-message-perl, libhttp-negotiate-perl, liblwp-mediatypes-perl, liblwp-protocol-https-perl, libnet-http-perl, libtry-tiny-perl, liburi-perl, libwww-robotrules-perl, netbase
+Package: libwww-robotrules-perl
+Version: 6.02-1
+Depends: perl, liburi-perl
+Package: libx11-6
+Version: 2:1.8.7-1build1
+Depends: libc6 (>= 2.38), libxcb1 (>= 1.11.1), libx11-data
+Package: libx11-data
+Version: 2:1.8.7-1build1
+Package: libx11-protocol-perl
+Version: 0.56-9
+Depends: perl:any
+Package: libx11-xcb1
+Version: 2:1.8.7-1build1
+Depends: libx11-6 (= 2:1.8.7-1build1)
+Package: libx264-164
+Version: 2:0.164.3108+git31e19f9-1
+Depends: libc6 (>= 2.38)
+Package: libx265-199
+Version: 3.5-2build1
+Depends: libc6 (>= 2.38), libnuma1 (>= 2.0.11), libstdc++6 (>= 4.1.1)
+Package: libxapian30
+Version: 1.4.22-1build1
+Depends: libc6 (>= 2.39), libgcc-s1 (>= 3.4), libstdc++6 (>= 13.1), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4)
+Package: libxau6
+Version: 1:1.0.9-1build6
+Depends: libc6 (>= 2.33)
+Package: libxaw7
+Version: 2:1.0.14-1build2
+Depends: libc6 (>= 2.34), libx11-6, libxext6, libxmu6 (>= 2:1.1.3), libxpm4, libxt6t64
+Package: libxcb-dri3-0
+Version: 1.15-1ubuntu2
+Depends: libc6 (>= 2.4), libxcb1 (>= 1.12)
+Package: libxcb-glx0
+Version: 1.15-1ubuntu2
+Depends: libc6 (>= 2.4), libxcb1
+Package: libxcb-present0
+Version: 1.15-1ubuntu2
+Depends: libc6 (>= 2.4), libxcb1
+Package: libxcb-randr0
+Version: 1.15-1ubuntu2
+Depends: libc6 (>= 2.4), libxcb1 (>= 1.9.2)
+Package: libxcb-render0
+Version: 1.15-1ubuntu2
+Depends: libc6 (>= 2.14), libxcb1 (>= 1.8)
+Package: libxcb-shape0
+Version: 1.15-1ubuntu2
+Depends: libc6 (>= 2.4), libxcb1
+Package: libxcb-shm0
+Version: 1.15-1ubuntu2
+Depends: libc6 (>= 2.4), libxcb1 (>= 1.12)
+Package: libxcb-sync1
+Version: 1.15-1ubuntu2
+Depends: libc6 (>= 2.14), libxcb1
+Package: libxcb-xfixes0
+Version: 1.15-1ubuntu2
+Depends: libc6 (>= 2.4), libxcb1
+Package: libxcb1
+Version: 1.15-1ubuntu2
+Depends: libc6 (>= 2.38), libxau6 (>= 1:1.0.9), libxdmcp6
+Package: libxcomposite1
+Version: 1:0.4.5-1build3
+Depends: libc6 (>= 2.4), libx11-6 (>= 2:1.4.99.1)
+Package: libxcursor1
+Version: 1:1.2.1-1build1
+Depends: libc6 (>= 2.38), libx11-6 (>= 2:1.4.99.1), libxfixes3, libxrender1
+Package: libxdamage1
+Version: 1:1.1.6-1build1
+Depends: libc6 (>= 2.4), libx11-6 (>= 2:1.4.99.1)
+Package: libxdmcp6
+Version: 1:1.1.3-0ubuntu6
+Depends: libbsd0 (>= 0.2.0), libc6 (>= 2.4)
+Package: libxext6
+Version: 2:1.3.4-1build2
+Depends: libc6 (>= 2.14), libx11-6 (>= 2:1.6.0)
+Package: libxfixes3
+Version: 1:6.0.0-2build1
+Depends: libc6 (>= 2.14), libx11-6 (>= 2:1.6.0)
+Package: libxfont2
+Version: 1:2.0.6-1+deb13u1build0.24.04.2
+Depends: libbz2-1.0, libc6 (>= 2.38), libfontenc1 (>= 1:1.1.8), libfreetype6 (>= 2.2.1), zlib1g (>= 1:1.1.4)
+Package: libxft2
+Version: 2.3.6-1build1
+Depends: libc6 (>= 2.14), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.3.5), libx11-6, libxrender1
+Package: libxi6
+Version: 2:1.8.1-1build1
+Depends: libc6 (>= 2.14), libx11-6 (>= 2:1.6.0), libxext6
+Package: libxinerama1
+Version: 2:1.1.4-3build1
+Depends: libc6 (>= 2.4), libx11-6 (>= 2:1.6.0), libxext6
+Package: libxkbcommon0
+Version: 1.6.0-1build1
+Depends: xkb-data, libc6 (>= 2.38)
+Package: libxkbfile1
+Version: 1:1.1.0-1build4
+Depends: libc6 (>= 2.14), libx11-6
+Package: libxml-parser-perl
+Version: 2.47-1ubuntu0.24.04.1
+Depends: perl (>= 5.38.2-3.2ubuntu0.2), perlapi-5.38.2, libc6 (>= 2.14), libexpat1 (>= 2.0.1), liburi-perl, libwww-perl
+Package: libxml-twig-perl
+Version: 1:3.52-2
+Depends: perl:any, libxml-parser-perl
+Package: libxml-xpathengine-perl
+Version: 0.14-2
+Depends: perl:any
+Package: libxml2
+Version: 2.9.14+dfsg-1.3ubuntu3.7
+Depends: libc6 (>= 2.38), libicu74 (>= 74.1-1~), liblzma5 (>= 5.1.1alpha+20120614), zlib1g (>= 1:1.2.3.3)
+Package: libxmlb2
+Version: 0.3.18-1
+Depends: libc6 (>= 2.14), libglib2.0-0t64 (>= 2.54.0), liblzma5 (>= 5.1.1alpha+20120614), libzstd1 (>= 1.5.5)
+Package: libxmlsec1t64
+Version: 1.2.39-5build2
+Depends: libc6 (>= 2.14), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25)
+Package: libxmlsec1t64-openssl
+Version: 1.2.39-5build2
+Depends: libc6 (>= 2.14), libssl3 (>= 3.0.0), libxml2 (>= 2.7.4), libxmlsec1t64 (>= 1.2.35)
+Package: libxmu6
+Version: 2:1.1.3-3build2
+Depends: libc6 (>= 2.14), libx11-6, libxext6, libxt6
+Package: libxmuu1
+Version: 2:1.1.3-3build2
+Depends: libc6 (>= 2.4), libx11-6
+Package: libxpm4
+Version: 1:3.5.17-1build2
+Depends: libc6 (>= 2.38), libx11-6
+Package: libxrandr2
+Version: 2:1.5.2-2build1
+Depends: libc6 (>= 2.14), libx11-6 (>= 2:1.6.0), libxext6, libxrender1
+Package: libxrender1
+Version: 1:0.9.10-1.1build1
+Depends: libc6 (>= 2.14), libx11-6 (>= 2:1.6.0)
+Package: libxshmfence1
+Version: 1.3-1build5
+Depends: libc6 (>= 2.27)
+Package: libxslt1.1
+Version: 1.1.39-0exp1ubuntu0.24.04.3
+Depends: libc6 (>= 2.38), libgcrypt20 (>= 1.10.0), libxml2 (>= 2.9.0)
+Package: libxss1
+Version: 1:1.2.3-1build3
+Depends: libc6 (>= 2.4), libx11-6 (>= 2:1.4.99.1), libxext6, x11-common
+Package: libxt6t64
+Version: 1:1.2.1-1.2build1
+Depends: libc6 (>= 2.33), libice6 (>= 1:1.0.0), libsm6, libx11-6
+Package: libxtables12
+Version: 1.8.10-3ubuntu2
+Depends: libc6 (>= 2.34)
+Package: libxtst6
+Version: 2:1.2.3-1.1build1
+Depends: libc6 (>= 2.4), libx11-6 (>= 2:1.6.0), libxext6, x11-common
+Package: libxv1
+Version: 2:1.0.11-1.1build1
+Depends: libc6 (>= 2.14), libx11-6 (>= 2:1.6.0), libxext6
+Package: libxvidcore4
+Version: 2:1.3.7-1build1
+Depends: libc6 (>= 2.34)
+Package: libxxf86dga1
+Version: 2:1.1.5-1build1
+Depends: libc6 (>= 2.34), libx11-6 (>= 2:1.6.0), libxext6
+Package: libxxf86vm1
+Version: 1:1.1.4-1build4
+Depends: libc6 (>= 2.4), libx11-6 (>= 2:1.6.0), libxext6
+Package: libxxhash0
+Version: 0.8.2-2build1
+Depends: libc6 (>= 2.14)
+Package: libyaml-0-2
+Version: 0.2.5-1build1
+Depends: libc6 (>= 2.14)
+Package: libzimg2
+Version: 3.0.5+ds1-1build1
+Depends: libc6 (>= 2.32), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 11)
+Package: libzix-0-0
+Version: 0.4.2-2build1
+Depends: libc6 (>= 2.34)
+Package: libzmq5
+Version: 4.3.5-1build2
+Depends: libbsd0 (>= 0.0), libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libgssapi-krb5-2 (>= 1.17), libnorm1t64 (>= 1.5r6), libpgm-5.3-0 (>= 5.1.116~dfsg), libsodium23 (>= 1.0.3), libstdc++6 (>= 12)
+Package: libzstd1
+Version: 1.5.5+dfsg2-2build1.1
+Depends: libc6 (>= 2.34)
+Package: libzvbi-common
+Version: 0.2.42-2
+Package: libzvbi0t64
+Version: 0.2.42-2
+Depends: libc6 (>= 2.38), libpng16-16t64 (>= 1.6.2), libzvbi-common (= 0.2.42-2)
+Package: linux-base
+Version: 4.5ubuntu9+24.04.1
+Depends: debconf (>= 0.5) | debconf-2.0
+Package: linux-firmware
+Version: 20240318.git3b128b60-0ubuntu2.25
+Package: linux-generic
+Version: 6.8.0-124.124
+Depends: linux-image-generic (= 6.8.0-124.124), linux-headers-generic (= 6.8.0-124.124)
+Package: linux-headers-6.8.0-124
+Version: 6.8.0-124.124
+Depends: coreutils
+Package: linux-headers-6.8.0-124-generic
+Version: 6.8.0-124.124
+Depends: linux-headers-6.8.0-124, libc6 (>= 2.38), libelf1t64 (>= 0.144), libgcc-s1 (>= 4.2), libssl3t64 (>= 3.0.0), zlib1g (>= 1:1.2.3.3)
+Package: linux-headers-generic
+Version: 6.8.0-124.124
+Depends: linux-headers-6.8.0-124-generic
+Package: linux-image-6.8.0-124-generic
+Version: 6.8.0-124.124
+Depends: kmod, linux-base (>= 4.5ubuntu1~16.04.1), linux-modules-6.8.0-124-generic
+Package: linux-image-generic
+Version: 6.8.0-124.124
+Depends: linux-image-6.8.0-124-generic, linux-modules-extra-6.8.0-124-generic, linux-firmware, intel-microcode, amd64-microcode
+Package: linux-libc-dev
+Version: 6.8.0-124.124
+Package: linux-modules-6.8.0-124-generic
+Version: 6.8.0-124.124
+Package: linux-modules-extra-6.8.0-124-generic
+Version: 6.8.0-124.124
+Depends: linux-modules-6.8.0-124-generic, wireless-regdb
+Package: linux-tools-6.8.0-124
+Version: 6.8.0-124.124
+Depends: libc6 (>= 2.38), libcap2 (>= 1:2.10), libdw1t64 (>= 0.161), libelf1t64 (>= 0.144), liblzma5 (>= 5.1.1alpha+20120614), libnuma1 (>= 2.0.11), libpci3 (>= 1:3.8.0), libpython3.12t64 (>= 3.12.1), libslang2 (>= 2.2.4), libssl3t64 (>= 3.0.0), libstdc++6 (>= 4.1.1), libtraceevent1 (>= 1:1.3.0), libudev1 (>= 183), libunwind8, libzstd1 (>= 1.5.5), zlib1g (>= 1:1.2.3.3), linux-tools-common
+Package: linux-tools-6.8.0-124-generic
+Version: 6.8.0-124.124
+Depends: linux-tools-6.8.0-124
+Package: linux-tools-common
+Version: 6.8.0-124.124
+Depends: lsb-release, hwdata
+Package: locales
+Version: 2.39-0ubuntu8.7
+Depends: libc-bin (>> 2.39), debconf (>= 0.5) | debconf-2.0
+Package: login
+Version: 1:4.13+dfsg1-4ubuntu3.2
+Package: logrotate
+Version: 3.21.0-2build1
+Depends: cron | anacron | cron-daemon | systemd-sysv, libacl1 (>= 2.2.23), libc6 (>= 2.38), libpopt0 (>= 1.14), libselinux1 (>= 3.1~)
+Package: logsave
+Version: 1.47.0-2.4~exp1ubuntu4.1
+Depends: libc6 (>= 2.34)
+Package: lrzsz
+Version: 0.12.21-11build1
+Depends: libc6 (>= 2.34)
+Package: lsb-base
+Version: 11.6
+Depends: sysvinit-utils (>= 3.05-4~)
+Package: lsb-release
+Version: 12.0-2
+Package: lshw
+Version: 02.19.git.2021.06.19.996aaad9c7-2build3
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.0), libstdc++6 (>= 13.1)
+Package: lsof
+Version: 4.95.0-1build3
+Depends: libc6 (>= 2.34), libselinux1 (>= 3.1~), libtirpc3t64 (>= 1.0.2)
+Package: lto-disabled-list
+Version: 47
+Package: lvm2
+Version: 2.03.16-3ubuntu3.2
+Depends: libaio1t64 (>= 0.3.93), libblkid1 (>= 2.24.2), libc6 (>= 2.38), libdevmapper-event1.02.1 (>= 2:1.02.74), libedit2 (>= 2.11-20080614-0), libselinux1 (>= 3.1~), libsystemd0 (>= 233), libudev1 (>= 183), dmsetup (>= 2:1.02.185-3ubuntu3.2~), dmeventd (>= 2:1.02.185-3ubuntu3.2~)
+Package: lxd-agent-loader
+Version: 0.7ubuntu0.1
+Package: lxd-installer
+Version: 4ubuntu0.1
+Package: make
+Version: 4.3-4.1build2
+Depends: libc6 (>= 2.38)
+Package: makedumpfile
+Version: 1:1.7.5-1
+Depends: perl:any, libc6 (>= 2.34), libdw1t64 (>= 0.143), libelf1t64 (>= 0.142), liblzo2-2 (>= 2.02), zlib1g (>= 1:1.2.0)
+Package: man-db
+Version: 2.12.0-4build2
+Depends: bsdextrautils | bsdmainutils (<< 12.1.1~), groff-base, debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.38), libgdbm6t64 (>= 1.16), libpipeline1 (>= 1.5.0), libseccomp2 (>= 2.1.0), zlib1g (>= 1:1.1.4)
+Package: manpages
+Version: 6.7-2
+Package: manpages-dev
+Version: 6.7-2
+Depends: manpages
+Package: mawk
+Version: 1.3.4.20240123-1build1
+Depends: libc6 (>= 2.38)
+Package: mdadm
+Version: 4.3-1ubuntu2.1
+Depends: udev, debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.38), libudev1 (>= 183)
+Package: media-types
+Version: 10.1.0
+Package: mesa-libgallium
+Version: 25.2.8-0ubuntu0.24.04.2
+Depends: libc6 (>= 2.38), libdrm-amdgpu1 (>= 2.4.125-1), libdrm-intel1 (>= 2.4.125-1), libdrm2 (>= 2.4.125-1), libelf1t64 (>= 0.142), libexpat1 (>= 2.0.1), libgcc-s1 (>= 3.4), libllvm20, libsensors5 (>= 1:3.5.0), libstdc++6 (>= 11), libx11-xcb1 (>= 2:1.8.7), libxcb-dri3-0 (>= 1.13), libxcb-present0, libxcb-randr0, libxcb-sync1, libxcb-xfixes0, libxcb1 (>= 1.9.2), libxshmfence1, libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Package: mesa-va-drivers
+Version: 25.2.8-0ubuntu0.24.04.2
+Depends: mesa-libgallium (= 25.2.8-0ubuntu0.24.04.2)
+Package: mesa-vdpau-drivers
+Version: 25.2.8-0ubuntu0.24.04.2
+Depends: libvdpau1
+Package: mesa-vulkan-drivers
+Version: 25.2.8-0ubuntu0.24.04.2
+Depends: libvulkan1, libc6 (>= 2.38), libdrm-amdgpu1 (>= 2.4.125-1), libdrm2 (>= 2.4.125-1), libelf1t64 (>= 0.142), libexpat1 (>= 2.0.1), libgcc-s1 (>= 4.2), libllvm20, libstdc++6 (>= 13.1), libwayland-client0 (>= 1.20.0), libx11-xcb1 (>= 2:1.8.7), libxcb-dri3-0 (>= 1.13), libxcb-present0, libxcb-randr0 (>= 1.13), libxcb-shm0, libxcb-sync1, libxcb-xfixes0, libxcb1 (>= 1.9.2), libxshmfence1, libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Package: modemmanager
+Version: 1.23.4-0ubuntu2
+Depends: libc6 (>= 2.38), libglib2.0-0t64 (>= 2.56.0), libgudev-1.0-0 (>= 212), libmbim-glib4 (>= 1.30.0), libmbim-proxy, libmm-glib0 (>= 1.23.4), libpolkit-gobject-1-0 (>= 0.99), libqmi-glib5 (>= 1.34.0), libqmi-proxy, libqrtr-glib0 (>= 1.0.0), libsystemd0 (>= 209), polkitd
+Package: motd-news-config
+Version: 13ubuntu10.4
+Package: mount
+Version: 2.39.3-9ubuntu6.4
+Package: mtr-tiny
+Version: 0.95-1.1ubuntu0.1
+Depends: libc6 (>= 2.38), libjansson4 (>= 2.14), libncurses6 (>= 6), libtinfo6 (>= 6)
+Package: multipath-tools
+Version: 0.9.4-5ubuntu8.1
+Depends: kpartx (>= 0.9.4-5ubuntu8.1), lsb-base, sg3-utils-udev, udev, libaio1t64 (>= 0.3.93), libc6 (>= 2.38), libdevmapper1.02.1 (>= 2:1.02.110), libedit2 (>= 2.11-20080614-0), libsystemd0, libudev1 (>= 183), liburcu8t64 (>= 0.13.0)
+Package: nano
+Version: 7.2-2ubuntu0.2
+Depends: libc6 (>= 2.38), libncursesw6 (>= 6), libtinfo6 (>= 6)
+Package: ncurses-base
+Version: 6.4+20240113-1ubuntu2
+Package: ncurses-bin
+Version: 6.4+20240113-1ubuntu2
+Package: ncurses-term
+Version: 6.4+20240113-1ubuntu2
+Depends: ncurses-base (= 6.4+20240113-1ubuntu2)
+Package: needrestart
+Version: 3.6-7ubuntu4.5
+Depends: perl:any, dpkg (>= 1.16.0), gettext-base, libintl-perl, libproc-processtable-perl, libsort-naturally-perl, libmodule-scandeps-perl, libterm-readkey-perl, libmodule-find-perl, xz-utils
+Package: net-tools
+Version: 2.10-0.1ubuntu4.4
+Depends: libc6 (>= 2.38), libselinux1 (>= 3.1~)
+Package: netbase
+Version: 6.4
+Package: netcat-openbsd
+Version: 1.226-1ubuntu2
+Depends: libbsd0 (>= 0.2.0), libc6 (>= 2.38)
+Package: netplan-generator
+Version: 1.1.2-8ubuntu1~24.04.1
+Depends: libc6 (>= 2.34), libglib2.0-0t64 (>= 2.70.0), libnetplan1 (= 1.1.2-8ubuntu1~24.04.1), systemd (>= 248~)
+Package: netplan.io
+Version: 1.1.2-8ubuntu1~24.04.1
+Depends: python3:any, libc6 (>= 2.34), libglib2.0-0t64 (>= 2.70.0), libnetplan1 (= 1.1.2-8ubuntu1~24.04.1), libsystemd0 (>= 243), ethtool, iproute2, netplan-generator, python3-netplan, python3-yaml, systemd (>= 248~), udev
+Package: networkd-dispatcher
+Version: 2.2.4-1
+Depends: dbus, gir1.2-glib-2.0, python3-dbus, python3-gi, python3:any
+Package: nftables
+Version: 1.0.9-1build1
+Depends: libnftables1 (= 1.0.9-1build1), libc6 (>= 2.34), libedit2 (>= 3.1-20130611-0)
+Package: node-acorn
+Version: 8.8.1+ds+~cs25.17.7-2
+Depends: node-xtend, nodejs:any | nodejs (<< 12.22.5~dfsg-4~)
+Package: node-busboy
+Version: 1.6.0+~cs2.6.0-2
+Package: node-cjs-module-lexer
+Version: 1.2.3+dfsg-1
+Package: node-undici
+Version: 5.26.3+dfsg1+~cs23.10.12-2
+Depends: node-busboy
+Package: node-xtend
+Version: 4.0.2-3
+Package: nodejs
+Version: 18.19.1+dfsg-6ubuntu5
+Depends: libc6 (>= 2.34), libnode109 (= 18.19.1+dfsg-6ubuntu5)
+Package: nodejs-doc
+Version: 18.19.1+dfsg-6ubuntu5
+Package: novnc
+Version: 1:1.3.0-2
+Depends: adduser, nodejs, net-tools, python3-novnc, python3-numpy, websockify
+Package: ntfs-3g
+Version: 1:2022.10.3-1.2ubuntu3
+Depends: libc6 (>= 2.38), libgcrypt20 (>= 1.10.3), libgnutls30t64 (>= 3.7.2), libntfs-3g89t64 (= 1:2022.10.3-1.2ubuntu3)
+Package: numactl
+Version: 2.0.18-1ubuntu0.24.04.1
+Depends: libc6 (>= 2.38), libnuma1 (>= 2.0.15)
+Package: ocl-icd-libopencl1
+Version: 2.3.2-1build1
+Depends: libc6 (>= 2.34)
+Package: open-iscsi
+Version: 2.1.9-3ubuntu5.4
+Depends: libopeniscsiusr (>= 2.1.9), udev, debconf (>= 0.5) | debconf-2.0, init-system-helpers (>= 1.51), libc6 (>= 2.38), libisns0t64, libkmod2 (>= 5~), libmount1 (>= 2.24.2), libssl3t64 (>= 3.0.0), libsystemd0
+Package: open-vm-tools
+Version: 2:12.5.0-1~ubuntu0.24.04.2
+Depends: libc6 (>= 2.38), libdrm2 (>= 2.4.3), libfuse3-3 (>= 3.2.3), libgcc-s1 (>= 3.3), libglib2.0-0t64 (>= 2.32.0), libmspack0t64 (>= 0.4), libssl3t64 (>= 3.0.0), libtirpc3t64 (>= 1.0.2), libudev1 (>= 183), libxml2 (>= 2.7.4), libxmlsec1t64 (>= 1.2.31), libxmlsec1t64-openssl (>= 1.2.31), pciutils, iproute2, lsb-release
+Package: openssh-client
+Version: 1:9.6p1-3ubuntu13.16
+Depends: adduser, passwd, libc6 (>= 2.38), libedit2 (>= 2.11-20080614-0), libfido2-1 (>= 1.8.0), libgssapi-krb5-2 (>= 1.17), libselinux1 (>= 3.1~), libssl3t64 (>= 3.0.13), zlib1g (>= 1:1.1.4)
+Package: openssh-server
+Version: 1:9.6p1-3ubuntu13.16
+Depends: adduser, libpam-modules, libpam-runtime, lsb-base, openssh-client (= 1:9.6p1-3ubuntu13.16), openssh-sftp-server, procps, ucf, debconf (>= 0.5) | debconf-2.0, libaudit1 (>= 1:2.2.1), libc6 (>= 2.38), libcom-err2 (>= 1.43.9), libcrypt1 (>= 1:4.1.0), libgssapi-krb5-2 (>= 1.17), libkrb5-3 (>= 1.13~alpha1+dfsg), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), libssl3t64 (>= 3.0.13), libwrap0 (>= 7.6-4~), zlib1g (>= 1:1.1.4)
+Package: openssh-sftp-server
+Version: 1:9.6p1-3ubuntu13.16
+Depends: openssh-client (= 1:9.6p1-3ubuntu13.16), libc6 (>= 2.38)
+Package: openssl
+Version: 3.0.13-0ubuntu3.9
+Depends: libc6 (>= 2.34), libssl3t64 (>= 3.0.9)
+Package: os-prober
+Version: 1.81ubuntu4
+Depends: grub-common, mount
+Package: overlayroot
+Version: 0.49~24.04.1
+Depends: cryptsetup, cryptsetup-bin, initramfs-tools
+Package: packagekit
+Version: 1.2.8-2ubuntu1.4
+Depends: libglib2.0-bin, polkitd, init-system-helpers (>= 1.52), libappstream5 (>= 1.0.0), libapt-pkg6.0t64 (>= 1.9.2), libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libglib2.0-0t64 (>= 2.79.0), libgstreamer1.0-0 (>= 1.0.0), libpackagekit-glib2-18 (>= 1.2.4), libpolkit-gobject-1-0 (>= 0.99), libsqlite3-0 (>= 3.5.9), libstdc++6 (>= 13.1), libsystemd0 (>= 214)
+Package: packagekit-tools
+Version: 1.2.8-2ubuntu1.4
+Depends: packagekit (= 1.2.8-2ubuntu1.4), libc6 (>= 2.34), libglib2.0-0t64 (>= 2.54), libpackagekit-glib2-18 (>= 1.2.5)
+Package: parted
+Version: 3.6-4build1
+Depends: libc6 (>= 2.38), libparted2t64 (= 3.6-4build1), libreadline8t64 (>= 6.0), libtinfo6 (>= 6), libuuid1 (>= 2.16)
+Package: passwd
+Version: 1:4.13+dfsg1-4ubuntu3.2
+Depends: libaudit1 (>= 1:2.2.1), libc6 (>= 2.38), libcrypt1 (>= 1:4.1.0), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), libsemanage2 (>= 2.0.32), libpam-modules
+Package: pastebinit
+Version: 1.6.2-1
+Depends: python3, python3-distro
+Package: patch
+Version: 2.7.6-7build3
+Depends: libc6 (>= 2.38)
+Package: pci.ids
+Version: 0.0~2024.03.31-1ubuntu0.1
+Package: pciutils
+Version: 1:3.10.0-2build1
+Depends: libc6 (>= 2.34), libkmod2 (>= 5~), libpci3 (= 1:3.10.0-2build1)
+Package: perl
+Version: 5.38.2-3.2ubuntu0.6
+Depends: perl-base (= 5.38.2-3.2ubuntu0.6), perl-modules-5.38 (>= 5.38.2-3.2ubuntu0.6), libperl5.38t64 (= 5.38.2-3.2ubuntu0.6)
+Package: perl-base
+Version: 5.38.2-3.2ubuntu0.6
+Package: perl-modules-5.38
+Version: 5.38.2-3.2ubuntu0.6
+Depends: perl-base (>= 5.38.2-1)
+Package: perl-openssl-defaults
+Version: 7build3
+Depends: libc6 (>= 2.34), libssl3t64 (>= 3.0.0)
+Package: pigz
+Version: 2.8-1
+Depends: libc6 (>= 2.34), zlib1g (>= 1:1.2.6)
+Package: pinentry-curses
+Version: 1.2.1-3ubuntu5
+Depends: libassuan0 (>= 2.1.0), libc6 (>= 2.38), libgpg-error0 (>= 1.16), libncursesw6 (>= 6), libtinfo6 (>= 6)
+Package: plymouth
+Version: 24.004.60-1ubuntu7.1
+Depends: init-system-helpers (>= 1.18), sysvinit-utils (>= 3.05-4), systemd (>= 232-8~) | elogind, udev (>= 232-8~), libc6 (>= 2.38), libdrm2 (>= 2.4.47), libplymouth5 (>= 23.360.11)
+Package: plymouth-theme-ubuntu-text
+Version: 24.004.60-1ubuntu7.1
+Depends: libc6 (>= 2.38), libplymouth5 (>= 0.9.2), plymouth (= 24.004.60-1ubuntu7.1), lsb-release
+Package: pocketsphinx-en-us
+Version: 0.8.0+real5prealpha+1-15ubuntu5
+Package: policycoreutils
+Version: 3.5-2
+Depends: selinux-utils, libaudit1 (>= 1:2.2.1), libc6 (>= 2.38), libselinux1 (>= 3.5), libsemanage2 (>= 3.5), libsepol2 (>= 3.5)
+Package: polkitd
+Version: 124-2ubuntu1.24.04.3
+Depends: adduser | systemd-sysusers, default-dbus-system-bus | dbus-system-bus, default-logind | logind, xml-core (>= 0.14), libc6 (>= 2.38), libduktape207 (>= 2.0.3), libexpat1 (>= 2.0.1), libglib2.0-0t64 (>= 2.79.0), libpam0g (>= 0.99.7.1), libpolkit-agent-1-0 (= 124-2ubuntu1.24.04.3), libpolkit-gobject-1-0 (= 124-2ubuntu1.24.04.3), libsystemd0 (>= 253)
+Package: pollinate
+Version: 4.33-3.1ubuntu1.1
+Depends: curl, adduser, xxd | vim-common
+Package: powermgmt-base
+Version: 1.37ubuntu0.1
+Package: procps
+Version: 2:4.0.4-4ubuntu3.2
+Depends: libc6 (>= 2.38), libncursesw6 (>= 6), libproc2-0 (>= 2:4.0.4), libsystemd0 (>= 254), libtinfo6 (>= 6), init-system-helpers (>= 1.29~)
+Package: psmisc
+Version: 23.7-1build1
+Depends: libc6 (>= 2.38), libtinfo6 (>= 6)
+Package: publicsuffix
+Version: 20231001.0357-0.1
+Package: python-apt-common
+Version: 2.7.7ubuntu5.2
+Package: python-babel-localedata
+Version: 2.10.3-3build1
+Package: python3
+Version: 3.12.3-0ubuntu2.1
+Depends: python3.12 (>= 3.12.3-0~), libpython3-stdlib (= 3.12.3-0ubuntu2.1)
+Package: python3-apport
+Version: 2.28.1-0ubuntu3.8
+Depends: python3-apt (>= 0.7.9), python3-httplib2, python3-launchpadlib, python3-problem-report (>= 2.28), python3-requests, python3-yaml, python3:any
+Package: python3-apt
+Version: 2.7.7ubuntu5.2
+Depends: python3 (<< 3.13), python3 (>= 3.12~), python3:any, libapt-pkg6.0t64 (>= 2.7.11), libc6 (>= 2.33), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 13.1), python-apt-common, distro-info-data
+Package: python3-attr
+Version: 23.2.0-2
+Depends: python3-importlib-metadata | python3-supported-min (>= 3.8), python3:any
+Package: python3-automat
+Version: 22.10.0-2
+Depends: python3-attr, python3:any
+Package: python3-babel
+Version: 2.10.3-3build1
+Depends: python-babel-localedata (= 2.10.3-3build1), python3-pkg-resources, python3-tz, python3:any
+Package: python3-bcrypt
+Version: 3.2.2-1build1
+Depends: python3 (>= 3~), python3-cffi-backend-api-min (<= 9729), python3-cffi-backend-api-max (>= 9729), python3:any, libc6 (>= 2.14)
+Package: python3-blinker
+Version: 1.7.0-1
+Depends: python3:any
+Package: python3-boto3
+Version: 1.34.46+dfsg-1ubuntu1
+Depends: python3-botocore (>= 1.31.49), python3-requests, python3-s3transfer (>= 0.1.10), python3-jmespath, python3:any
+Package: python3-botocore
+Version: 1.34.46+repack-1ubuntu1
+Depends: python3-dateutil, python3-jmespath, python3-urllib3 | python3-supported-max (<< 3.10), python3-urllib3 | python3-supported-min (>= 3.10), python3:any, python3-requests, python3-six
+Package: python3-bpfcc
+Version: 0.29.1+ds-1ubuntu7
+Depends: libbpfcc (>= 0.29.1+ds-1ubuntu7), python3:any
+Package: python3-certifi
+Version: 2023.11.17-1
+Depends: ca-certificates, python3:any
+Package: python3-cffi-backend
+Version: 1.16.0-2build1
+Depends: python3 (<< 3.13), python3 (>= 3.12~), libc6 (>= 2.38), libffi8 (>= 3.4)
+Package: python3-chardet
+Version: 5.2.0+dfsg-1
+Depends: python3:any, python3-pkg-resources
+Package: python3-click
+Version: 8.1.6-2
+Depends: python3-colorama, python3-importlib-metadata | python3-supported-min (>= 3.8), python3:any
+Package: python3-colorama
+Version: 0.4.6-4
+Depends: python3:any
+Package: python3-commandnotfound
+Version: 23.04.0
+Depends: lsb-release, python3-apt, python3-gdbm, python3:any
+Package: python3-configobj
+Version: 5.0.8-3
+Depends: python3:any
+Package: python3-constantly
+Version: 23.10.4-1
+Depends: python3:any
+Package: python3-cryptography
+Version: 41.0.7-4ubuntu0.4
+Depends: python3 (>= 3~), python3-cffi-backend-api-min (<= 9729), python3-cffi-backend-api-max (>= 9729), python3:any, libc6 (>= 2.34), libgcc-s1 (>= 4.2), libssl3t64 (>= 3.0.0)
+Package: python3-dateutil
+Version: 2.8.2-3ubuntu1
+Depends: python3-six (>= 1.5), python3:any, tzdata
+Package: python3-dbus
+Version: 1.3.2-5build3
+Depends: python3 (<< 3.13), python3 (>= 3.12~), python3:any, libc6 (>= 2.4), libdbus-1-3 (>= 1.9.14), libglib2.0-0t64 (>= 2.16.0)
+Package: python3-debconf
+Version: 1.5.86ubuntu1
+Depends: debconf (= 1.5.86ubuntu1), python3:any
+Package: python3-debian
+Version: 0.1.49ubuntu2
+Depends: python3-chardet, zstd, python3:any
+Package: python3-debtcollector
+Version: 2.5.0-3
+Depends: python3-pbr, python3-wrapt, python3-importlib-metadata | python3-supported-min (>= 3.8), python3:any
+Package: python3-deprecated
+Version: 1.2.14-1
+Depends: python3-wrapt, python3:any
+Package: python3-dev
+Version: 3.12.3-0ubuntu2.1
+Depends: python3 (= 3.12.3-0ubuntu2.1), libpython3-dev (= 3.12.3-0ubuntu2.1), python3.12-dev (>= 3.12.3-0~), libjs-sphinxdoc (>= 7.2.2)
+Package: python3-distro
+Version: 1.9.0-1
+Depends: lsb-release, python3:any
+Package: python3-distro-info
+Version: 1.7build1
+Depends: distro-info-data (>= 0.46), python3:any
+Package: python3-distupgrade
+Version: 1:24.04.28
+Depends: python3:any, python3-update-manager (>= 1:19.04.2~), python3-apt (>= 0.8.5~), python3-dbus, python3-distro-info, gpgv, lsb-release, sensible-utils, procps
+Package: python3-dnspython
+Version: 2.6.1-1ubuntu1
+Depends: netbase, python3:any
+Package: python3-docutils
+Version: 0.20.1+dfsg-3
+Depends: docutils-common (= 0.20.1+dfsg-3), python3-roman, python3:any
+Package: python3-eventlet
+Version: 0.35.2-0ubuntu1.1
+Depends: netbase, python3-greenlet, python3-dnspython, python3-monotonic (>= 1.4) | python3-supported-min (>= 3.5), python3:any
+Package: python3-gdbm
+Version: 3.12.3-0ubuntu1
+Depends: python3 (>= 3.12.2-0~), python3 (<< 3.13), libc6 (>= 2.4), libgdbm6t64 (>= 1.16)
+Package: python3-gi
+Version: 3.48.2-1
+Depends: gir1.2-glib-2.0 (>= 1.64.0), gir1.2-girepository-2.0, python3 (<< 3.13), python3 (>= 3.12~), python3:any, libc6 (>= 2.14), libffi8 (>= 3.4), libgirepository-1.0-1 (>= 1.71.0), libgirepository-1.0-1-with-libffi8 (>= 1.64.0~), libglib2.0-0t64 (>= 2.77.0)
+Package: python3-greenlet
+Version: 3.0.3-0ubuntu5.1
+Depends: python3 (<< 3.13), python3 (>= 3.12~), python3:any, libc6 (>= 2.14), libgcc-s1 (>= 3.3.1), libstdc++6 (>= 5.2)
+Package: python3-hamcrest
+Version: 2.1.0-1
+Depends: python3:any
+Package: python3-httplib2
+Version: 0.20.4-3
+Depends: ca-certificates, python3-pyparsing, python3:any
+Package: python3-hyperlink
+Version: 21.0.0-5
+Depends: python3-idna, python3:any
+Package: python3-idna
+Version: 3.6-2ubuntu0.1
+Depends: python3:any
+Package: python3-importlib-metadata
+Version: 4.12.0-1
+Depends: python3-typing-extensions | python3 (>> 3.8), python3-zipp (>= 0.5), python3:any
+Package: python3-incremental
+Version: 22.10.0-1
+Depends: python3:any
+Package: python3-iso8601
+Version: 1.0.2-1
+Depends: python3:any
+Package: python3-jinja2
+Version: 3.1.2-1ubuntu1.3
+Depends: python3-markupsafe (>= 2.0), python3:any
+Package: python3-jmespath
+Version: 1.0.1-1
+Depends: python3:any
+Package: python3-jwcrypto
+Version: 1.5.4-1
+Depends: python3-cryptography (>= 3.4), python3-typing-extensions, python3:any, python3-deprecated
+Package: python3-jwt
+Version: 2.7.0-1ubuntu0.1
+Depends: python3-typing-extensions | python3-supported-min (>> 3.7), python3:any
+Package: python3-launchpadlib
+Version: 1.11.0-6
+Depends: python3-httplib2, python3-lazr.restfulclient, python3-lazr.uri, python3-six, init-system-helpers (>= 1.52), python3:any
+Package: python3-lazr.restfulclient
+Version: 0.14.6-1
+Depends: python3-httplib2 (>= 0.7.7), python3-lazr.uri, python3-wadllib (>= 1.1.4), python3-distro, python3-importlib-metadata | python3-supported-min (>= 3.8), python3-oauthlib, python3-pkg-resources, python3:any
+Package: python3-lazr.uri
+Version: 1.0.6-3
+Depends: python3-importlib-metadata | python3 (>> 3.8), python3-pkg-resources, python3:any
+Package: python3-magic
+Version: 2:0.4.27-3
+Depends: python3:any, libmagic1t64
+Package: python3-markdown-it
+Version: 3.0.0-2
+Depends: python3-mdurl, python3:any
+Package: python3-markupsafe
+Version: 2.1.5-1build2
+Depends: python3 (<< 3.13), python3 (>= 3.12~), python3:any, libc6 (>= 2.14)
+Package: python3-mdurl
+Version: 0.1.2-1
+Depends: python3:any
+Package: python3-minimal
+Version: 3.12.3-0ubuntu2.1
+Depends: dpkg (>= 1.13.20)
+Package: python3-monotonic
+Version: 1.6-2
+Depends: python3:any
+Package: python3-more-itertools
+Version: 10.2.0-1
+Depends: python3:any
+Package: python3-msgpack
+Version: 1.0.3-3build2
+Depends: python3 (<< 3.13), python3 (>= 3.12~), python3:any, libc6 (>= 2.14)
+Package: python3-netaddr
+Version: 0.8.0-2ubuntu1
+Depends: ieee-data, python3-importlib-resources | python3-supported-min (>= 3.7), python3:any
+Package: python3-netifaces
+Version: 0.11.0-2build3
+Depends: python3 (<< 3.13), python3 (>= 3.12~), libc6 (>= 2.4)
+Package: python3-netplan
+Version: 1.1.2-8ubuntu1~24.04.1
+Depends: python3 (>= 3~), python3:any, libc6 (>= 2.4), libnetplan1 (= 1.1.2-8ubuntu1~24.04.1), python3-cffi-backend
+Package: python3-newt
+Version: 0.52.24-2ubuntu2
+Depends: libnewt0.52 (= 0.52.24-2ubuntu2), python3 (<< 3.13), python3 (>= 3.12~), python3:any, libc6 (>= 2.4)
+Package: python3-novnc
+Version: 1:1.3.0-2
+Depends: python3-oslo.config, python3-pil, python3:any
+Package: python3-numpy
+Version: 1:1.26.4+ds-6ubuntu1
+Depends: python3 (<< 3.13), python3 (>= 3.12~), python3:any, libblas3 | libblas.so.3, libc6 (>= 2.38), libgcc-s1 (>= 3.4), liblapack3 | liblapack.so.3, python3-pkg-resources
+Package: python3-oauthlib
+Version: 3.2.2-1
+Depends: python3:any, python3-blinker, python3-cryptography, python3-jwt
+Package: python3-olefile
+Version: 0.46-3
+Depends: python3:any
+Package: python3-openssl
+Version: 23.2.0-1ubuntu0.1
+Depends: python3-cryptography (>= 38), python3:any
+Package: python3-oslo.config
+Version: 1:9.4.0-0ubuntu1
+Depends: python3-debtcollector (>= 1.2.0), python3-docutils, python3-importlib-metadata (>= 1.7.0), python3-netaddr (>= 0.7.18), python3-oslo.i18n (>= 3.15.3), python3-oslo.log (>= 3.36.0), python3-pbr (>= 2.0.0), python3-requests (>= 2.18.0), python3-rfc3986 (>= 1.2.0), python3-six (>= 1.10.0), python3-stevedore (>= 1:1.20.0), python3-yaml (>= 5.1), python3:any
+Package: python3-oslo.context
+Version: 1:5.5.0-0ubuntu1
+Depends: python3-debtcollector (>= 1.2.0), python3-pbr (>= 2.0.0), python3:any
+Package: python3-oslo.i18n
+Version: 6.3.0-0ubuntu1
+Depends: python3-babel (>= 2.3.4), python3-pbr (>= 2.0.0), python3-six (>= 1.10.0), python3:any
+Package: python3-oslo.log
+Version: 5.5.1-0ubuntu1
+Depends: python3-dateutil (>= 2.7.0), python3-debtcollector (>= 1.19.0), python3-eventlet (>= 0.30.1), python3-monotonic (>= 1.4), python3-oslo.config (>= 1:5.2.0), python3-oslo.context (>= 1:2.21.0), python3-oslo.i18n (>= 3.20.0), python3-oslo.serialization (>= 2.25.0), python3-oslo.utils (>= 3.36.0), python3-pbr (>= 3.1.1), python3-pyinotify (>= 0.9.6), python3-six (>= 1.11.0), python3:any
+Package: python3-oslo.serialization
+Version: 5.4.0-0ubuntu1
+Depends: python3-debtcollector (>= 1.2.0), python3-msgpack (>= 0.5.2), python3-oslo.utils (>= 3.33.0), python3-pbr (>= 2.0.0), python3-six (>= 1.10.0), python3-tz (>= 2013.6), python3-yaml (>= 3.12), python3:any
+Package: python3-oslo.utils
+Version: 7.1.0-0ubuntu1
+Depends: python3-debtcollector (>= 1.2.0), python3-iso8601 (>= 0.1.11), python3-netaddr (>= 0.7.18), python3-netifaces (>= 0.10.4), python3-oslo.i18n (>= 3.15.3), python3-pyparsing (>= 2.1.0), python3-tz (>= 2013.6), python3-packaging (>= 20.4), python3-yaml, python3:any
+Package: python3-packaging
+Version: 24.0-1
+Depends: python3:any
+Package: python3-pbr
+Version: 5.11.1-0ubuntu1
+Depends: python3-pkg-resources, python3-setuptools, python3-six (>= 1.10.0), python3:any
+Package: python3-pexpect
+Version: 4.9-2
+Depends: python3-ptyprocess, python3:any
+Package: python3-pil
+Version: 10.2.0-1ubuntu1.3
+Depends: python3 (<< 3.13), python3 (>= 3.12~), python3:any, media-types | python3-pil.imagetk, libc6 (>= 2.14), libfreetype6 (>= 2.10.1), libimagequant0 (>= 2.11.10), libjpeg8 (>= 8c), liblcms2-2 (>= 2.7), libopenjp2-7 (>= 2.4.0), libraqm0 (>= 0.7.0), libtiff6 (>= 4.0.3), libwebp7 (>= 1.3.2), libwebpdemux2 (>= 1.3.2), libwebpmux3 (>= 1.3.2), libxcb1, zlib1g (>= 1:1.1.4)
+Package: python3-pip
+Version: 24.0+dfsg-1ubuntu1.3
+Depends: ca-certificates, python3-setuptools, python3-wheel, python3:any
+Package: python3-pip-whl
+Version: 24.0+dfsg-1ubuntu1.3
+Depends: ca-certificates
+Package: python3-pkg-resources
+Version: 68.1.2-2ubuntu1.2
+Depends: python3:any
+Package: python3-problem-report
+Version: 2.28.1-0ubuntu3.8
+Depends: python3:any
+Package: python3-ptyprocess
+Version: 0.7.0-5
+Depends: python3:any
+Package: python3-pyasn1
+Version: 0.4.8-4ubuntu0.2
+Depends: python3:any
+Package: python3-pyasn1-modules
+Version: 0.2.8-1
+Depends: python3-pyasn1 (>= 0.4.6), python3-pyasn1 (<< 0.5.0), python3:any
+Package: python3-pyasyncore
+Version: 1.0.2-2
+Depends: python3:any
+Package: python3-pygments
+Version: 2.17.2+dfsg-1
+Depends: python3-pkg-resources, python3:any
+Package: python3-pyinotify
+Version: 0.9.6-2ubuntu1
+Depends: python3:any, python3-pyasyncore
+Package: python3-pyparsing
+Version: 3.1.1-1
+Depends: python3:any
+Package: python3-requests
+Version: 2.31.0+dfsg-1ubuntu1.1
+Depends: python3-certifi, python3-chardet (>= 3.0.2), python3-idna, python3-urllib3 (>= 1.21.1), python3:any, ca-certificates
+Package: python3-rfc3986
+Version: 2.0.0-2
+Depends: python3-idna, python3:any
+Package: python3-rich
+Version: 13.7.1-1
+Depends: python3-markdown-it, python3-pygments (>= 2.14.0), python3-typing-extensions (>= 3.7.4) | python3-supported-min (>= 3.9), python3:any
+Package: python3-roman
+Version: 3.3-3
+Depends: python3:any
+Package: python3-s3transfer
+Version: 0.10.1-1ubuntu2
+Depends: python3-botocore (>= 1.34.18+repack-1~), python3:any
+Package: python3-serial
+Version: 3.5-2
+Depends: python3:any
+Package: python3-service-identity
+Version: 24.1.0-1
+Depends: python3-attr, python3-cryptography, python3-pyasn1, python3-pyasn1-modules, python3:any
+Package: python3-setuptools
+Version: 68.1.2-2ubuntu1.2
+Depends: python3-pkg-resources (= 68.1.2-2ubuntu1.2), python3:any
+Package: python3-setuptools-whl
+Version: 68.1.2-2ubuntu1.2
+Package: python3-six
+Version: 1.16.0-4
+Depends: python3:any
+Package: python3-software-properties
+Version: 0.99.49.4
+Depends: gpg, iso-codes, lsb-release, python3, python3-apt (>= 2.7.1~), python3-gi, python3-launchpadlib, python3:any
+Package: python3-stevedore
+Version: 1:5.1.0-0ubuntu1
+Depends: python3-importlib-metadata (>= 1.6.0), python3-pbr (>= 2.0.0), python3-pkg-resources, python3-six (>= 1.10.0), python3:any
+Package: python3-systemd
+Version: 235-1build4
+Depends: python3 (<< 3.13), python3 (>= 3.12~), python3:any, libc6 (>= 2.38), libsystemd0 (>= 246)
+Package: python3-twisted
+Version: 24.3.0-1ubuntu0.2
+Depends: python3-bcrypt (>= 3.0.0), python3-cryptography (>= 2.5), python3-hamcrest, python3-idna, python3-openssl, python3-service-identity (>= 18.1.0), python3-attr (>= 19.2.0), python3-automat (>= 0.8.0), python3-constantly, python3-hyperlink, python3-incremental (>= 21.3.0), python3-zope.interface (>= 5), python3:any
+Package: python3-typing-extensions
+Version: 4.10.0-1
+Depends: python3:any
+Package: python3-tz
+Version: 2024.1-2
+Depends: tzdata, python3:any
+Package: python3-update-manager
+Version: 1:24.04.12
+Depends: python3-apt (>= 0.8.5~), python3-distro-info, python3-distupgrade, python3:any
+Package: python3-urllib3
+Version: 2.0.7-1ubuntu0.7
+Depends: python3:any
+Package: python3-venv
+Version: 3.12.3-0ubuntu2.1
+Depends: python3.12-venv (>= 3.12.3-0~), python3 (= 3.12.3-0ubuntu2.1)
+Package: python3-wadllib
+Version: 1.3.6-5
+Depends: python3-importlib-metadata | python3-supported-min (>> 3.8), python3-lazr.uri, python3-pkg-resources, python3:any
+Package: python3-websockify
+Version: 0.10.0+dfsg1-5build2
+Depends: python3-numpy, python3-pkg-resources, python3:any
+Package: python3-wheel
+Version: 0.42.0-2
+Depends: python3:any
+Package: python3-wrapt
+Version: 1.15.0-2build3
+Depends: python3 (<< 3.13), python3 (>= 3.12~), python3:any, libc6 (>= 2.4)
+Package: python3-xkit
+Version: 0.5.0ubuntu6
+Depends: python3:any (>= 3.2~)
+Package: python3-yaml
+Version: 6.0.1-2build2
+Depends: python3 (<< 3.13), python3 (>= 3.12~), python3:any, libc6 (>= 2.14), libyaml-0-2
+Package: python3-zipp
+Version: 1.0.0-6ubuntu0.1
+Depends: python3-more-itertools, python3:any
+Package: python3-zope.interface
+Version: 6.1-1build1
+Depends: python3 (<< 3.13), python3 (>= 3.12~), python3-pkg-resources, python3:any, libc6 (>= 2.4)
+Package: python3.12
+Version: 3.12.3-1ubuntu0.17
+Depends: python3.12-minimal (= 3.12.3-1ubuntu0.17), libpython3.12-stdlib (= 3.12.3-1ubuntu0.17), media-types | mime-support, tzdata
+Package: python3.12-dev
+Version: 3.12.3-1ubuntu0.17
+Depends: python3.12 (= 3.12.3-1ubuntu0.17), libpython3.12-dev (= 3.12.3-1ubuntu0.17), libpython3.12t64 (= 3.12.3-1ubuntu0.17)
+Package: python3.12-minimal
+Version: 3.12.3-1ubuntu0.17
+Depends: libpython3.12-minimal (= 3.12.3-1ubuntu0.17), libexpat1 (>= 2.6.0), zlib1g (>= 1:1.2.0)
+Package: python3.12-venv
+Version: 3.12.3-1ubuntu0.17
+Depends: python3.12 (= 3.12.3-1ubuntu0.17), python3-pip-whl (>= 22.2), python3-setuptools-whl
+Package: readline-common
+Version: 8.2-4build1
+Package: rpcsvc-proto
+Version: 1.4.2-0ubuntu7
+Depends: libc6 (>= 2.38)
+Package: rsync
+Version: 3.2.7-1ubuntu1.4
+Depends: lsb-base, libacl1 (>= 2.2.23), libc6 (>= 2.38), liblz4-1 (>= 0.0~r130), libpopt0 (>= 1.14), libssl3t64 (>= 3.0.0), libxxhash0 (>= 0.8.0), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Package: rsyslog
+Version: 8.2312.0-3ubuntu9.1
+Depends: libc6 (>= 2.38), libestr0 (>= 0.1.9), libfastjson4 (>= 0.99.8), libsystemd0 (>= 246), libuuid1 (>= 2.16), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4), adduser, ucf
+Package: run-one
+Version: 1.17-0ubuntu2
+Depends: procps
+Package: runc
+Version: 1.3.4-0ubuntu1~24.04.1
+Depends: libc6 (>= 2.38), libseccomp2 (>= 2.5.0)
+Package: sbsigntool
+Version: 0.9.4-3.1ubuntu7
+Depends: libc6 (>= 2.38), libssl3t64 (>= 3.0.0), libuuid1 (>= 2.16)
+Package: screen
+Version: 4.9.1-1ubuntu1
+Depends: libc6 (>= 2.38), libcrypt1 (>= 1:4.1.0), libpam0g (>= 0.99.7.1), libtinfo6 (>= 6), libutempter0 (>= 1.1.5), debianutils (>= 5.3-1~)
+Package: secureboot-db
+Version: 1.9build1
+Depends: sbsigntool
+Package: sed
+Version: 4.9-2ubuntu0.24.04.1
+Package: selinux-utils
+Version: 3.5-2ubuntu2.1
+Depends: libc6 (>= 2.38), libpcre2-8-0 (>= 10.22), libselinux1 (>= 3.5), libsepol2 (>= 3.5)
+Package: sensible-utils
+Version: 0.0.22
+Package: session-migration
+Version: 0.3.9build1
+Depends: libc6 (>= 2.34), libglib2.0-0t64 (>= 2.51.1), init-system-helpers (>= 1.52)
+Package: sg3-utils
+Version: 1.46-3ubuntu4
+Depends: libc6 (>= 2.38), libsgutils2-1.46-2 (>= 1.46)
+Package: sg3-utils-udev
+Version: 1.46-3ubuntu4
+Depends: sg3-utils, initramfs-tools-core, initramfs-tools | linux-initramfs-tool
+Package: sgml-base
+Version: 1.31
+Package: shared-mime-info
+Version: 2.4-4
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libglib2.0-0t64 (>= 2.75.3), libstdc++6 (>= 9), libxml2 (>= 2.7.4)
+Package: snapd
+Version: 2.75.2+ubuntu24.04
+Depends: adduser, apparmor (>= 2.10.95-0ubuntu2.2), ca-certificates, fuse3 (>= 3.10.5-1) | fuse, libcap2-bin, openssh-client, squashfs-tools, systemd, udev, default-dbus-session-bus | dbus-session-bus, libblkid1 (>= 2.17.2), libc6 (>= 2.38), libfuse3-3 (>= 3.12.0), liblzma5 (>= 5.1.1alpha+20120614), liblzo2-2 (>= 2.02), libudev1 (>= 183), zlib1g (>= 1:1.1.4)
+Package: software-properties-common
+Version: 0.99.49.4
+Depends: ca-certificates, gir1.2-glib-2.0, gir1.2-packagekitglib-1.0 (>= 1.1.0-2), packagekit, python-apt-common (>= 0.9), python3, python3-dbus, python3-gi, python3-software-properties (= 0.99.49.4), python3:any
+Package: sosreport
+Version: 4.9.2-0ubuntu0~24.04.1
+Depends: python3-magic, python3-packaging, python3-pexpect, python3-yaml, python3:any
+Package: squashfs-tools
+Version: 1:4.6.1-1build1
+Depends: libc6 (>= 2.38), liblz4-1 (>= 0.0~r130), liblzma5 (>= 5.1.1alpha+20120614), liblzo2-2 (>= 2.02), libzstd1 (>= 1.5.5), zlib1g (>= 1:1.1.4)
+Package: ssh-import-id
+Version: 5.11-0ubuntu2.24.04.1
+Depends: ca-certificates, openssh-client, python3-distro, python3-launchpadlib, wget, python3:any
+Package: strace
+Version: 6.8-0ubuntu2
+Depends: libc6 (>= 2.38), libunwind8
+Package: sudo
+Version: 1.9.15p5-3ubuntu5.24.04.1
+Depends: libapparmor1 (>= 2.7.0~beta1+bzr1772), libaudit1 (>= 1:2.2.1), libc6 (>= 2.38), libpam0g (>= 0.99.7.1), libselinux1 (>= 3.1~), libssl3t64 (>= 3.0.0), zlib1g (>= 1:1.2.0.2), libpam-modules
+Package: sysstat
+Version: 12.6.1-2
+Depends: ucf (>= 2.003), xz-utils, debconf (>= 0.5) | debconf-2.0, libc6 (>= 2.34), libsensors5 (>= 1:3.5.0)
+Package: systemd
+Version: 255.4-1ubuntu8.15
+Depends: libacl1 (>= 2.2.23), libapparmor1 (>= 2.13), libaudit1 (>= 1:2.2.1), libcryptsetup12 (>= 2:2.4), libfdisk1 (>= 2.33), libkmod2 (>= 15), libpam0g (>= 0.99.7.1), libseccomp2 (>= 2.3.1), libsystemd-shared (= 255.4-1ubuntu8.15), libsystemd0 (= 255.4-1ubuntu8.15), systemd-dev (>= 255.4-1ubuntu8.15), mount
+Package: systemd-dev
+Version: 255.4-1ubuntu8.15
+Package: systemd-hwe-hwdb
+Version: 255.1.7
+Depends: udev
+Package: systemd-resolved
+Version: 255.4-1ubuntu8.15
+Depends: libc6 (>= 2.39), libssl3t64 (>= 3.0.0), libsystemd-shared (= 255.4-1ubuntu8.15), systemd (= 255.4-1ubuntu8.15), default-dbus-system-bus | dbus-system-bus
+Package: systemd-sysv
+Version: 255.4-1ubuntu8.15
+Depends: systemd (= 255.4-1ubuntu8.15)
+Package: systemd-timesyncd
+Version: 255.4-1ubuntu8
+Depends: libc6 (>= 2.34), libsystemd-shared (= 255.4-1ubuntu8), systemd
+Package: sysvinit-utils
+Version: 3.08-6ubuntu3
+Depends: libc6 (>= 2.38)
+Package: tar
+Version: 1.35+dfsg-3build1
+Package: tcl
+Version: 8.6.14build1
+Depends: tcl8.6 (>= 8.6.14+dfsg-1~)
+Package: tcl8.6
+Version: 8.6.14+dfsg-1build1
+Depends: libc6 (>= 2.34), libtcl8.6 (>= 8.6.0)
+Package: tcpd
+Version: 7.6.q-33
+Depends: libc6 (>= 2.34), libwrap0 (= 7.6.q-33)
+Package: tcpdump
+Version: 4.99.4-3ubuntu4.24.04.1
+Depends: adduser, libc6 (>= 2.38), libpcap0.8t64 (>= 1.9.1), libssl3t64 (>= 3.0.0)
+Package: telnet
+Version: 0.17+2.5-3ubuntu4.1
+Depends: inetutils-telnet
+Package: thermald
+Version: 2.5.6-2ubuntu0.24.04.3
+Depends: libc6 (>= 2.38), libdbus-1-3 (>= 1.9.14), libdbus-glib-1-2 (>= 0.78), libevdev2 (>= 0.9.1), libgcc-s1 (>= 3.3.1), libglib2.0-0t64 (>= 2.79.0), liblzma5 (>= 5.1.1alpha+20120614), libstdc++6 (>= 13.1), libupower-glib3 (>= 0.99.0), libxml2 (>= 2.7.4)
+Package: thin-provisioning-tools
+Version: 0.9.0-2ubuntu5.1
+Depends: libaio1t64 (>= 0.3.93), libc6 (>= 2.38), libexpat1 (>= 2.0.1), libgcc-s1 (>= 3.0), libstdc++6 (>= 13.1)
+Package: time
+Version: 1.9-0.2build1
+Depends: libc6 (>= 2.34)
+Package: tk
+Version: 8.6.14build1
+Depends: tk8.6 (>= 8.6.14-1~), tcl
+Package: tk8.6
+Version: 8.6.14-1build1
+Depends: libc6 (>= 2.34), libtcl8.6 (>= 8.6.0), libtk8.6 (>= 8.6.0)
+Package: tmux
+Version: 3.4-1ubuntu0.1
+Depends: libc6 (>= 2.38), libevent-core-2.1-7t64 (>= 2.1.8-stable), libsystemd0 (>= 221), libtinfo6 (>= 6.4+20230603), libtinfo6 (<< 6.5~), libutempter0 (>= 1.1.5)
+Package: tnftp
+Version: 20230507-2build3
+Depends: libc6 (>= 2.38), libedit2 (>= 2.11-20080614-0), libssl3t64 (>= 3.0.0)
+Package: tpm-udev
+Version: 0.6ubuntu1
+Depends: adduser, udev
+Package: trace-cmd
+Version: 3.2-1ubuntu2
+Depends: libc6 (>= 2.38), libtraceevent1 (>= 1:1.5.1), libtracefs1 (>= 1.6.3), libzstd1 (>= 1.5.5), libtraceevent1-plugin
+Package: tzdata
+Version: 2025b-0ubuntu0.24.04.1
+Depends: debconf (>= 0.5) | debconf-2.0
+Package: tzdata-legacy
+Version: 2025b-0ubuntu0.24.04.1
+Depends: tzdata
+Package: ubuntu-drivers-common
+Version: 1:0.9.7.6ubuntu3.5
+Depends: python3:any (>= 3.2~), debconf (>= 0.5.00) | debconf-2.0, libc6 (>= 2.38), libdrm2 (>= 2.3.1), libkmod2 (>= 5~), libpci3 (>= 1:3.8.0), python3-apt, python3-xkit, python3-click, udev (>= 204-0ubuntu4~), pciutils, usbutils, kmod | module-init-tools
+Package: ubuntu-fan
+Version: 0.12.16+24.04.1
+Depends: bridge-utils, iproute2 (>> 3.16.0-2ubuntu2~), dnsmasq-base
+Package: ubuntu-kernel-accessories
+Version: 1.539.2
+Package: ubuntu-keyring
+Version: 2023.11.28.1
+Package: ubuntu-minimal
+Version: 1.539.2
+Depends: adduser, apt, apt-utils, console-setup, debconf, debconf-i18n, dhcpcd-base, e2fsprogs, eject, init, iproute2, iputils-ping, kbd, kmod, less, locales, lsb-release, mawk, mount, netbase, netcat-openbsd, netplan.io, passwd, procps, python3, sensible-utils, sudo, tzdata, ubuntu-keyring, ubuntu-pro-client, udev, vim-tiny, whiptail
+Package: ubuntu-mono
+Version: 24.04-0ubuntu1
+Depends: adwaita-icon-theme, hicolor-icon-theme, humanity-icon-theme
+Package: ubuntu-pro-client
+Version: 37.1ubuntu0~24.04
+Depends: python3-yaml, python3:any, libapt-pkg6.0t64 (>= 1.9~), libc6 (>= 2.38), libgcc-s1 (>= 3.3.1), libjson-c5 (>= 0.15), libstdc++6 (>= 13.1), python3-apt, distro-info (>= 0.18ubuntu0.18.04.1), python3-pkg-resources
+Package: ubuntu-pro-client-l10n
+Version: 37.1ubuntu0~24.04
+Depends: ubuntu-pro-client (= 37.1ubuntu0~24.04)
+Package: ubuntu-release-upgrader-core
+Version: 1:24.04.28
+Depends: python3:any, python3-distupgrade (= 1:24.04.28), ca-certificates
+Package: ubuntu-server
+Version: 1.539.2
+Depends: apport, bcache-tools, btrfs-progs, byobu, cloud-guest-utils, cloud-initramfs-copymods, cloud-initramfs-dyn-netconf, curl, dirmngr, fonts-ubuntu-console, git, gnupg, htop, lvm2, lxd-installer, mdadm, motd-news-config, multipath-tools, overlayroot, patch, pollinate, screen, software-properties-common, sosreport, tmux, update-notifier-common, vim, xfsprogs
+Package: ubuntu-standard
+Version: 1.539.2
+Depends: bind9-dnsutils, busybox-static, cpio, cron, dmidecode, dosfstools, ed, file, ftp, hdparm, info, libpam-systemd, logrotate, lshw, lsof, man-db, media-types, nftables, parted, pciutils, psmisc, rsync, strace, time, usbutils, wget, xz-utils
+Package: ucf
+Version: 3.0043+nmu1
+Depends: debconf (>= 0.5) | debconf-2.0, sensible-utils
+Package: udev
+Version: 255.4-1ubuntu8.15
+Depends: libacl1 (>= 2.2.23), libblkid1 (>= 2.37.2), libc6 (>= 2.38), libcap2 (>= 1:2.10), libkmod2 (>= 15), libselinux1 (>= 3.1~), systemd | systemd-standalone-sysusers | systemd-sysusers, libudev1 (= 255.4-1ubuntu8.15), systemd-dev (>= 255.4-1ubuntu8.15)
+Package: udisks2
+Version: 2.10.1-6ubuntu1.3
+Depends: libudisks2-0 (= 2.10.1-6ubuntu1.3), libblockdev-crypto3, libblockdev-fs3, libblockdev-loop3, libblockdev-mdraid3, libblockdev-nvme3, libblockdev-part3, libblockdev-swap3, dbus, parted, udev, libacl1 (>= 2.2.23), libatasmart4 (>= 0.13), libblkid1 (>= 2.16), libblockdev-utils3 (>= 3.0), libblockdev3 (>= 3.0), libc6 (>= 2.38), libglib2.0-0t64 (>= 2.79.0), libgudev-1.0-0 (>= 212), libmount1 (>= 2.30), libpolkit-agent-1-0 (>= 0.102), libpolkit-gobject-1-0 (>= 0.102), libsystemd0 (>= 209), libuuid1 (>= 2.16)
+Package: ufw
+Version: 0.36.2-6
+Depends: iptables, ucf, python3:any, debconf (>= 0.5) | debconf-2.0
+Package: unattended-upgrades
+Version: 2.9.1+nmu4ubuntu1
+Depends: debconf (>= 0.5) | debconf-2.0, debconf, python3, python3-apt (>= 1.9.6~), python3-dbus, python3-distro-info, ucf, lsb-release, lsb-base, xz-utils
+Package: unzip
+Version: 6.0-28ubuntu4.1
+Depends: libbz2-1.0, libc6 (>= 2.34)
+Package: update-inetd
+Version: 4.53
+Depends: debconf (>= 0.5) | debconf-2.0, perl:any
+Package: update-manager-core
+Version: 1:24.04.12
+Depends: distro-info-data, python3-distro-info, python3-update-manager (= 1:24.04.12), ubuntu-pro-client, ubuntu-release-upgrader-core (>= 1:18.04.9), python3:any
+Package: update-notifier-common
+Version: 3.192.68.2
+Depends: python3:any, python3-apt, python3-dbus, python3-debian, python3-debconf | debconf (<< 1.5.64~), python3-distro-info, lsb-release, patch, update-manager-core (>= 1:17.04.2)
+Package: upower
+Version: 1.90.3-1
+Depends: dbus, udev, libupower-glib3 (= 1.90.3-1), libc6 (>= 2.34), libglib2.0-0t64 (>= 2.66), libgudev-1.0-0 (>= 238), libimobiledevice6 (>= 1.3.0), libplist-2.0-4 (>= 2.3.0)
+Package: usb-modeswitch
+Version: 2.6.1-3ubuntu3
+Depends: tcl, usb-modeswitch-data, libc6 (>= 2.34), libusb-1.0-0 (>= 2:1.0.9)
+Package: usb-modeswitch-data
+Version: 20191128-6
+Package: usb.ids
+Version: 2024.03.18-1
+Package: usbmuxd
+Version: 1.1.1-5~exp3ubuntu2.1
+Depends: libc6 (>= 2.34), libimobiledevice6 (>= 1.3.0), libplist-2.0-4 (>= 2.3.0), libusb-1.0-0 (>= 2:1.0.22), adduser
+Package: usbutils
+Version: 1:017-3build1
+Depends: libc6 (>= 2.38), libudev1 (>= 196), libusb-1.0-0 (>= 2:1.0.22)
+Package: util-linux
+Version: 2.39.3-9ubuntu6.4
+Package: uuid-runtime
+Version: 2.39.3-9ubuntu6.4
+Depends: adduser, libc6 (>= 2.38), libsmartcols1 (>= 2.27~rc1), libsystemd0, libuuid1 (>= 2.38.1-2~)
+Package: va-driver-all
+Version: 2.20.0-2ubuntu0.2
+Depends: i965-va-driver | i965-va-driver-shaders, intel-media-va-driver | intel-media-va-driver-non-free, mesa-va-drivers
+Package: vdpau-driver-all
+Version: 1.5-2build1
+Depends: mesa-vdpau-drivers
+Package: vim
+Version: 2:9.1.0016-1ubuntu7.14
+Depends: vim-common (= 2:9.1.0016-1ubuntu7.14), vim-runtime (= 2:9.1.0016-1ubuntu7.14), libacl1 (>= 2.2.23), libc6 (>= 2.38), libgpm2 (>= 1.20.7), libpython3.12t64 (>= 3.12.1), libselinux1 (>= 3.1~), libsodium23 (>= 1.0.14), libtinfo6 (>= 6)
+Package: vim-common
+Version: 2:9.1.0016-1ubuntu7.14
+Package: vim-runtime
+Version: 2:9.1.0016-1ubuntu7.14
+Package: vim-tiny
+Version: 2:9.1.0016-1ubuntu7.14
+Depends: vim-common (= 2:9.1.0016-1ubuntu7.14), libacl1 (>= 2.2.23), libc6 (>= 2.34), libselinux1 (>= 3.1~), libtinfo6 (>= 6)
+Package: websockify
+Version: 0.10.0+dfsg1-5build2
+Depends: python3-jwcrypto, python3-numpy, python3-websockify (>= 0.10.0+dfsg1-5build2), python3 (<< 3.13), python3 (>= 3.12~), libc6 (>= 2.34)
+Package: wget
+Version: 1.21.4-1ubuntu4.5
+Depends: libc6 (>= 2.38), libidn2-0 (>= 0.6), libpcre2-8-0 (>= 10.22), libpsl5t64 (>= 0.16.0), libssl3t64 (>= 3.0.0), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4)
+Package: whiptail
+Version: 0.52.24-2ubuntu2
+Depends: libc6 (>= 2.38), libnewt0.52 (>= 0.52.24), libpopt0 (>= 1.14), libslang2 (>= 2.2.4)
+Package: wireless-regdb
+Version: 2025.10.07-0ubuntu1~24.04.1
+Package: x11-common
+Version: 1:7.7+23ubuntu3
+Depends: lsb-base (>= 1.3-9ubuntu2)
+Package: x11-utils
+Version: 7.7+6build2
+Depends: libc6 (>= 2.38), libfontconfig1 (>= 2.12.6), libgl1, libx11-6, libx11-xcb1 (>= 2:1.8.7), libxaw7 (>= 2:1.0.14), libxcb-shape0, libxcb1 (>= 1.6), libxcomposite1 (>= 1:0.4.5), libxext6, libxft2 (>> 2.1.1), libxi6, libxinerama1 (>= 2:1.1.4), libxkbfile1 (>= 1:1.1.0), libxmu6 (>= 2:1.1.3), libxmuu1 (>= 2:1.1.3), libxrandr2 (>= 2:1.2.0), libxrender1, libxt6t64 (>= 1:1.1.0), libxtst6, libxv1, libxxf86dga1 (>= 2:1.1.5), libxxf86vm1
+Package: x11-xkb-utils
+Version: 7.7+8build2
+Depends: libc6 (>= 2.38), libx11-6, libxaw7 (>= 2:1.0.14), libxkbfile1 (>= 1:1.1.0), libxrandr2 (>= 2:1.2.99.2), libxt6t64
+Package: x11-xserver-utils
+Version: 7.7+10build2
+Depends: libc6 (>= 2.38), libice6 (>= 1:1.0.0), libx11-6, libxaw7 (>= 2:1.0.14), libxcursor1 (>> 1.1.2), libxext6, libxi6, libxmu6 (>= 2:1.1.3), libxmuu1 (>= 2:1.1.3), libxrandr2 (>= 2:1.5.0), libxt6t64, libxxf86vm1, cpp
+Package: x11vnc
+Version: 0.9.16-10
+Depends: openssl, tk, libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libc6 (>= 2.34), libcrypt1 (>= 1:4.1.0), libssl3t64 (>= 3.0.0), libvncclient1 (>= 0.9.13+dfsg-4~), libvncserver1 (>= 0.9.13+dfsg-4~), libx11-6, libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxi6 (>= 2:1.2.99.4), libxinerama1 (>= 2:1.1.4), libxrandr2, libxtst6
+Package: xauth
+Version: 1:1.1.2-1build1
+Depends: libc6 (>= 2.38), libx11-6, libxau6 (>= 1:1.0.9), libxext6, libxmuu1 (>= 2:1.1.3)
+Package: xdg-user-dirs
+Version: 0.18-1build1
+Depends: libc6 (>= 2.34)
+Package: xdg-utils
+Version: 1.1.3-4.1ubuntu3
+Package: xfonts-base
+Version: 1:1.0.5+nmu1
+Depends: xfonts-utils
+Package: xfonts-encodings
+Version: 1:1.0.5-0ubuntu2
+Depends: x11-common
+Package: xfonts-utils
+Version: 1:7.7+6build3
+Depends: libc6 (>= 2.38), libfontenc1 (>= 1:1.1.8), libfreetype6 (>= 2.2.1), zlib1g (>= 1:1.1.4), x11-common, xfonts-encodings
+Package: xfsprogs
+Version: 6.6.0-1ubuntu2.1
+Depends: libblkid1 (>= 2.17.2), libc6 (>= 2.38), libdevmapper1.02.1 (>= 2:1.02.20), libedit2 (>= 2.11-20080614-0), libicu74 (>= 74.1-1~), libinih1 (>= 53), liburcu8t64 (>= 0.13.0), libuuid1 (>= 2.16), python3:any
+Package: xkb-data
+Version: 2.41-2ubuntu1.1
+Package: xml-core
+Version: 0.19
+Depends: sed (>= 4.1.2-8), sgml-base (>= 1.28)
+Package: xserver-common
+Version: 2:21.1.12-1ubuntu1.6
+Depends: x11-common, xkb-data, x11-xkb-utils
+Package: xvfb
+Version: 2:21.1.12-1ubuntu1.6
+Depends: xserver-common (>= 2:21.1.12-1ubuntu1.6), libaudit1 (>= 1:2.2.1), libc6 (>= 2.38), libgcrypt20 (>= 1.10.0), libgl1, libpixman-1-0 (>= 0.30.0), libselinux1 (>= 3.1~), libsystemd0, libunwind8, libxau6 (>= 1:1.0.9), libxdmcp6, libxfont2 (>= 1:2.0.1), xauth, x11-xkb-utils
+Package: xxd
+Version: 2:9.1.0016-1ubuntu7.14
+Depends: libc6 (>= 2.34)
+Package: xz-utils
+Version: 5.6.1+really5.4.5-1ubuntu0.3
+Depends: libc6 (>= 2.34), liblzma5 (>= 5.4.0)
+Package: zerofree
+Version: 1.1.1-1build5
+Depends: libc6 (>= 2.34), libext2fs2t64 (>= 1.42)
+Package: zip
+Version: 3.0-13ubuntu0.2
+Depends: libbz2-1.0, libc6 (>= 2.34)
+Package: zlib1g
+Version: 1:1.3.dfsg-3.1ubuntu2.1
+Depends: libc6 (>= 2.14)
+Package: zlib1g-dev
+Version: 1:1.3.dfsg-3.1ubuntu2.1
+Depends: zlib1g (= 1:1.3.dfsg-3.1ubuntu2.1), libc6-dev | libc-dev
+Package: zstd
+Version: 1.5.5+dfsg2-2build1.1
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.3.1), liblz4-1 (>= 1.8.0), liblzma5 (>= 5.1.1alpha+20120614), libstdc++6 (>= 12), zlib1g (>= 1:1.1.4)
+Package: zutty
+Version: 0.14.8.20231210+dfsg1-1
+Depends: libc6 (>= 2.34), libegl1, libfreetype6 (>= 2.2.1), libgcc-s1 (>= 3.3.1), libgles2 (>= 1.0.0), libstdc++6 (>= 13.1), libx11-6, libxmu6 (>= 2:1.1.3)

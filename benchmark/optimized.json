@@ -1,0 +1,84 @@
+{
+  "impl": "optimized",
+  "upstream": "r1chardj0n3s/parse",
+  "upstream_commit": "cf27a9bb66f68a42a467484693b5343be8242197",
+  "src": "/tmp/lead/parse-opt",
+  "command": "/usr/bin/python3 benchmark/bench.py --src /tmp/lead/parse-opt --tag optimized --out benchmark --corpus benchmark/corpus/dpkg-status-lines.txt --tests-command .venv/bin/python -m pytest tests -q -o addopts=\"\" --tests-summary 178 passed, 1 skipped in 0.18s (patched)",
+  "python": "3.12.3",
+  "cpu": "AMD EPYC 7K62 48-Core Processor",
+  "mem_total_kb": 3812564,
+  "seed": 20261114,
+  "corpus": "/home/ubuntu/GitHub/work/algo/parse-opt-lab/benchmark/corpus/dpkg-status-lines.txt",
+  "corpus_bytes": 143457,
+  "corpus_sha256": "7c3c718e7ac311f696d2826fe5045015d8239a9d656715976adfd20676a114fa",
+  "corpus_lines_total": 3000,
+  "formats": {
+    "Package": "Package: {name}",
+    "Version": "Version: {version}",
+    "Depends": "Depends: {deps}"
+  },
+  "warmup": 3,
+  "samples": 5,
+  "upstream_tests": {
+    "command": ".venv/bin/python -m pytest tests -q -o addopts=\"\"",
+    "summary": "178 passed, 1 skipped in 0.18s (patched)"
+  },
+  "scales": {
+    "500": {
+      "lines": 500,
+      "samples_s": [
+        0.001928086,
+        0.002018225,
+        0.00201063,
+        0.002002906,
+        0.001973281
+      ],
+      "median_s": 0.002002906,
+      "p25_s": 0.001973281,
+      "p75_s": 0.00201063,
+      "rsd": 0.0184
+    },
+    "1500": {
+      "lines": 1500,
+      "samples_s": [
+        0.005762044,
+        0.005756275,
+        0.005736075,
+        0.00565232,
+        0.005707893
+      ],
+      "median_s": 0.005736075,
+      "p25_s": 0.005707893,
+      "p75_s": 0.005756275,
+      "rsd": 0.0078
+    },
+    "3000": {
+      "lines": 3000,
+      "samples_s": [
+        0.011571798,
+        0.011384716,
+        0.011521174,
+        0.011277956,
+        0.011193858
+      ],
+      "median_s": 0.011384716,
+      "p25_s": 0.011277956,
+      "p75_s": 0.011521174,
+      "rsd": 0.014
+    }
+  },
+  "distinct_envelope": {
+    "inputs": 10000,
+    "samples_s": [
+      1.326540042,
+      1.328066002,
+      1.319692417,
+      1.329406712,
+      1.331382398
+    ],
+    "median_s": 1.328066002,
+    "p25_s": 1.326540042,
+    "p75_s": 1.329406712,
+    "matched": 7143
+  }
+}

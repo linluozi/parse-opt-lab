@@ -1,0 +1,10 @@
+{
+ "impl": "optimized",
+ "workload": "corpus",
+ "scale": 500,
+ "sample": 0,
+ "elapsed_s": 0.001928086,
+ "lines": 500,
+ "matched": 500,
+ "payload": 500
+}
